@@ -27,7 +27,7 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_1 =
 
 {
   checkboard = false,
-  save = "__248K-Redux_0.0.1__/ressources/menu_simulation/248k_menu_1.zip",
+  save = "__248k__/ressources/menu_simulation/248k_menu_1.zip",
   length = 60*25,
   init = [[
     local logo = game.surfaces.nauvis.find_entities_filtered{name = "factorio-logo-22tiles", limit = 1}[1]  
