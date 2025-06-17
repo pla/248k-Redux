@@ -13,15 +13,22 @@ local clean_up_list = {
     "fi_base_crystal_item",
     "fi_catalyst_crystal_item"
 }
+--Encontre el error,en "data.raw.item[v].flags ="el "hidden" ya no es valido
+-- Que es lo que estaba intentando lograr con esta función?
 
 local function clean_up(clean_up_list)
     for i,v in ipairs(clean_up_list) do
         if data.raw.item[v] then
-            data.raw.item[v].flags = { "hidden" }
+            data.raw.item[v].flags = { 
+                "hidden"
+             }
         end
 
+--Encontre el error,en "data.raw["item-with-tags"][v].flags ="el "hidden" ya no es valido
         if data.raw["item-with-tags"][v] then
-            data.raw["item-with-tags"][v].flags = { "hidden" }
+            data.raw["item-with-tags"][v].flags = { 
+                "hidden"
+             }
         end
     end
 end
