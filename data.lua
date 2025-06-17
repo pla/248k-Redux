@@ -84,6 +84,7 @@ require('prototypes/fi_recipes')
 require('prototypes/fu_recipes')
 require('prototypes/gr_recipes')
 
+
 --require('scripts/menu_simulation')
 require('scripts/clean_up')
 
