@@ -15,6 +15,8 @@ local clean_up_list = {
 }
 --Encontre el error,en "data.raw.item[v].flags ="el "hidden" ya no es valido
 -- Que es lo que estaba intentando lograr con esta función?
+--Voy a ocultarlo por el momento para poder continuar con el resto del mod ya cuando pueda abrir el juego vere que hace esto
+--[[
 
 local function clean_up(clean_up_list)
     for i,v in ipairs(clean_up_list) do
@@ -34,3 +36,5 @@ local function clean_up(clean_up_list)
 end
 
 clean_up(clean_up_list)
+
+]]
