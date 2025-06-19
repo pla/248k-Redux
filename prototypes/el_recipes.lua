@@ -50,12 +50,11 @@ data:extend({
         enabled = 'false',
         category = 'crafting',
         ingredients = {
-            {'el_lithium_item',4},
-            {'iron-plate',4},
-            {'steel-plate',4},
+            {type = "item",name = 'el_lithium_item',amount = 4},
+            {type = "item",name = 'iron-plate',amount = 4},
+            {type = "item",name = 'steel-plate',amount = 4},
         },
-        result = 'el_lithium_battery',
-        result_count = 2,
+        results = {{type = "item",name = 'el_lithium_battery',amount = 2}},
         energy_required = 10,
     },
     --el_burner
