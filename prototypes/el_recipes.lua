@@ -23,7 +23,6 @@ data:extend({
         --result_count = 2,
         energy_required = 4,
         order = 'a-a-2',
-        enabled = false,
     },
     --el_aluminum_ore
     
