@@ -1094,28 +1094,29 @@ data:extend({
         type = 'recipe',
         enabled = false,
         ingredients = {
-            {'concrete',60},
-            {'el_materials_ALK',60},
-            {'iron-gear-wheel',40},
-            {'engine-unit',15},
-            {'el_energy_crystal_item',20},
+            {type = 'item', name = 'concrete', amount = 60},
+            {type = 'item', name = 'el_materials_ALK', amount = 60},
+            {type = 'item', name = 'iron-gear-wheel', amount = 40},
+            {type = 'item', name = 'engine-unit', amount = 15},
+            {type = 'item', name = 'el_energy_crystal_item', amount = 20},
         },
-        result = 'fi_compound_machine_item',
-        result_count = 1,
+        results = {
+            {type = 'item', name = 'fi_compound_machine_item', amount = 1},
+        },
         energy_required = 4,
     },
     {
         name = 'fi_NFK_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_compound_machine_category',
         ingredients = {
-            {type="fluid", name="petroleum-gas", amount=10},
-            {type="item", name="fi_materials_natural_fiber", amount=1},
-            {type="item", name="plastic-bar", amount=1},
+            {type = "fluid", name = "petroleum-gas", amount = 10},
+            {type = "item", name = "fi_materials_natural_fiber", amount = 1},
+            {type = "item", name = "plastic-bar", amount = 1},
         },
         results = {
-            {type="item", name="fi_materials_NFK", amount=1},
+            {type = "item", name = "fi_materials_NFK", amount = 1},
         },
         energy_required = 0.2,
         order = 'a-b',
@@ -1124,15 +1125,15 @@ data:extend({
     {
         name = 'fi_GFK_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_compound_machine_category',
         ingredients = {
-            {type="fluid", name="petroleum-gas", amount=10},
-            {type="item", name="fi_materials_glass_fiber", amount=1},
-            {type="item", name="plastic-bar", amount=1},
+            {type = "fluid", name = "petroleum-gas", amount = 10},
+            {type = "item", name = "fi_materials_glass_fiber", amount = 1},
+            {type = "item", name = "plastic-bar", amount = 1},
         },
         results = {
-            {type="item", name="fi_materials_GFK", amount=1},
+            {type = "item", name = "fi_materials_GFK", amount = 1},
         },
         energy_required = 0.2,
         order = 'a-b',
@@ -1141,16 +1142,16 @@ data:extend({
     {
         name = 'fi_pure_neodym_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_pure_neodym',
         ingredients = {
-            {type="fluid", name="fi_dirty_water", amount=100},
+            {type = "fluid", name = "fi_dirty_water", amount = 100},
         },
         results = {
-            {type="fluid", name="water", amount=100},
+            {type = "fluid", name = "water", amount = 100},
             --{type="item", name="fi_materials_pure_gold", amount=2},
-            {type="item", name="fi_materials_pure_neodym", amount=2},
+            {type = "item", name = "fi_materials_pure_neodym", amount = 2},
             --{type="item", name="fi_materials_pure_titan", amount=2},
         },
         energy_required = 0.2,
@@ -1159,15 +1160,15 @@ data:extend({
     {
         name = 'fi_pure_gold_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_pure_gold',
         ingredients = {
-            {type="fluid", name="fi_dirty_water", amount=100},
+            {type = "fluid", name = "fi_dirty_water", amount = 100},
         },
         results = {
-            {type="fluid", name="water", amount=100},
-            {type="item", name="fi_materials_pure_gold", amount=2},
+            {type = "fluid", name = "water", amount = 100},
+            {type = "item", name = "fi_materials_pure_gold", amount = 2},
             --{type="item", name="fi_materials_pure_neodym", amount=4},
             --{type="item", name="fi_materials_pure_titan", amount=2},
         },
@@ -1177,17 +1178,17 @@ data:extend({
     {
         name = 'fi_pure_titan_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_pure_titan',
         ingredients = {
-            {type="fluid", name="fi_dirty_water", amount=100},
+            {type = "fluid", name = "fi_dirty_water", amount = 100},
         },
         results = {
-            {type="fluid", name="water", amount=100},
+            {type = "fluid", name = "water", amount = 100},
             --{type="item", name="fi_materials_pure_gold", amount=2},
             --{type="item", name="fi_materials_pure_neodym", amount=4},
-            {type="item", name="fi_materials_pure_titan", amount=2},
+            {type = "item", name = "fi_materials_pure_titan", amount = 2},
         },
         energy_required = 0.2,
         order = 'a-b',
@@ -1195,13 +1196,13 @@ data:extend({
     {
         name = 'fi_decay_waste_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_castor_category',
         icon = sprite('fission/fi_materials/fi_materials_waste.png'),
         icon_size = 64,
         subgroup = 'fi_item_subgroup_a',
         ingredients = {
-            {type="item", name="fi_materials_waste", amount=1},
+            {type = "item", name = "fi_materials_waste", amount = 1},
         },
         results = {},
         energy_required = 150,
@@ -1211,15 +1212,15 @@ data:extend({
     {
         name = 'fi_empty_solution_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_empty_solution',
         ingredients = {
-            {type="item", name="fi_materials_GFK", amount=6},
-            {type="item", name="empty-barrel", amount=1},
+            {type = "item", name = "fi_materials_GFK", amount = 6},
+            {type = "item", name = "empty-barrel", amount = 1},
         },
         results = {
-            {type="item", name="fi_materials_empty_solution", amount=1},
+            {type = "item", name = "fi_materials_empty_solution", amount = 1},
         },
         energy_required = 1,
         order = 'a-b',
@@ -1228,19 +1229,19 @@ data:extend({
     {
         name = 'fi_solution_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'fi_materials_solution',
         ingredients = {
-            {type="fluid", name="fi_strong_acid", amount=120},
-            {type="fluid", name="sulfuric-acid", amount=60},
-            {type="item", name="fi_materials_empty_solution", amount=1},
-            {type="item", name="el_lithium_item", amount=2},
+            {type = "fluid", name = "fi_strong_acid", amount = 120},
+            {type = "fluid", name = "sulfuric-acid", amount = 60},
+            {type = "item", name = "fi_materials_empty_solution", amount = 1},
+            {type = "item", name = "el_lithium_item", amount = 2},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=20},
-            {type="item", name="fi_materials_solution", amount=1, probability=0.95},
-            {type="item", name="fi_materials_empty_solution", amount=1, probability=0.05},
+            {type = "fluid", name = "el_acidic_water", amount = 20},
+            {type = "item", name = "fi_materials_solution", amount = 1, probability = 0.95},
+            {type = "item", name = "fi_materials_empty_solution", amount = 1, probability = 0.05},
         },
         energy_required = 6,
         order = 'a-b',
@@ -1251,18 +1252,18 @@ data:extend({
     {
         name = 'fi_rich_powder_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'centrifuging',
         main_product = 'fi_materials_rich_powder',
         ingredients = {
-            {type="item", name="fi_materials_solution", amount=1},
-            {type="item", name="fi_crushed_stone_item", amount=16},
-            {type="item", name="fi_crushed_coal_item", amount=10},
+            {type = "item", name = "fi_materials_solution", amount = 1},
+            {type = "item", name = "fi_crushed_stone_item", amount = 16},
+            {type = "item", name = "fi_crushed_coal_item", amount = 10},
         },
         results = {
-            {type="item", name="fi_crushed_coal_item", amount=7},
-            {type="item", name="fi_materials_rich_powder", amount=3},
-            {type="item", name="fi_materials_empty_solution", amount=1},
+            {type = "item", name = "fi_crushed_coal_item", amount = 7},
+            {type = "item", name = "fi_materials_rich_powder", amount = 3},
+            {type = "item", name = "fi_materials_empty_solution", amount = 1},
         },
         energy_required = 6,
         order = 'a-b',
@@ -1271,16 +1272,16 @@ data:extend({
     {
         name = 'fi_extract_rich_powder_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'fi_dirty_water',
         ingredients = {
-            {type="item", name="fi_materials_rich_powder", amount=1},
-            {type="fluid", name="water", amount=200},
+            {type = "item", name = "fi_materials_rich_powder", amount = 1},
+            {type = "fluid", name = "water", amount = 200},
         },
         results = {
-            {type="fluid", name="fi_dirty_water", amount=150},
-            {type="fluid", name="el_dirty_water", amount=50},
+            {type = "fluid", name = "fi_dirty_water", amount = 150},
+            {type = "fluid", name = "el_dirty_water", amount = 50},
         },
         energy_required = 1,
         order = 'a-b',
@@ -1289,13 +1290,13 @@ data:extend({
     {
         name = 'fi_refinery_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         ingredients = {
-            {type="item", name="oil-refinery", amount=1},
-            {'concrete',60},
-            {'el_materials_ALK',20},
-            {'engine-unit',15},
+            {type = "item", name = "oil-refinery", amount=1},
+            {type = "item", name = 'concrete', amount = 60},
+            {type = "item", name = 'el_materials_ALK', amount = 20},
+            {type = "item", name = 'engine-unit', amount = 15},
         },
         results = {
             {type="item", name="fi_refinery_item", amount=1}
@@ -1306,19 +1307,19 @@ data:extend({
     {
         name = 'fi_refinery_basic_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_refining',
         icon = sprite('icons/fi_refining_basic.png'),
         icon_size = 64,
         ingredients = {
-            {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=40},
+            {type = "fluid", name = "crude-oil", amount = 180},
+            {type = "fluid", name = "steam", amount = 40},
         },
         results = {
-            {type="fluid", name="petroleum-gas", amount=80},
-            {type="fluid", name="fi_acid_gas", amount=20},
-            {type="fluid", name="el_kerosene", amount=80},
-            {type="fluid", name="heavy-oil", amount=20},
+            {type = "fluid", name = "petroleum-gas", amount = 80},
+            {type = "fluid", name = "fi_acid_gas", amount = 20},
+            {type = "fluid", name = "el_kerosene", amount = 80},
+            {type = "fluid", name = "heavy-oil", amount = 20},
         },
         energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
@@ -1328,20 +1329,20 @@ data:extend({
     {
         name = 'fi_refinery_coal_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_refining',
         icon = sprite('icons/fi_refining_coal.png'),
         icon_size = 64,
         ingredients = {
-            {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=40},
-            {type="item", name="fi_crushed_coal_item", amount=10},
+            {type = "fluid", name = "crude-oil", amount = 180},
+            {type = "fluid", name = "steam", amount = 40},
+            {type = "item", name = "fi_crushed_coal_item", amount = 10},
         },
         results = {
-            {type="fluid", name="petroleum-gas", amount=60},
-            {type="fluid", name="fi_acid_gas", amount=30},
-            {type="fluid", name="el_kerosene", amount=75},
-            {type="fluid", name="heavy-oil", amount=95},
+            {type = "fluid", name = "petroleum-gas", amount = 60},
+            {type = "fluid", name = "fi_acid_gas", amount = 30},
+            {type = "fluid", name = "el_kerosene", amount = 75},
+            {type = "fluid", name = "heavy-oil", amount = 95},
         },
         energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
@@ -1351,20 +1352,20 @@ data:extend({
     {
         name = 'fi_refinery_sulfur_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_refining',
         icon = sprite('icons/fi_refining_sulfur.png'),
         icon_size = 64,
         ingredients = {
-            {type="fluid", name="crude-oil", amount=180},
-            {type="fluid", name="steam", amount=40},
-            {type="item", name="sulfur", amount=3},
+            {type = "fluid", name = "crude-oil", amount = 180},
+            {type = "fluid", name = "steam", amount = 40},
+            {type = "item", name = "sulfur", amount = 3},
         },
         results = {
-            {type="fluid", name="petroleum-gas", amount=95},
-            {type="fluid", name="fi_acid_gas", amount=75},
-            {type="fluid", name="el_kerosene", amount=80},
-            {type="fluid", name="heavy-oil", amount=20},
+            {type = "fluid", name = "petroleum-gas", amount = 95},
+            {type = "fluid", name = "fi_acid_gas", amount = 75},
+            {type = "fluid", name = "el_kerosene", amount = 80},
+            {type = "fluid", name = "heavy-oil", amount = 20},
         },
         energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
@@ -1374,16 +1375,16 @@ data:extend({
     {
         name = 'fi_crack_sulfur_gas_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'sulfur',
         ingredients = {
-            {type="fluid", name="fi_acid_gas", amount=10},
-            {type="fluid", name="steam", amount=5},
+            {type = "fluid", name = "fi_acid_gas", amount = 10},
+            {type = "fluid", name = "steam", amount = 5},
         },
         results = {
-            {type="fluid", name="water", amount=5},
-            {type="item", name="sulfur", amount=1},
+            {type = "fluid", name = "water", amount = 5},
+            {type = "item", name = "sulfur", amount = 1},
         },
         energy_required = 0.5,
         subgroup = 'fi_item_subgroup_f',
@@ -1393,16 +1394,16 @@ data:extend({
     {
         name = 'fi_crack_acid_gas_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'el_acidic_water',
         ingredients = {
-            {type="fluid", name="fi_acid_gas", amount=20},
-            {type="fluid", name="steam", amount=5},
+            {type = "fluid", name = "fi_acid_gas", amount = 20},
+            {type = "fluid", name = "steam", amount = 5},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=20},
-            {type="fluid", name="sulfuric-acid", amount=5},
+            {type = "fluid", name = "el_acidic_water", amount = 20},
+            {type = "fluid", name = "sulfuric-acid", amount = 5},
         },
         energy_required = 0.5,
         subgroup = 'fi_item_subgroup_f',
@@ -1412,17 +1413,17 @@ data:extend({
     {
         name = 'fi_refinery_kerosene_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_refining',
         icon = sprite('icons/fi_cracking_kerosene.png'),
         icon_size = 64,
         ingredients = {
-            {type="fluid", name="el_kerosene", amount=200},
+            {type = "fluid", name = "el_kerosene", amount = 200},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=100},
-            {type="fluid", name="fi_acid_gas", amount=50},
-            {type="fluid", name="el_desulfurized_kerosene", amount=90},
+            {type = "fluid", name = "el_acidic_water", amount = 100},
+            {type = "fluid", name = "fi_acid_gas", amount = 50},
+            {type = "fluid", name = "el_desulfurized_kerosene", amount = 90},
         },
         energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
@@ -1432,18 +1433,18 @@ data:extend({
     {
         name = 'fi_refinery_kerosene_coal_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'fi_refining',
         icon = sprite('icons/fi_cracking_kerosene_coal.png'),
         icon_size = 64,
         ingredients = {
-            {type="fluid", name="el_kerosene", amount=200},
-            {type="item", name="fi_crushed_coal_item", amount=10},
+            {type = "fluid", name = "el_kerosene", amount = 200},
+            {type = "item", name = "fi_crushed_coal_item", amount = 10},
         },
         results = {
-            {type="fluid", name="el_acidic_water", amount=110},
-            {type="fluid", name="fi_acid_gas", amount=70},
-            {type="fluid", name="heavy-oil", amount=90},
+            {type = "fluid", name = "el_acidic_water", amount = 110},
+            {type = "fluid", name = "fi_acid_gas", amount = 70},
+            {type = "fluid", name = "heavy-oil", amount = 90},
         },
         energy_required = 5,
         subgroup = 'fi_item_subgroup_f',
@@ -1453,20 +1454,21 @@ data:extend({
     {
         name = 'fi_charge_crystal_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'el_charger_category',
         ingredients = {
-            {type='item', name='fi_energy_crystal_item', amount=1},
+            {type = 'item', name = 'fi_energy_crystal_item', amount = 1},
         },
-        result = 'fi_energy_crystal_charged_item',
-        result_count = 1,
+        results = {
+            {type = 'item', name = 'fi_energy_crystal_charged_item', amount = 1},
+        },
         energy_required = 10,
         always_show_made_in = true,
     },
     {
         name = 'fi_ceramic_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         ingredients = {
             {type="fluid", name="steam", amount=45},
@@ -1482,7 +1484,7 @@ data:extend({
     {
         name = 'fi_grenade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fi_grenade',
         ingredients = {
@@ -1492,13 +1494,12 @@ data:extend({
         results = {
             {type="item", name="fi_grenade", amount=1},
         },
-        result_count = 1,
         energy_required = 4,
     },
     {
         name = 'fi_solid_1_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'solid-fuel',
         icon = sprite('icons/fi_solid_2.png'),
@@ -1509,7 +1510,6 @@ data:extend({
         results = {
             {type="item", name="solid-fuel", amount=1},
         },
-        result_count = 1,
         energy_required = 2,
         subgroup = 'fluid-recipes',
         order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-a',
@@ -1517,7 +1517,7 @@ data:extend({
     {
         name = 'fi_solid_2_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'solid-fuel',
         icon = sprite('icons/fi_solid_1.png'),
@@ -1528,7 +1528,6 @@ data:extend({
         results = {
             {type="item", name="solid-fuel", amount=1},
         },
-        result_count = 1,
         energy_required = 2,
         subgroup = 'fluid-recipes',
         order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-b',
@@ -1536,7 +1535,7 @@ data:extend({
     {
         name = 'fi_rocket_fuel_2_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'rocket-fuel',
         icon = sprite('icons/fi_rocket_1.png'),
@@ -1548,7 +1547,6 @@ data:extend({
         results = {
             {type="item", name="rocket-fuel", amount=1},
         },
-        result_count = 1,
         energy_required = 30,
         subgroup = 'fluid-recipes',
         order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-c',
@@ -1556,7 +1554,7 @@ data:extend({
     {
         name = 'fi_rocket_fuel_1_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'rocket-fuel',
         icon = sprite('icons/fi_rocket_2.png'),
@@ -1568,7 +1566,6 @@ data:extend({
         results = {
             {type="item", name="rocket-fuel", amount=1},
         },
-        result_count = 1,
         energy_required = 30,
         subgroup = 'fluid-recipes',
         order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-d',
@@ -1576,7 +1573,7 @@ data:extend({
     {
         name = 'fi_rocket_fuel_1_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'chemistry',
         main_product = 'rocket-fuel',
         icon = sprite('icons/fi_rocket_2.png'),
@@ -1588,7 +1585,6 @@ data:extend({
         results = {
             {type="item", name="rocket-fuel", amount=1},
         },
-        result_count = 1,
         energy_required = 30,
         subgroup = 'fluid-recipes',
         order = 'b[fluid-chemistry]-e[solid-fuel-from-heavy-oil]-d',
@@ -1596,7 +1592,7 @@ data:extend({
     {
         name = 'fi_rich_solution_pack_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_rich_solution',
         ingredients = {
@@ -1606,14 +1602,13 @@ data:extend({
         results = {
             {type="item", name="fi_materials_rich_solution", amount=1},
         },
-        result_count = 1,
         energy_required = 0.2,
         always_show_made_in = true,
     },
     {
         name = 'fi_rich_solution_unpack_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_dirty_water',
         ingredients = {
@@ -1623,14 +1618,13 @@ data:extend({
             {type="fluid", name="fi_dirty_water", amount=1000},
             {type="item", name="fi_materials_empty_solution", amount=1},
         },
-        result_count = 1,
         energy_required = 0.2,
         always_show_made_in = true,
     },
     {
         name = 'fi_dirty_solution_pack_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_materials_dirty_solution',
         ingredients = {
@@ -1640,14 +1634,13 @@ data:extend({
         results = {
             {type="item", name="fi_materials_dirty_solution", amount=1},
         },
-        result_count = 1,
         energy_required = 0.2,
         always_show_made_in = true,
     },
     {
         name = 'fi_dirty_solution_unpack_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'el_dirty_water',
         ingredients = {
@@ -1657,7 +1650,6 @@ data:extend({
             {type="fluid", name="el_dirty_water", amount=1000},
             {type="item", name="fi_materials_empty_solution", amount=1},
         },
-        result_count = 1,
         energy_required = 0.2,
         always_show_made_in = true,
         subgroup = 'fi_item_subgroup_f',
@@ -1666,7 +1658,7 @@ data:extend({
     {
         name = 'fi_upgrade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_upgrade',
         ingredients = {
@@ -1677,14 +1669,13 @@ data:extend({
         results = {
             {type="item", name="fi_materials_upgrade", amount=2},
         },
-        result_count = 1,
         energy_required = 10,
         always_show_made_in = true,
     },
     {
         name = 'fi_miner_upgrade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fu_miner_item_2',
         ingredients = {
@@ -1694,14 +1685,13 @@ data:extend({
         results = {
             {type="item", name="fu_miner_item_2", amount=1},
         },
-        result_count = 1,
         energy_required = 10,
         always_show_made_in = true,
     },
     {
         name = 'fu_upgrade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fu_materials_upgrade',
         ingredients = {
@@ -1712,14 +1702,13 @@ data:extend({
         results = {
             {type="item", name="fu_materials_upgrade", amount=2},
         },
-        result_count = 1,
         energy_required = 10,
         always_show_made_in = true,
     },
     {
         name = 'fu_miner_upgrade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fu_miner_item_3',
         ingredients = {
@@ -1729,14 +1718,13 @@ data:extend({
         results = {
             {type="item", name="fu_miner_item_3", amount=1},
         },
-        result_count = 1,
         energy_required = 10,
         always_show_made_in = true,
     },
     {
         name = 'gr_upgrade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'gr_materials_upgrade',
         ingredients = {
@@ -1747,14 +1735,13 @@ data:extend({
         results = {
             {type="item", name="gr_materials_upgrade", amount=2},
         },
-        result_count = 1,
         energy_required = 10,
         always_show_made_in = true,
     },
     {
         name = 'gr_miner_upgrade_recipe',
         type = 'recipe',
-        enabled = 'false',
+        enabled = false,
         category = 'crafting',
         main_product = 'fu_miner_item_4',
         ingredients = {
@@ -1764,7 +1751,6 @@ data:extend({
         results = {
             {type="item", name="fu_miner_item_4", amount=1},
         },
-        result_count = 1,
         energy_required = 10,
         always_show_made_in = true,
     },
