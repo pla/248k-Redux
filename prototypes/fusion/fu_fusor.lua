@@ -71,10 +71,11 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
+              volume = 100,
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {type = "input", position = {-1.5, -3}},
+                {flow_direction = "input", position = {-1.5, -2}, direction = 0},
               },
               production_type = "input"
             },
@@ -82,10 +83,11 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
+              volume = 100,
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {type = "input", position = {1.5, -3}}
+                {flow_direction = "input", position = {1.5, -2}, direction = 0},
               },
               production_type = "input"
             },

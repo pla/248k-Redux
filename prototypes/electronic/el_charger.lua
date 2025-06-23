@@ -58,11 +58,12 @@ data:extend({
           filter = 'water',
           height = 2,
           base_level = -1,
+          volume = 100,
           pipe_covers = pipecoverspictures(),
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "input", position = {0, -4}},
+            {flow_direction = "input", position = {0, -3}, direction = 0},
           },
           production_type = "input"
         },
@@ -72,11 +73,12 @@ data:extend({
           height = 2,
           filter = 'fu_oxygen',
           base_level = 1,
+          volume = 100,
           pipe_covers = pipecoverspictures(),
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "output", position = {-4, 0}}
+            {flow_direction = "output", position = {-3, 0}, direction = 0},
           },
           production_type = "output"
         },
@@ -86,11 +88,12 @@ data:extend({
           height = 2,
           filter = 'fu_hydrogen',
           base_level = 1,
+          volume = 100,
           pipe_covers = pipecoverspictures(),
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "output", position = {4, 0}},
+            {flow_direction = "output", position = {3, 0}, direction = 0},
             --{type = "output", position = {2, -2.5}}
           },
           production_type = "output"
@@ -101,11 +104,12 @@ data:extend({
           height = 2,
           filter = 'fu_hydrogen',
           base_level = 1,
+          volume = 100,
           pipe_covers = pipecoverspictures(),
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {type = "output", position = {0, 4}},
+            {flow_direction = "output", position = {0, 3}, direction = 0},
           },
           production_type = "output"
         },

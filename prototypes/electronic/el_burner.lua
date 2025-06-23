@@ -73,7 +73,7 @@ data:extend({
             fuel_inventory_size = 3,
             burnt_inventory_size = 3,
             effectivity = 0.95,
-            emissions_per_minute = 20,
+            emissions = {emissions_per_minute = 20},
             fuel_categories = {"chemical", "charged_fuel"},
             smoke = {
                 {
@@ -131,7 +131,7 @@ data:extend({
             type = 'electric',
             usage_priority = 'primary-output',
             input_flow_limit = '0W',
-            emissions_per_minute = 20,
+            emissions= {emissions_per_minute = 20},
         },
         max_power_output = burner_output(),
         maximum_temperature = 40,
@@ -142,6 +142,7 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = -1,
+            volume = 100,
             filter = 'el_desulfurized_kerosene',
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
@@ -149,10 +150,10 @@ data:extend({
             maximum_temperature = 40,
             production_type = 'input-output', 
             pipe_connections = {
-                {type = "input-output", position = {2, 0}},  
-                {type = "input-output", position = {-2, 0}},  
-                {type = "input-output", position = {0, 2}},  
-                {type = "input-output", position = {0, -2}},  
+                {flow_direction = "input-output", position = {1, 0}, direction = 4},
+                {flow_direction = "input-output", position = {-1, 0}, direction = 12},
+                {flow_direction = "input-output", position = {0, 1}, direction = 0},
+                {flow_direction = "input-output", position = {0, -1}, direction = 8},
             },
         },
         fluid_input = {

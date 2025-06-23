@@ -53,14 +53,15 @@ data:extend({
         base_area = 1,
         height = 2,
         base_level = -1,
+        volume = 100,
         pipe_covers = pipecoverspictures(),
         pipe_picture = grey_south_pipe_picture,
         pipe_connections =
         {
-          {type = "input-output", position = {-4, 0}},
-          {type = "input-output", position = {4, 0}},
-          {type = "input-output", position = {0, 4}},
-          {type = "input-output", position = {0, -4}}
+          {flow_direction = "input-output", position = {-3, 0}, direction = 0},
+          {flow_direction = "input-output", position = {3, 0}, direction = 12},
+          {flow_direction = "input-output", position = {0, 3}, direction = 4},
+          {flow_direction = "input-output", position = {0, -3}, direction = 8},
         },
         production_type = "input-output"
       },

@@ -70,6 +70,7 @@ data:extend({
         selection_box = {{-1, -1}, {1, 1}},
         map_color = {r=0, g=0, b=1, a=1},
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
+        module_slots = 2,
         minable = {
             mining_time = 1,
             result = 'el_ki_beacon_item',
@@ -82,7 +83,7 @@ data:extend({
         },
         energy_usage = '0.4MW',
         module_specification = {
-            module_slots = 2,
+            --module_slots = 2, Lo muevo a debajo de  allowed_effects
             module_info_icon_shift = {0, 0.5},
             module_info_multi_row_initial_height_modifier = -0.3,
         },
@@ -135,6 +136,7 @@ data:extend({
         selection_box = {{-1.5,-1.5},{1.5,1.5}},
         map_color = {r=0, g=0, b=1, a=1},
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
+        module_slots = 6,
         minable = {
             mining_time = 1,
             result = 'fi_ki_beacon_item',
@@ -147,7 +149,7 @@ data:extend({
         },
         energy_usage = '4MW',
         module_specification = {
-            module_slots = 6,
+            --module_slots = 6, Lo muevo a debajo de  allowed_effects
             module_info_icon_shift = {0, 0.5},
             module_info_multi_row_initial_height_modifier = -0.3,
         },
@@ -200,6 +202,7 @@ data:extend({
         selection_box = {{-2,-2},{2,2}},
         map_color = {r=0, g=0, b=1, a=1},
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
+        module_slots = 18,
         minable = {
             mining_time = 1,
             result = 'fu_ki_beacon_item',
@@ -212,7 +215,7 @@ data:extend({
         },
         energy_usage = '40MW',
         module_specification = {
-            module_slots = 18,
+            --module_slots = 18, Lo muevo a debajo de  allowed_effects
             module_info_icon_shift = {0, 0.5},
             module_info_multi_row_initial_height_modifier = -0.3,
         },

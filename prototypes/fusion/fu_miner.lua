@@ -62,8 +62,8 @@ data:extend({
         type = "burner",
         fuel_inventory_size = 1,
         effectivity = 1,
-        emissions_per_minute = 20,
-        fuel_category = "fu_miner_fuel_category",
+        emissions = {emissions_per_minute = 20},
+        fuel_categories = {"fu_miner_fuel_category"},
         smoke = {
             {
                 name = "smoke",

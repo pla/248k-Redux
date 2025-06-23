@@ -2,22 +2,25 @@ function gr_make_white_hole_recipe(item)
     local blank = {
         name = 'blank',
         type = 'recipe',
-        enabled = 'true',
-        hidden = 'true',
-        allow_as_intermediate = 'false',
+        enabled = true,
+        hidden = true,
+        allow_as_intermediate = false,
         category = 'gr_white_hole_category',
         ingredients = {
-            {'blank',1}
+            {type = "item", name = 'blank', amount = 1}
         },
-        result = 'blank',
-        result_count = 2,
+        results = {
+            {type = 'item', name = 'blank', amount = 2},
+        },
         energy_required = 10,
     }
     blank["name"] = "gr_white_hole_cycle_"..item.."_recipe"
     blank["ingredients"] = {
-        {item,1}
-    }
-    blank["result"] = item
+            {type = "item", name = item, amount = 1}
+        }
+    blank["results"] = {
+            {type = "item", name = item, amount = 1}
+        }
 
     --table.insert(data.raw.recipe, base)
     data:extend({blank})

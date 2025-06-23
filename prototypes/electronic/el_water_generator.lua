@@ -65,6 +65,7 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = -1,
+            volume = 100,
             filter = 'el_pressurized_water',
             minimum_temperature = 0,
             maximum_temperature = 500,
@@ -72,8 +73,8 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
-                {type = "input-output", position = {2, 0}},  
-                {type = "input-output", position = {-2, 0}},  
+                {flow_direction = "input-output", position = {1, 0}, direction = 0},  
+                {flow_direction = "input-output", position = {-1, 0}, direction = 0},  
             },
         },
         fluid_input = {

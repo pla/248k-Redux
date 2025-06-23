@@ -54,10 +54,11 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
+              volume = 100,
               
               pipe_connections =
               {
-                {type = "input", position = {9, 0}}
+                {flow_direction = "input", position = {8, 0}, direction = 0},
               },
               production_type = "input"
             },
@@ -65,10 +66,11 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+              volume = 100,
                 
                 pipe_connections =
                 {
-                  {type = "input", position = {9, 2}}
+                  {flow_direction = "input", position = {8, 2}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -76,10 +78,11 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+              volume = 100,
                 
                 pipe_connections =
                 {
-                  {type = "input", position = {9, -2}}
+                  {flow_direction = "input", position = {8, -2}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -87,10 +90,11 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = 1,
+              volume = 100,
                 
                 pipe_connections =
                 {
-                  {type = "output", position = {-11, -1}},
+                  {flow_direction = "output", position = {-10, -1}, direction = 0},
                 },
                 production_type = "output"
             },
@@ -98,10 +102,11 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
+              volume = 100,
               
               pipe_connections =
               {
-                {type = "output", position = {-11, 1}},
+                {flow_direction = "output", position = {-10, 1}, direction = 0},
               },
               production_type = "output"
             },

@@ -49,8 +49,8 @@ data:extend({
             fuel_inventory_size = 3,
             burnt_inventory_size = 3,
             effectivity = 0.35,
-            emissions_per_minute = 20,
-            fuel_category = 'fi_basic_fuel'
+            emissions = {emissions_per_minute = 20},
+            fuel_categories = {'fi_basic_fuel'}
         },
         energy_usage = '200kW',
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},

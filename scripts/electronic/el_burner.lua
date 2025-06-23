@@ -12,14 +12,13 @@ function make_burner_recipe(item)
             {type="item", name="blank", amount=1},
         },
         results = {},
-        result_count = 1,
         energy_required = 0.1,
         always_show_made_in = true,
         subgroup = 'fu_item_subgroup_f',
     }
     blank["name"] = "fu_burn_"..item.."_recipe"
     blank["ingredients"] = {
-        {item,1}
+        {type = "item", name = item, amount = 1}
     }
     if data.raw.item[item].icon then 
         blank["icon"] = data.raw.item[item].icon

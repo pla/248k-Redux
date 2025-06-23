@@ -57,17 +57,19 @@ data:extend({
             module_slots = 4
         },
     crafting_speed = 1,
-    energy_usage = '500KW',
+    energy_usage = '500kW',
     fluid_boxes = {
         {
             base_area = 1,
             height = 2,
             base_level = -1,
-            production_type = 'input', 
+            volume = 100,
+            production_type = "input", 
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
-                {type = "input", position = {2, 0}},  
+                {flow_direction = "input", position = {1, 0}, direction = 0},  --Toca especificar la direccion de la tuberia, tambien se cambio la position de 2,0 a 1,0
+                --tambien se cambio type a flow_direction
                 --{type = "output", position = {-2, 0}},  
             },
         },
@@ -75,11 +77,13 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = 1,
+            volume = 100,
             production_type = 'output', 
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
-                {type = "output", position = {-2, 0}},  
+                {flow_direction = "output", position = {1, 0}, direction = 4},
+                --{type = "output", position = {-2, 0}},  
                 --{type = "output", position = {-2, 0}},  
             },
         }

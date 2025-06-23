@@ -48,7 +48,7 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
           input_flow_limit = '60kW',
-          emissions_per_minute = 25,
+          emissions = {emissions_per_minute = 25},
       },
       energy_usage = '40kW',
       fluid_boxes = {
@@ -57,11 +57,12 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = -1,
+            volume = 100,
             pipe_covers = pipecoverspictures(),
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "input", position = {0, -2}},
+              {flow_direction = "input", position = {0, -1}, direction = 0},
             },
             production_type = "input"
           },
@@ -70,11 +71,12 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = -1,
+            volume = 100,
             pipe_covers = pipecoverspictures(),
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "input", position = {-2, 0}}
+              {flow_direction = "input", position = {-1, 0}, direction = 4}
             },
             production_type = "input"
           },
@@ -83,11 +85,12 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = 1,
+            volume = 100,
             pipe_covers = pipecoverspictures(),
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "output", position = {2, 0}},
+              {flow_direction = "output", position = {1, 0}, direction = 12},
               --{type = "output", position = {2, -2.5}}
             },
             production_type = "output"
@@ -97,11 +100,12 @@ data:extend({
             base_area = 1,
             height = 2,
             base_level = 1,
+            volume = 100,
             pipe_covers = pipecoverspictures(),
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {type = "output", position = {0, 2}},
+              {flow_direction = "output", position = {0, 1}, direction = 8},
             },
             production_type = "output"
           },

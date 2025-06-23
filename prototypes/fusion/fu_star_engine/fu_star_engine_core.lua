@@ -56,9 +56,10 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_connections =
                 {
-                  {type = "input", position = {-9, 3}}
+                  {flow_direction = "input", position = {-8, 3}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -66,9 +67,10 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_connections =
                 {
-                  {type = "input", position = {-9, 1}}
+                  {flow_direction = "input", position = {-8, 1}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -77,9 +79,10 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
+                volume = 100,
               pipe_connections =
               {
-                {type = "input", position = {9, 3}}
+                {flow_direction = "input", position = {8, 3}, direction = 0},
               },
               production_type = "input"
           },
@@ -87,9 +90,10 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = -1,
+                volume = 100,
               pipe_connections =
               {
-                {type = "input", position = {9, 1}}
+                {flow_direction = "input", position = {8, 1}, direction = 0},
               },
               production_type = "input"
           },
@@ -99,9 +103,10 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
+                volume = 100,
               pipe_connections =
               {
-                {type = "output", position = {-2, -5}},
+                {flow_direction = "output", position = {-2, -4}, direction = 0},
               },
               production_type = "output"
             },
@@ -109,9 +114,10 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
+                volume = 100,
               pipe_connections =
               {
-                {type = "output", position = {2, -5}},
+                {flow_direction = "output", position = {2, -4}, direction = 0},
               },
               production_type = "output"
             },
@@ -120,9 +126,10 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
+                volume = 100,
               pipe_connections =
               {
-                {type = "output", position = {-2, 9}},
+                {flow_direction = "output", position = {-2, 4}, direction = 0},
               },
               production_type = "output"
             },
@@ -130,9 +137,10 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
+                volume = 100,
               pipe_connections =
               {
-                {type = "output", position = {2, 9}},
+                {flow_direction = "output", position = {2, 4}, direction = 0},
               },
               production_type = "output"
             },

@@ -103,11 +103,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -3.5}},
+                  {flow_direction = "input", position = {0.5, -2.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -116,11 +117,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-0.5, -3.5}},
+                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 4},
                 },
                 production_type = "input"
             },
@@ -129,11 +131,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, 3.5}},
+                  {flow_direction = "input", position = {0.5, 2.5}, direction = 8},
                 },
                 production_type = "input"
             },
@@ -142,11 +145,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-0.5, 3.5}},
+                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -194,9 +198,10 @@ data:extend({
         energy_usage = '1W',
         supply_area_distance = 0,
         allowed_effects = allowed_modules, 
+        module_slots = 2,
         module_specification =
         {
-            module_slots = 2,
+            --module_slots = 2, Lo muevo a debajo de  allowed_effects
             module_info_icon_shift = {0, 0.5},
             module_info_multi_row_initial_height_modifier = -0.3
         },
@@ -246,11 +251,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -3.5}},
+                  {flow_direction = "input", position = {0.5, -2.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -259,11 +265,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-0.5, -3.5}},
+                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 4},
                 },
                 production_type = "input"
             },
@@ -272,11 +279,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, 3.5}},
+                  {flow_direction = "input", position = {0.5, 2.5}, direction = 8},
                 },
                 production_type = "input"
             },
@@ -285,11 +293,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-0.5, 3.5}},
+                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -298,11 +307,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {3.5, 0.5}},
+                  {flow_direction = "input", position = {2.5, 0.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -311,11 +321,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {3.5, -0.5}},
+                  {flow_direction = "input", position = {2.5, -0.5}, direction = 4},
                 },
                 production_type = "input"
             }
@@ -363,9 +374,10 @@ data:extend({
         energy_usage = '1W',
         supply_area_distance = 0,
         allowed_effects = allowed_modules, 
+        module_slots = 2,
         module_specification =
         {
-            module_slots = 2,
+            --module_slots = 2,
             module_info_icon_shift = {0, 0.5},
             module_info_multi_row_initial_height_modifier = -0.3
         },
@@ -415,11 +427,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, -3.5}},
+                  {flow_direction = "input", position = {0.5, -2.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -428,11 +441,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-0.5, -3.5}},
+                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 4},
                 },
                 production_type = "input"
             },
@@ -441,11 +455,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {0.5, 3.5}},
+                  {flow_direction = "input", position = {0.5, 2.5}, direction = 8},
                 },
                 production_type = "input"
             },
@@ -454,11 +469,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-0.5, 3.5}},
+                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -467,11 +483,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {3.5, 0.5}},
+                  {flow_direction = "input", position = {2.5, 0.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -480,11 +497,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {3.5, -0.5}},
+                  {flow_direction = "input", position = {2.5, -0.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -493,11 +511,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-3.5, 0.5}},
+                  {flow_direction = "input", position = {-2.5, 0.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -506,11 +525,12 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
+                volume = 100,
                 pipe_covers = pipecoverspictures(),
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {type = "input", position = {-3.5, -0.5}},
+                  {flow_direction = "input", position = {-2.5, -0.5}, direction = 0},
                 },
                 production_type = "input"
             }
@@ -558,9 +578,10 @@ data:extend({
         energy_usage = '1W',
         supply_area_distance = 0,
         allowed_effects = allowed_modules, 
+        module_slots = 2,
         module_specification =
         {
-            module_slots = 2,
+            --module_slots = 2,
             module_info_icon_shift = {0, 0.5},
             module_info_multi_row_initial_height_modifier = -0.3
         },

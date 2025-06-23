@@ -9,15 +9,15 @@ end
 
 local function solar_output()
     if config("power_output") == "80kW (normal)" then
-        return "80KW"
+        return "80kW"
     end
 
     if config("power_output") == "100kW (high)" then
-        return "100KW"
+        return "100kW"
     end
 
     if config("power_output") == "160kW (very high)" then
-        return "160KW"
+        return "160kW"
     end
     
     return "80kW"
