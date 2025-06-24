@@ -43,7 +43,7 @@ data:extend({
         stack_size = 1,
         icon_size = 64,
         icon = sprite('selection_tool.png'),
-        flags = {"hidden","mod-openable","only-in-cursor"},
+        flags = {--[["hidden", comentando esto para saltar error, entender para que es esto]]"mod-openable","only-in-cursor"},
         selection_color = {r=0.79, g=0.4, b=0, a=0.5 },
         selection_mode = {"any-entity"},
         selection_cursor_box_type = "entity",

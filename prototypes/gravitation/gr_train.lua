@@ -111,28 +111,41 @@ data:extend({
             },
         },
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('animation_1.png'),sprite('animation_2.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures = 
+        {
+            rotated =
+            {
+                layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('animation_1.png'),sprite('animation_2.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                },
+            },
         },
-        wheels = {
-			priority = "low",
-			width = 512/2,
-			height = 512/2,
-			direction_count = 128,
-			filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
-        },
+        wheels = 
+            {
+                rotated =
+                    {
+                        priority = "low",
+                        width = 512/2,
+                        height = 512/2,
+                        direction_count = 128,
+                        filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    },
+            },
         --minimap
         minimap_representation = {
 			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
@@ -226,27 +239,40 @@ data:extend({
         weight = 10,
         inventory_size = 80,
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('wagon_animation.png'),sprite('wagon_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures = 
+        {
+            rotated =
+            {
+                layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('wagon_animation.png'),sprite('wagon_animation.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                },
+            },
         },
-        wheels = {
-			priority = "low",
-			width = 512/2,
-			height = 512/2,
-			direction_count = 128,
-			filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        wheels = 
+        {
+            rotated =
+            {
+                priority = "low",
+                width = 512/2,
+                height = 512/2,
+                direction_count = 128,
+                filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
+                line_length = 8,
+                lines_per_file = 8,
+                shift = {0.2, -0.6},
+                scale = 0.5,
+            },
         },
         --minimap
         minimap_representation = {
@@ -301,27 +327,40 @@ data:extend({
         capacity = 200000,
         tank_count = 3,
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('wagon_animation.png'),sprite('wagon_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures = 
+        {
+            rotated =
+            {
+                layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('wagon_animation.png'),sprite('wagon_animation.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                },
+            },
         },
-        wheels = {
-			priority = "low",
-			width = 512/2,
-			height = 512/2,
-			direction_count = 128,
-			filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        wheels = 
+        {
+            rotated =
+                {
+                    priority = "low",
+                    width = 512/2,
+                    height = 512/2,
+                    direction_count = 128,
+                    filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
+                    line_length = 8,
+                    lines_per_file = 8,
+                    shift = {0.2, -0.6},
+                    scale = 0.5,
+                },
         },
         --minimap
         minimap_representation = {
@@ -409,18 +448,20 @@ data:extend({
         reversing_power_modifier = 0.5,
         weight = 10,
         --burner
-        burner = {
-            fuel_categories = {
-                'nuclear',
-                'fi_basic_fuel',
-                'fi_advanced_fuel',
-                'fi_pure_fuel',
+        energy_source =
+            {
+                type = "burner",
+                fuel_categories = {
+                    'nuclear',
+                    'fi_basic_fuel',
+                    'fi_advanced_fuel',
+                    'fi_pure_fuel',
+                },
+                fuel_inventory_size = 3,
+                burnt_inventory_size = 3,
+                effectivity = 0.001,
+                emissions = {emissions_per_minute = 10},
             },
-            fuel_inventory_size = 3,
-            burnt_inventory_size = 3,
-            effectivity = 0.001,
-            emissions_per_minute = 10,
-        },
         --light
         front_light = {
             {
@@ -453,28 +494,41 @@ data:extend({
             },
         },
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('pre_animation_1.png'),sprite('pre_animation_2.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures = 
+        {
+            rotated =
+            {
+                layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('pre_animation_1.png'),sprite('pre_animation_2.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                },
+            },
         },
-        wheels = {
-			priority = "low",
-			width = 512/2,
-			height = 512/2,
-			direction_count = 128,
-			filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
-        },
+        wheels = 
+            {
+                rotated =
+                    {
+                    priority = "low",
+                    width = 512/2,
+                    height = 512/2,
+                    direction_count = 128,
+                    filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
+                    line_length = 8,
+                    lines_per_file = 8,
+                    shift = {0.2, -0.6},
+                    scale = 0.5,
+                    },
+            },
         --minimap
         minimap_representation = {
 			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
@@ -568,28 +622,41 @@ data:extend({
         weight = 10,
         inventory_size = 40,
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('wagon_pre_animation.png'),sprite('wagon_pre_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures = 
+        {
+            rotated =
+            {
+                layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('wagon_pre_animation.png'),sprite('wagon_pre_animation.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                },
+            },
         },
-        wheels = {
-			priority = "low",
-			width = 512/2,
-			height = 512/2,
-			direction_count = 128,
-			filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
-        },
+        wheels = 
+            {
+            rotated =
+                {
+                    priority = "low",
+                    width = 512/2,
+                    height = 512/2,
+                    direction_count = 128,
+                    filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
+                    line_length = 8,
+                    lines_per_file = 8,
+                    shift = {0.2, -0.6},
+                    scale = 0.5,
+                },
+            },
         --minimap
         minimap_representation = {
 			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
@@ -643,28 +710,41 @@ data:extend({
         capacity = 100000,
         tank_count = 3,
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('wagon_pre_animation.png'),sprite('wagon_pre_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures = 
+        {
+            rotated =
+            {
+                layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('wagon_pre_animation.png'),sprite('wagon_pre_animation.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                },
+            },
         },
-        wheels = {
-			priority = "low",
-			width = 512/2,
-			height = 512/2,
-			direction_count = 128,
-			filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
-        },
+        wheels = 
+            {
+                rotated =
+                    {
+                        priority = "low",
+                        width = 512/2,
+                        height = 512/2,
+                        direction_count = 128,
+                        filenames = {sprite('wheels_animation.png'),sprite('wheels_animation.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    },
+            },
         --minimap
         minimap_representation = {
 			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",

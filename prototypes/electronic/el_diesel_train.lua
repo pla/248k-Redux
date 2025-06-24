@@ -60,11 +60,13 @@ data:extend({
         --grid
         equipment_grid = 'el_train_equipment_grid',
         --burner
-        burner = {
-            fuel_category = 'el_train_fuel',
+        energy_source =
+        {
+            type = "burner",
+            fuel_categories = {'el_train_fuel'},
             fuel_inventory_size = 3,
             effectitvity = 1,
-            emissions_per_minute = 20,
+            emissions = {emissions_per_minute = 20},
             smoke = {
                 {
                     name = "train-smoke",
@@ -112,16 +114,25 @@ data:extend({
             },
         },
         --animation
-        pictures = {
-			priority = "low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames = {sprite('animation_1.png'),sprite('animation_2.png')},
-			line_length = 8,
-			lines_per_file = 8,
-            shift = {0.2, -0.6},
-            scale = 0.5,
+        pictures =
+        {
+        rotated =
+            {
+            layers =
+                {
+                    {
+                        priority = "low",
+                        width = 512,
+                        height = 512,
+                        direction_count = 128,
+                        filenames = {sprite('animation_1.png'),sprite('animation_2.png')},
+                        line_length = 8,
+                        lines_per_file = 8,
+                        shift = {0.2, -0.6},
+                        scale = 0.5,
+                    }
+                }  
+            },
         },
         --minimap
         minimap_representation = {
