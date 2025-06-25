@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/fusion/fu_miner/fu_miner_'..name
+    return '__248k-Redux__/ressources/fusion/fu_miner/fu_miner_'..name
 end
 
 --item
@@ -102,11 +102,29 @@ data:extend({
           }
         }
       },
-      working_sound =
+      --[[working_sound =
       {
         sound = {filename = "__base__/sound/burner-mining-drill.ogg" },
-        apparent_volume = 0.3,
+        apparent_volume = 0.3,]]
       },
+       working_sound = {
+        fade_in_ticks = 4,
+        fade_out_ticks = 20,
+        sound = {
+          {
+            filename = "__base__/sound/burner-mining-drill-1.ogg",
+            modifiers = {
+              type = "tips-and-tricks",
+              volume_multiplier = 0.8
+            },
+            volume = 0.6
+          },
+          {
+            filename = "__base__/sound/burner-mining-drill-2.ogg",
+            modifiers = "SERPENT PLACEHOLDER" --[=[ ref [""]["mining-drill"]["burner-mining-drill"].working_sound.sound[1].modifiers ]=],
+            volume = 0.6
+          }
+        }
   },
 })
 
@@ -117,7 +135,7 @@ miner2.icons = {
       icon = miner2.icon
   },
   {
-      icon = "__248k__/ressources/icons/fi_upgrade.png"
+      icon = "__248k-Redux__/ressources/icons/fi_upgrade.png"
   }
 }
 miner2.icon = nil
@@ -132,7 +150,7 @@ miner3.icons = {
       icon = miner3.icon
   },
   {
-      icon = "__248k__/ressources/icons/fu_upgrade.png"
+      icon = "__248k-Redux__/ressources/icons/fu_upgrade.png"
   }
 }
 miner3.icon = nil
@@ -148,7 +166,7 @@ miner4.icons = {
       icon = miner4.icon
   },
   {
-      icon = "__248k__/ressources/icons/gr_upgrade.png"
+      icon = "__248k-Redux__/ressources/icons/gr_upgrade.png"
   }
 }
 miner4.icon = nil
@@ -164,7 +182,7 @@ miner2_item.icons = {
       icon = miner2_item.icon
   },
   {
-      icon = "__248k__/ressources/icons/fi_upgrade.png"
+      icon = "__248k-Redux__/ressources/icons/fi_upgrade.png"
   }
 }
 miner2_item.icon = nil
@@ -177,7 +195,7 @@ miner3_item.icons = {
       icon = miner3_item.icon
   },
   {
-      icon = "__248k__/ressources/icons/fu_upgrade.png"
+      icon = "__248k-Redux__/ressources/icons/fu_upgrade.png"
   }
 }
 miner3_item.icon = nil
@@ -192,7 +210,7 @@ miner4_item.icons = {
       icon = miner4_item.icon
   },
   {
-      icon = "__248k__/ressources/icons/gr_upgrade.png"
+      icon = "__248k-Redux__/ressources/icons/gr_upgrade.png"
   }
 }
 miner4_item.icon = nil

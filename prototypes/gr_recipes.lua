@@ -24,7 +24,7 @@ data:extend({
         ingredients = {
             {type = 'item', name = 'fu_space_probe_up_matter_item', amount = 1},
             {type = 'item', name = 'fu_tech_sign_item', amount = 40},
-            {type = 'item', name = 'fusion-reactor-equipment', amount = 1},
+            {type = 'item', name = 'fission-reactor-equipment', amount = 1}, -- cambiand de fusion-reactor-equipment a fission-reactor-equipment
         },
         results = {
             {type = 'item', name = 'gr_materials_fusion_cell_item', amount = 1},

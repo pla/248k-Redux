@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/gravitation/gr_white_hole/gr_white_hole_'..name
+    return '__248k-Redux__/ressources/gravitation/gr_white_hole/gr_white_hole_'..name
 end
 
 --item

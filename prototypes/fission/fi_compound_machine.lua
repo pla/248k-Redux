@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/fission/fi_compound_machine/fi_compound_machine_'..name
+    return '__248k-Redux__/ressources/fission/fi_compound_machine/fi_compound_machine_'..name
 end
 
 --item

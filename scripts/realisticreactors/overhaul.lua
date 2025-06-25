@@ -245,7 +245,7 @@ data:extend({
     {
         name = 'fi_test_fuel',
         type = 'item',
-        icon = '__248k__/ressources/fission/fi_fuel/fi_fuel_test_item.png',
+        icon = '__248k-Redux__/ressources/fission/fi_fuel/fi_fuel_test_item.png',
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_b',
@@ -258,7 +258,7 @@ data:extend({
     {
         name = 'fi_test_used_fuel',
         type = 'item',
-        icon = '__248k__/ressources/fission/fi_fuel/fi_fuel_test_used_item.png',
+        icon = '__248k-Redux__/ressources/fission/fi_fuel/fi_fuel_test_used_item.png',
         icon_size = 64,
         stack_size = 100,
         subgroup = 'fi_item_subgroup_b',
@@ -267,7 +267,7 @@ data:extend({
     {
         name = 'fi_tech_fuel',
         type = 'item',
-        icon = '__248k__/ressources/fission/fi_fuel/fi_fuel_tech_item.png',
+        icon = '__248k-Redux__/ressources/fission/fi_fuel/fi_fuel_tech_item.png',
         icon_size = 64,
         stack_size = 100,
         subgroup = 'fi_item_subgroup_b',
@@ -319,7 +319,7 @@ data:extend({
     {
         name = 'fi_solid_reactor_tech',
         type = 'technology',
-        icon = '__248k__/ressources/techs/fi_solid_reactor_tech.png',
+        icon = '__248k-Redux__/ressources/techs/fi_solid_reactor_tech.png',
         icon_size = 128,
         prerequisites = {'fi_energy_tech','fi_refining_tech'},
         effects = {
@@ -349,7 +349,7 @@ data:extend({
     {
         name = 'fi_solid_reactor_entity',
         type = 'assembling-machine',
-        icon = '__248k__/ressources/fission/fi_solid_reactor/fi_solid_reactor_entity_icon.png',
+        icon = '__248k-Redux__/ressources/fission/fi_solid_reactor/fi_solid_reactor_entity_icon.png',
         icon_size = 64,
         flags = {"player-creation","placeable-neutral"},
         max_health = 300,
@@ -369,7 +369,7 @@ data:extend({
         },
         energy_usage = "1W",
         animation = {
-            filename = '__248k__/ressources/fission/fi_solid_reactor/fi_solid_reactor_entity_animation.png',
+            filename = '__248k-Redux__/ressources/fission/fi_solid_reactor/fi_solid_reactor_entity_animation.png',
             width = 960,
             height = 960,
             shift = {0, 0},
@@ -378,7 +378,7 @@ data:extend({
           working_visualisations = {
             {
                 animation = {
-                    filename = '__248k__/ressources/fission/fi_solid_reactor/fi_solid_reactor_entity_animation_2.png',
+                    filename = '__248k-Redux__/ressources/fission/fi_solid_reactor/fi_solid_reactor_entity_animation_2.png',
                     width = 960,
                     height = 960,
                     shift = {0, 0},

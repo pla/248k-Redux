@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/electronic/el_tank/el_tank_'..name
+    return '__248k-Redux__/ressources/electronic/el_tank/el_tank_'..name
 end
 
 local tank_color = {r=1.7,g=1.7,b=1.7}

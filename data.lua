@@ -123,7 +123,7 @@ data:extend({
     {
         type = "sprite",
         name = "sprite_248kmainbutton",
-        filename = "__248k__/ressources/groups/gr_group_icon.png",
+        filename = "__248k-Redux__/ressources/groups/gr_group_icon.png",
         priority = "extra-high",
         width = 64,
         height = 64,

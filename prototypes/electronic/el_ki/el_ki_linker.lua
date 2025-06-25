@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/electronic/el_ki/el_ki_linker/el_ki_'..name
+    return '__248k-Redux__/ressources/electronic/el_ki/el_ki_linker/el_ki_'..name
 end
 
 data:extend({
@@ -44,19 +44,38 @@ data:extend({
         icon_size = 64,
         icon = sprite('selection_tool.png'),
         flags = {--[["hidden", comentando esto para saltar error, entender para que es esto]]"mod-openable","only-in-cursor"},
-        selection_color = {r=0.79, g=0.4, b=0, a=0.5 },
+        
+        --[[selection_color = {r=0.79, g=0.4, b=0, a=0.5 },
         selection_mode = {"any-entity"},
         selection_cursor_box_type = "entity",
         alt_selection_color = {r=1, g=0, b=0, a=0.5 },
         alt_selection_cursor_box_type = "entity",
         alt_selection_mode = {"any-entity"},
         entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"},
-        alt_entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"}
+        alt_entity_filters = {"el_ki_beacon_entity","fi_ki_beacon_entity","fu_ki_beacon_entity"}]]
+
+        select = 
+            {
+            
+            selection_color = {r=0.79, g=0.4, b=0, a=0.5},
+            border_color = {r=0.79, g=0.4, b=0, a=0.7},
+            cursor_box_type  = "entity",
+            mode = {"any-entity"},
+            entity_filters = {"el_ki_beacon_entity", "fi_ki_beacon_entity", "fu_ki_beacon_entity"}
+            },
+        alt_select = {
+            
+            selection_color = {r=1, g=0, b=0, a=0.5},
+            border_color = {r=1, g=0, b=0, a=0.7},
+            cursor_box_type  = "entity",
+            mode = {"any-entity"},
+            entity_filters = {"el_ki_beacon_entity", "fi_ki_beacon_entity", "fu_ki_beacon_entity"}
+            }
     },
     {
 		type     = "sprite",
 		name     = "el_ki_not_operable_icon",		
-		filename = "__248k__/ressources/electronic/el_ki/el_ki_linker/el_ki_not_operable_icon.png",
+		filename = "__248k-Redux__/ressources/electronic/el_ki/el_ki_linker/el_ki_not_operable_icon.png",
 		width    = 64,
 		height   = 64,
 		scale    = 1

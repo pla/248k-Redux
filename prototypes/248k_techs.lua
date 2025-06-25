@@ -1,6 +1,6 @@
 --local functions
 local function sprite(name)
-    return '__248k__/ressources/techs/'..name
+    return '__248k-Redux__/ressources/techs/'..name
 end
 --techs
 data:extend({
@@ -13,7 +13,7 @@ data:extend({
         prerequisites = {'electronics'},
         effects = {},
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'automation-science-pack',1},
             },
@@ -29,7 +29,7 @@ data:extend({
         prerequisites = {'el_ALK_tech','el_lithium_tech'},
         effects = {},
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -51,7 +51,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -81,7 +81,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -114,7 +114,7 @@ data:extend({
             },
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -139,7 +139,7 @@ data:extend({
             }
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -176,7 +176,7 @@ data:extend({
             },
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -221,7 +221,7 @@ data:extend({
             }
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -242,7 +242,7 @@ data:extend({
             }
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -267,7 +267,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -296,7 +296,7 @@ data:extend({
             },
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -327,7 +327,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -371,7 +371,7 @@ data:extend({
             },
         },
         unit = {
-            count = '30',
+            count = 30,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1,},
@@ -385,7 +385,7 @@ data:extend({
     {
         name = 'el_kerosene_tech',
         type = 'technology',
-        icon = '__248k__/ressources/techs/el_kerosene_tech.png',
+        icon = '__248k-Redux__/ressources/techs/el_kerosene_tech.png',
         icon_size = 128,
         prerequisites = {'el_ALK_tech'},
         effects = {
@@ -407,7 +407,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1,},
@@ -446,7 +446,7 @@ data:extend({
             },
         },
         unit = {
-            count = '350',
+            count = 350,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1,},
@@ -488,7 +488,7 @@ data:extend({
             }
         },
         unit = {
-            count = '350',
+            count = 350,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1,},
@@ -525,7 +525,7 @@ data:extend({
             }
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -563,7 +563,7 @@ data:extend({
             }
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'chemical-science-pack',80},
                 {'automation-science-pack',80},
@@ -592,7 +592,7 @@ data:extend({
             }
         },
         unit = {
-            count = '80',
+            count = 80,
             ingredients = {
                 {'fi_ki_science',1} 
             },
@@ -616,7 +616,7 @@ data:extend({
             }
         },
         unit = {
-            count = '240',
+            count = 240,
             ingredients = {
                 {'fi_ki_science',1} 
             },
@@ -640,7 +640,7 @@ data:extend({
             }
         },
         unit = {
-            count = '400',
+            count = 400,
             ingredients = {
                 {'fu_ki_science',1} 
             },
@@ -660,7 +660,7 @@ data:extend({
             }
         },
         unit = {
-            count = '40',
+            count = 40,
             ingredients = {
                 {'fi_ki_science',1} 
             },
@@ -680,7 +680,7 @@ data:extend({
             }
         },
         unit = {
-            count = '120',
+            count = 120,
             ingredients = {
                 {'fi_ki_science',1} 
             },
@@ -700,7 +700,7 @@ data:extend({
             }
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'fi_ki_science',1} 
             },
@@ -720,7 +720,7 @@ data:extend({
             }
         },
         unit = {
-            count = '40',
+            count = 40,
             ingredients = {
                 {'fu_ki_science',1} 
             },
@@ -740,7 +740,7 @@ data:extend({
             }
         },
         unit = {
-            count = '120',
+            count = 120,
             ingredients = {
                 {'fu_ki_science',1} 
             },
@@ -760,7 +760,7 @@ data:extend({
             }
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'fu_ki_science',1} 
             },
@@ -780,7 +780,7 @@ data:extend({
             },
         },
         unit = {
-            count = '2000',
+            count = 2000,
             ingredients = {
                 {'chemical-science-pack',50},
                 {'automation-science-pack',50},
@@ -808,7 +808,7 @@ data:extend({
             },
         },
         unit = {
-            count = '4000',
+            count = 4000,
             ingredients = {
                 {'chemical-science-pack',50},
                 {'automation-science-pack',50},
@@ -836,7 +836,7 @@ data:extend({
             },
         },
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'fi_ki_science',1} 
             },
@@ -856,7 +856,7 @@ data:extend({
             },
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'fi_ki_science',1},
                 {'fu_ki_science',1}
@@ -877,7 +877,7 @@ data:extend({
             },
         },
         unit = {
-            count = '600',
+            count = 600,
             ingredients = {
                 {'fi_ki_science',1},
                 {'fu_ki_science',1}
@@ -898,7 +898,7 @@ data:extend({
             },
         },
         unit = {
-            count = '900',
+            count = 900,
             ingredients = {
                 {'fi_ki_science',1},
                 {'fu_ki_science',1}
@@ -919,7 +919,7 @@ data:extend({
             },
         },
         unit = {
-            count = '50',
+            count = 50,
             ingredients = {
                 {'automation-science-pack',1},
                 {'logistic-science-pack',1},
@@ -945,7 +945,7 @@ data:extend({
         },
         effects = {},
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -963,7 +963,7 @@ data:extend({
         prerequisites = {'fi_materials_tech'},
         effects = {},
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -993,7 +993,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1019,7 +1019,7 @@ data:extend({
             }
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1049,7 +1049,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1087,7 +1087,7 @@ data:extend({
             },
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1137,7 +1137,7 @@ data:extend({
             },
         },
         unit = {
-            count = '600',
+            count = 600,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1163,7 +1163,7 @@ data:extend({
             }
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1205,7 +1205,7 @@ data:extend({
             },
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1240,7 +1240,7 @@ data:extend({
             },
         },
         unit = {
-            count = '250',
+            count = 250,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1271,7 +1271,7 @@ data:extend({
             }
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1297,7 +1297,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1323,7 +1323,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1354,7 +1354,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1404,7 +1404,7 @@ data:extend({
             },
         },
         unit = {
-            count = '500',
+            count = 500,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1466,7 +1466,7 @@ data:extend({
             ]]
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1488,7 +1488,7 @@ data:extend({
             }
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1523,7 +1523,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1550,7 +1550,7 @@ data:extend({
             },
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1581,7 +1581,7 @@ data:extend({
             },
         },
         unit = {
-            count = '150',
+            count = 150,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1603,7 +1603,7 @@ data:extend({
             },
         },
         unit = {
-            count = '250',
+            count = 250,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1625,7 +1625,7 @@ data:extend({
             },
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1648,7 +1648,7 @@ data:extend({
             },
         },
         unit = {
-            count = '2000',
+            count = 2000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1674,7 +1674,7 @@ data:extend({
             },
         },
         unit = {
-            count = '3000',
+            count = 3000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1700,7 +1700,7 @@ data:extend({
             },
         },
         unit = {
-            count = '4000',
+            count = 4000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1754,7 +1754,7 @@ data:extend({
             },
         },
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1780,7 +1780,7 @@ data:extend({
             }
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1802,7 +1802,7 @@ data:extend({
             }
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1824,7 +1824,7 @@ data:extend({
             },
         },
         unit = {
-            count = '300',
+            count = 300,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1846,7 +1846,7 @@ data:extend({
             },
         },
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1872,7 +1872,7 @@ data:extend({
             },
         },
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1896,7 +1896,7 @@ data:extend({
         },
         effects = {},
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1926,7 +1926,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1955,7 +1955,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -1984,7 +1984,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2013,7 +2013,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2043,7 +2043,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2073,7 +2073,7 @@ data:extend({
             
         },
         unit = {
-            count = '800',
+            count = 800,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2102,7 +2102,7 @@ data:extend({
             },
         },
         unit = {
-            count = '800',
+            count = 800,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2135,7 +2135,7 @@ data:extend({
             },
         },
         unit = {
-            count = '800',
+            count = 800,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2164,7 +2164,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2193,7 +2193,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2239,7 +2239,7 @@ data:extend({
             }
         },
         unit = {
-            count = '400',
+            count = 400,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2281,7 +2281,7 @@ data:extend({
             }
         },
         unit = {
-            count = '400',
+            count = 400,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2310,7 +2310,7 @@ data:extend({
             },
         },
         unit = {
-            count = '800',
+            count = 800,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2340,7 +2340,7 @@ data:extend({
             },
         },
         unit = {
-            count = '2000',
+            count = 2000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2371,7 +2371,7 @@ data:extend({
             },
         },
         unit = {
-            count = '6000',
+            count = 6000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2397,7 +2397,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2428,7 +2428,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2488,7 +2488,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2524,7 +2524,7 @@ data:extend({
             }
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2555,7 +2555,7 @@ data:extend({
             },
         },
         unit = {
-            count = '400',
+            count = 400,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2583,7 +2583,7 @@ data:extend({
             },
         },
         unit = {
-            count = '400',
+            count = 400,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2615,7 +2615,7 @@ data:extend({
         }
     },
         unit = {
-            count = '2000',
+            count = 2000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2680,7 +2680,7 @@ data:extend({
             }
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2720,7 +2720,7 @@ data:extend({
             }
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2757,7 +2757,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2790,7 +2790,7 @@ data:extend({
             },
         },
         unit = {
-            count = '2000',
+            count = 2000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2823,7 +2823,7 @@ data:extend({
             },
         },
         unit = {
-            count = '4000',
+            count = 4000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2856,7 +2856,7 @@ data:extend({
             },
         },
         unit = {
-            count = '6000',
+            count = 6000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2889,7 +2889,7 @@ data:extend({
             },
         },
         unit = {
-            count = '8000',
+            count = 8000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2922,7 +2922,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2948,7 +2948,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -2977,7 +2977,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3014,7 +3014,7 @@ data:extend({
             --},
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3055,7 +3055,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3077,7 +3077,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3101,7 +3101,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3131,7 +3131,7 @@ data:extend({
             },
         },
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3156,7 +3156,7 @@ data:extend({
         },
         effects = {},
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3192,7 +3192,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3224,7 +3224,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3252,7 +3252,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3281,7 +3281,7 @@ data:extend({
             },
         },
         unit = {
-            count = '2000',
+            count = 2000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3309,7 +3309,7 @@ data:extend({
             },
         },
         unit = {
-            count = '4000',
+            count = 4000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3346,7 +3346,7 @@ data:extend({
             },
         },
         unit = {
-            count = '200',
+            count = 200,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3382,7 +3382,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3415,7 +3415,7 @@ data:extend({
             }
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3451,7 +3451,7 @@ data:extend({
             }
         },
         unit = {
-            count = '50000',
+            count = 50000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3479,7 +3479,7 @@ data:extend({
             }
         },
         unit = {
-            count = '100000',
+            count = 100000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3507,7 +3507,7 @@ data:extend({
             }
         },
         unit = {
-            count = '100000',
+            count = 100000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3540,7 +3540,7 @@ data:extend({
             }
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3572,7 +3572,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3604,7 +3604,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3636,7 +3636,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3668,7 +3668,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3700,7 +3700,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3732,7 +3732,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3764,7 +3764,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'gr_materials_red_pack_item',1},
                 {'gr_materials_green_pack_item',1},
@@ -3820,7 +3820,7 @@ data:extend({
             },
         },
         unit = {
-            count = '10000',
+            count = 10000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3856,7 +3856,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3884,7 +3884,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3912,7 +3912,7 @@ data:extend({
             },
         },
         unit = {
-            count = '1000',
+            count = 1000,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},
@@ -3945,7 +3945,7 @@ data:extend({
             },
         },
         unit = {
-            count = '100',
+            count = 100,
             ingredients = {
                 {'chemical-science-pack',1},
                 {'automation-science-pack',1},

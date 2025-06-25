@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/'..name
+    return '__248k-Redux__/ressources/'..name
 end
 
 data:extend({
@@ -252,7 +252,7 @@ data:extend({
         ingredients = {
             {type = 'item', name = 'explosive-rocket', amount = 10},
             {type = 'item', name = 'fi_plutonium239_item', amount = 10},
-            {type = 'item', name = 'rocket-control-unit', amount = 10},
+            {type = 'item', name = 'processing-unit', amount = 10}, --cambiado de rocket-control-unit a processing-unit ya que rocket-control-unit' dejo de existir
         },
         results = {
             {type = 'item', name = 'atomic-bomb', amount = 1},
@@ -379,7 +379,7 @@ data:extend({
             {type = "fluid", name = "fi_crystal_fluid", amount = 50},
         },
         results = {
-            {type = "fluid", name = 'fi_energy_crystal_item', amount = 2}
+            {type = "item", name = 'fi_energy_crystal_item', amount = 2}
         },
         energy_required = 4,
         always_show_made_in = true,
@@ -390,10 +390,10 @@ data:extend({
         enabled = false,
         category = 'centrifuging',
         ingredients = {
-            {type = "fluid", name = 'el_train_fuel_diesel_energized_item', amount = 1},
+            {type = "item", name = 'el_train_fuel_diesel_energized_item', amount = 1},
         },
         results = {
-            {type = "fluid", name = 'fi_catalyst_crystal_item', amount = 2}
+            {type = "item", name = 'fi_catalyst_crystal_item', amount = 2}
         },
         energy_required = 2,
         always_show_made_in = true,
@@ -894,10 +894,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_stone.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_stone.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -925,10 +925,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_iron.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_iron.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -956,10 +956,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_copper.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_copper.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -988,10 +988,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_uranium.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_uranium.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -1217,7 +1217,7 @@ data:extend({
         main_product = 'fi_materials_empty_solution',
         ingredients = {
             {type = "item", name = "fi_materials_GFK", amount = 6},
-            {type = "item", name = "empty-barrel", amount = 1},
+            {type = "item", name = "barrel", amount = 1},
         },
         results = {
             {type = "item", name = "fi_materials_empty_solution", amount = 1},

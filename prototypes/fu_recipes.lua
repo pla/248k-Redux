@@ -185,10 +185,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -212,10 +212,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -239,10 +239,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -265,10 +265,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1049,10 +1049,10 @@ data:extend({
         category = 'advanced-crafting',
         enabled = false,
         ingredients = {
-            {type="item", name="rocket-control-unit", amount=10},
+            --{type="item", name="rocket-control-unit", amount=10},
             {type="item", name="fu_materials_KFK", amount=20},
             {type="item", name="fu_materials_TIM", amount=10},
-            {type="item", name="processing-unit", amount=200},
+            {type="item", name="processing-unit", amount=220}, --aumentando de 200 a 220 processing-unit para compensar los 10 rocket-control-unit
             {type="item", name="advanced-circuit", amount=100},
             {type="item", name="radar", amount=10},
         },
@@ -1068,10 +1068,10 @@ data:extend({
         category = 'advanced-crafting',
         enabled = false,
         ingredients = {
-            {type="item", name="rocket-control-unit", amount=10},
+            --{type="item", name="rocket-control-unit", amount=10},
             {type="item", name="fu_materials_energy_crystal", amount=20},
             {type="item", name="fu_space_probe_data_card_2_item", amount=5},
-            {type="item", name="processing-unit", amount=100},
+            {type="item", name="processing-unit", amount=120}, --aumentando de 100 a 120 processing-unit para compensar los 10 rocket-control-unit
             {type="item", name="fu_space_probe_sputnik_item", amount=1},
         },
         results = {
@@ -1088,9 +1088,9 @@ data:extend({
         ingredients = {
             {type="item", name="fu_space_probe_data_card_3_item", amount=5},
             {type="item", name="fu_space_probe_probe_item", amount=1},
-            {type="item", name="rocket-control-unit", amount=10},
+            --{type="item", name="rocket-control-unit", amount=10},
             {type="item", name="fu_materials_energy_crystal", amount=20},
-            {type="item", name="processing-unit", amount=100},
+            {type="item", name="processing-unit", amount=120}, --aumentando de 100 a 120 processing-unit para compensar los 10 rocket-control-unit
         },
         results = {
             {type="item", name="fu_space_probe_deep_probe_item", amount=1},
@@ -1562,7 +1562,7 @@ data:extend({
         name = 'fu_burn_oxygen_recipe',
         type = 'recipe',
         category = 'fu_burner_category',
-        icon = '__248k__/ressources/elements/fu_oxygen.png',
+        icon = '__248k-Redux__/ressources/elements/fu_oxygen.png',
         icon_size = 64,
         enabled = true,
         hidden = true,
@@ -1736,10 +1736,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1765,10 +1765,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1794,10 +1794,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1820,10 +1820,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -2042,10 +2042,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k__/ressources/icons/overlay_slag.png"
+                icon = "__248k-Redux__/ressources/icons/overlay_slag.png"
             }
         },
     },

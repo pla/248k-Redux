@@ -3,7 +3,7 @@
 --===================================================================================================================
 
 local function sprite(name)
-    return '__248k__/ressources/science/'..name..'.png'
+    return '__248k-Redux__/ressources/science/'..name..'.png'
 end
 
 local function retexture_science(table_in)

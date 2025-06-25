@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/fission/fi_modules/fi_modules_'..name
+    return '__248k-Redux__/ressources/fission/fi_modules/fi_modules_'..name
 end
 
 local limitation_list = {
@@ -77,10 +77,10 @@ data:extend({
         tier = 1,
         order = 'a-a',
         effect = {
-            consumption = {bonus = 0.9},
-            speed = {bonus = -0.2},
-            productivity = {bonus = 0.06},
-            pollution = {bonus = 0.3}
+            consumption = 0.9,--{bonus = 0.9},
+            speed = -0.2, --{bonus = -0.2},
+            productivity = 0.06, --{bonus = 0.06},
+            pollution = 0.3, --{bonus = 0.3}
         },
         limitation = limitation_list,
         limitation_message_key = 'limitation_message',
@@ -96,10 +96,10 @@ data:extend({
         tier = 2,
         order = 'a-a',
         effect = {
-            consumption = {bonus = 1.4},
-            speed = {bonus = -0.35},
-            productivity = {bonus = 0.10},
-            pollution = {bonus = 0.6}
+            consumption = 1.4, --{bonus = 1.4},
+            speed = -0.35, --{bonus = -0.35},
+            productivity = 0.10, --{bonus = 0.10},
+            pollution = 0.6, --{bonus = 0.6}
         },
         limitation = limitation_list,
         limitation_message_key = 'limitation_message',
@@ -115,10 +115,10 @@ data:extend({
         tier = 3,
         order = 'a-a',
         effect = {
-            consumption = {bonus = 2.6},
-            speed = {bonus = -0.6},
-            productivity = {bonus = 0.12},
-            pollution = {bonus = 0.9}
+            consumption = 2.6, --{bonus = 2.6},
+            speed = -0.6, --{bonus = -0.6},
+            productivity = 0.12, --{bonus = 0.12},
+            pollution = 0.9, --{bonus = 0.9}
         },
         limitation = limitation_list,
         limitation_message_key = 'limitation_message',
@@ -134,10 +134,10 @@ data:extend({
         tier = 4,
         order = 'a-a',
         effect = {
-            consumption = {bonus = 2},
-            speed = {bonus = -0.5},
-            productivity = {bonus = 0.05},
-            pollution = {bonus = 1}
+            consumption = 2, --{bonus = 2},
+            speed = -0.5, --{bonus = -0.5},
+            productivity = 0.05, --{bonus = 0.05},
+            pollution = 1, --{bonus = 1}
         },
     },
     {
@@ -151,10 +151,10 @@ data:extend({
         tier = 5,
         order = 'a-b',
         effect = {
-            consumption = {bonus = 3},
-            speed = {bonus = -0.7},
-            productivity = {bonus = 0.1},
-            pollution = {bonus = 1}
+            consumption = 3, --{bonus = 3},
+            speed = -0.7, --{bonus = -0.7},
+            productivity = 0.1, --{bonus = 0.1},
+            pollution = 1, --{bonus = 1}
         },
     },
     {
@@ -168,10 +168,10 @@ data:extend({
         tier = 6,
         order = 'a-c',
         effect = {
-            consumption = {bonus = 6},
-            speed = {bonus = -0.9},
-            productivity = {bonus = 0.25},
-            pollution = {bonus = 1}
+            consumption = 6, --{bonus = 6},
+            speed = -0.9, --{bonus = -0.9},
+            productivity = 0.25, --{bonus = 0.25},
+            pollution = 1, --{bonus = 1}
         },
     },
     {

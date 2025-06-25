@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/gravitation/gr_cooker/gr_cooker_'..name
+    return '__248k-Redux__/ressources/gravitation/gr_cooker/gr_cooker_'..name
 end
 
 --item

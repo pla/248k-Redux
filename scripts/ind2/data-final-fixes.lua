@@ -1,5 +1,5 @@
 local function sprite(name)
-    return '__248k__/ressources/techs/'..name
+    return '__248k-Redux__/ressources/techs/'..name
 end
 
 data.raw["assembling-machine"]["oil-refinery"].fixed_recipe = nil

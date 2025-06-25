@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/electronic/el_aluminum/el_aluminum_'..name
+    return '__248k-Redux__/ressources/electronic/el_aluminum/el_aluminum_'..name
 end
 --ore
 data:extend({

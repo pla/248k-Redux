@@ -27,7 +27,7 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_1 =
 
 {
   checkboard = false,
-  save = "__248k__/ressources/menu_simulation/248k_menu_1.zip",
+  save = "__248k-Redux__/ressources/menu_simulation/248k_menu_1.zip",
   length = 60*25,
   init = [[
     local logo = game.surfaces.nauvis.find_entities_filtered{name = "factorio-logo-22tiles", limit = 1}[1]  
@@ -41,7 +41,7 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_1 =
 data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_2 =
 {
   checkboard = false,
-  save = "__248k__/ressources/menu_simulation/248k_menu_2.zip",
+  save = "__248k-Redux__/ressources/menu_simulation/248k_menu_2.zip",
   length = 60*25,
   init = [[
     local logo = game.surfaces.nauvis.find_entities_filtered{name = "factorio-logo-11tiles", limit = 1}[1]  
@@ -54,7 +54,7 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_2 =
 data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_3 =
 {
   checkboard = false,
-  save = "__248k__/ressources/menu_simulation/248k_menu_3.zip",
+  save = "__248k-Redux__/ressources/menu_simulation/248k_menu_3.zip",
   length = 60*25,
   init = [[
     local logo = game.surfaces.nauvis.find_entities_filtered{name = "factorio-logo-16tiles", limit = 1}[1]  
@@ -68,7 +68,7 @@ data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_3 =
 data.raw["utility-constants"]["default"].main_menu_simulations.menu_248k_6 =
 {
   checkboard = false,
-  save = "__248k__/ressources/menu_simulation/248k_menu_6.zip",
+  save = "__248k-Redux__/ressources/menu_simulation/248k_menu_6.zip",
   length = 60*25,
   init = [[
     local logo = game.surfaces.nauvis.find_entities_filtered{name = "crash-site-spaceship", limit = 1}[1]  

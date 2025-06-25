@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k__/ressources/fusion/fu_lab/fu_lab_'..name..".png"
+    return '__248k-Redux__/ressources/fusion/fu_lab/fu_lab_'..name..".png"
 end
 
 --item

@@ -2,7 +2,7 @@ data:extend({
     {
         name = 'fu_fusor_tech',
         type = 'technology',
-        icon = '__248k__/ressources/techs/fu_fusor_tech.png',
+        icon = '__248k-Redux__/ressources/techs/fu_fusor_tech.png',
         icon_size = 128,
         prerequisites = {
             'fu_magnet_tech','fu_basic_elements_tech'
