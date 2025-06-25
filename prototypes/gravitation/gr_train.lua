@@ -148,13 +148,13 @@ data:extend({
             },
         --minimap
         minimap_representation = {
-			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
@@ -276,13 +276,13 @@ data:extend({
         },
         --minimap
         minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png", --original filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png", --original filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
@@ -364,13 +364,13 @@ data:extend({
         },
         --minimap
         minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
@@ -531,13 +531,13 @@ data:extend({
             },
         --minimap
         minimap_representation = {
-			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
@@ -659,13 +659,13 @@ data:extend({
             },
         --minimap
         minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png", --original filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",--original filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
@@ -747,13 +747,13 @@ data:extend({
             },
         --minimap
         minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5,
