@@ -32,7 +32,7 @@ script.on_init(
         el_ki_init(e)
         gr_black_hole_init(e)
 
-        if game.active_mods["Booktorio"] then
+        if script.active_mods["Booktorio"] then
             registerThread_248k()
         end
 
@@ -54,9 +54,9 @@ script.on_event({
     function(e)
         gui.add_top_gui(game.get_player(e["player_index"]))
 
-        if not global.message_printed then
+        if not storage.message_printed then
             print_start_message()
-            global.message_printed = true
+            storage.message_printed = true
         end
 
     end
@@ -112,16 +112,16 @@ script.on_nth_tick(60,
 
     el_ki_supported_adder()
 
-    if global.ki.dirty then
+    if storage.ki.dirty then
         --game.print("f")
         el_ki_beacon_update()
         gui.update_main()
-        global.ki.dirty = false
+        storage.ki.dirty = false
     end
 
-    if global.black_hole.dirty then
+    if storage.black_hole.dirty then
         gr_gui.update_main()
-        global.black_hole.dirty = false
+        storage.black_hole.dirty = false
     end
     gr_gui.update_main()
     end
@@ -181,8 +181,8 @@ script.on_event({
     },
     function(e)
         if e.research and (e.research.name == "fu_ki_plus_1_tech" or e.research.name == "fu_ki_plus_2_tech") then
-            if not global.ki then global.ki = {} end
-            global.ki.dirty = true
+            if not storage.ki then storage.ki = {} end
+            storage.ki.dirty = true
         end
     end
 )

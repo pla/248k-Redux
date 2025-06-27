@@ -23,16 +23,16 @@
 --===================================================================================================================
 
 function gr_black_hole_init()
-    if not global.black_hole then --init is not guaranteed to run only once during whole game(?)
-        global.black_hole =  {}
-        global.black_hole.base = {}
-        global.black_hole.energy = {}
-        global.black_hole.dirty = false
-        global.black_hole.counter = 0
+    if not storage.black_hole then --init is not guaranteed to run only once during whole game(?)
+        storage.black_hole =  {}
+        storage.black_hole.base = {}
+        storage.black_hole.energy = {}
+        storage.black_hole.dirty = false
+        storage.black_hole.counter = 0
 
-        global.black_hole.gui = {}
-        global.black_hole.gui.frame = nil
-        global.black_hole.gui.id = nil
+        storage.black_hole.gui = {}
+        storage.black_hole.gui.frame = nil
+        storage.black_hole.gui.id = nil
     end
 end
 
@@ -80,7 +80,7 @@ end
 function make_black_hole(entity)
     register_black_hole_base(entity)
 
-    global.black_hole.dirty = true
+    storage.black_hole.dirty = true
     --gr_gui.update_main()
 end
 
@@ -90,7 +90,7 @@ function make_black_hole_energy(base_entity)
     link_base_energy(base_entity,slave)
     --game.print("from make: "..slave.unit_number)
 
-    global.black_hole.dirty = true
+    storage.black_hole.dirty = true
     --gr_gui.update_main()
 end
 --===================================================================================================================
@@ -100,13 +100,13 @@ end
 function destroy_black_hole(entity,player,robot)
     local slave = nil
 
-    if global.black_hole.base then
-        if global.black_hole.base[entity.unit_number] then
+    if storage.black_hole.base then
+        if storage.black_hole.base[entity.unit_number] then
 
-            if global.black_hole.base[entity.unit_number].energy then
-                if global.black_hole.energy[global.black_hole.base[entity.unit_number].energy] then
-                    if global.black_hole.energy[global.black_hole.base[entity.unit_number].energy].entity then
-                        slave = global.black_hole.energy[global.black_hole.base[entity.unit_number].energy].entity
+            if storage.black_hole.base[entity.unit_number].energy then
+                if storage.black_hole.energy[storage.black_hole.base[entity.unit_number].energy] then
+                    if storage.black_hole.energy[storage.black_hole.base[entity.unit_number].energy].entity then
+                        slave = storage.black_hole.energy[storage.black_hole.base[entity.unit_number].energy].entity
                     end
                 end
             end
@@ -120,7 +120,7 @@ function destroy_black_hole(entity,player,robot)
 
     
 
-    global.black_hole.dirty = true
+    storage.black_hole.dirty = true
     --gr_gui.update_main()
 end
 
@@ -131,11 +131,11 @@ end
 function register_black_hole_base(entity)
     local unit = entity.unit_number
 
-    global.black_hole.base[unit] = {}
-    global.black_hole.base[unit].entity = entity
-    global.black_hole.base[unit].energy = nil
+    storage.black_hole.base[unit] = {}
+    storage.black_hole.base[unit].entity = entity
+    storage.black_hole.base[unit].energy = nil
 
-    global.black_hole.base[unit].active = false
+    storage.black_hole.base[unit].active = false
 
     --game.print("register base: "..unit)
 end
@@ -143,14 +143,14 @@ end
 function register_black_hole_energy(entity)
     local unit = entity.unit_number
 
-    global.black_hole.energy[unit] = {}
-    global.black_hole.energy[unit].entity = entity
-    global.black_hole.energy[unit].base = nil
-    global.black_hole.energy[unit].total = 0
-    global.black_hole.energy[unit].stabilizers = 100
-    global.black_hole.energy[unit].power_gen = 0
-    global.black_hole.energy[unit].matter_consumption = 0
-    global.black_hole.energy[unit].stable = 0
+    storage.black_hole.energy[unit] = {}
+    storage.black_hole.energy[unit].entity = entity
+    storage.black_hole.energy[unit].base = nil
+    storage.black_hole.energy[unit].total = 0
+    storage.black_hole.energy[unit].stabilizers = 100
+    storage.black_hole.energy[unit].power_gen = 0
+    storage.black_hole.energy[unit].matter_consumption = 0
+    storage.black_hole.energy[unit].stable = 0
 
     --game.print("from erngy make: "..unit)
 end
@@ -158,11 +158,11 @@ end
 function link_base_energy(base_entity,energy)
     local unit_base = base_entity.unit_number
     local unit_energy = energy.unit_number
-    if global.black_hole.base[unit_base] then
-        if global.black_hole.energy[unit_energy] then
-            global.black_hole.base[unit_base].energy = unit_energy
-            global.black_hole.energy[unit_energy].base = unit_base
-            global.black_hole.base[unit_base].active = true
+    if storage.black_hole.base[unit_base] then
+        if storage.black_hole.energy[unit_energy] then
+            storage.black_hole.base[unit_base].energy = unit_energy
+            storage.black_hole.energy[unit_energy].base = unit_base
+            storage.black_hole.base[unit_base].active = true
         end
     end
 end
@@ -172,9 +172,9 @@ end
 
 function unregister_black_hole(entity)
     local unit = entity.unit_number
-    if global.black_hole.base[unit].energy then
+    if storage.black_hole.base[unit].energy then
         --game.print("unregister base.energy: "..global.black_hole.base[unit].energy)
-        unregister_black_hole_energy(nil,global.black_hole.base[unit].energy)
+        unregister_black_hole_energy(nil,storage.black_hole.base[unit].energy)
         unregister_black_hole_base(entity,nil)
     else
         --game.print("2")
@@ -189,14 +189,14 @@ function unregister_black_hole_base(entity,unitin)
     else
         unit = unitin
     end
-    global.black_hole.base[unit] = nil
+    storage.black_hole.base[unit] = nil
 
     --game.print(unit)
 
-    if global.black_hole.energy then
-        for i,v in pairs(global.black_hole.energy) do 
-            if global.black_hole.energy[i].base == unit then
-                global.black_hole.energy[i].base = nil
+    if storage.black_hole.energy then
+        for i,v in pairs(storage.black_hole.energy) do 
+            if storage.black_hole.energy[i].base == unit then
+                storage.black_hole.energy[i].base = nil
             end
         end
     end
@@ -211,13 +211,13 @@ function unregister_black_hole_energy(entity,unitin)
         unit = unitin
         --game.print("unitin")
     end
-    global.black_hole.energy[unit] = nil
+    storage.black_hole.energy[unit] = nil
 
-    if global.black_hole.base then
-        for i,v in pairs(global.black_hole.base) do
-            if global.black_hole.base[i].energy == unit then
-                global.black_hole.base[i].energy = nil
-                global.black_hole.base[i].active = false
+    if storage.black_hole.base then
+        for i,v in pairs(storage.black_hole.base) do
+            if storage.black_hole.base[i].energy == unit then
+                storage.black_hole.base[i].energy = nil
+                storage.black_hole.base[i].active = false
             end
         end
     end
@@ -248,18 +248,18 @@ end
 --===================================================================================================================
 
 function black_hole_base_update()
-    if global.black_hole then
-        if global.black_hole.base then
-            for i,v in pairs(global.black_hole.base) do 
-                if global.black_hole.base[i].entity then
-                    if global.black_hole.base[i].entity.valid then
-                        if global.black_hole.base[i].energy then
-                            local energy = global.black_hole.base[i].energy
-                            local entity = global.black_hole.base[i].entity
+    if storage.black_hole then
+        if storage.black_hole.base then
+            for i,v in pairs(storage.black_hole.base) do 
+                if storage.black_hole.base[i].entity then
+                    if storage.black_hole.base[i].entity.valid then
+                        if storage.black_hole.base[i].energy then
+                            local energy = storage.black_hole.base[i].energy
+                            local entity = storage.black_hole.base[i].entity
                             local inv = entity.get_inventory(defines.inventory.chest)
                             
-                            local total = global.black_hole.energy[energy].total
-                            local stable = global.black_hole.energy[energy].stable
+                            local total = storage.black_hole.energy[energy].total
+                            local stable = storage.black_hole.energy[energy].stable
                             local power_gen, matter_consumption = calc_black_hole_stats(stable)
 
                             
@@ -278,10 +278,10 @@ function black_hole_base_update()
 
                             total = total - matter_consumption + new_matter
 
-                            global.black_hole.energy[energy].power_gen = power_gen
-                            global.black_hole.energy[energy].matter_consumption = matter_consumption
-                            global.black_hole.energy[energy].stable = stable
-                            global.black_hole.energy[energy].total = total
+                            storage.black_hole.energy[energy].power_gen = power_gen
+                            storage.black_hole.energy[energy].matter_consumption = matter_consumption
+                            storage.black_hole.energy[energy].stable = stable
+                            storage.black_hole.energy[energy].total = total
 
                             --game.print(stable.." "..power_gen.." "..total)
 
@@ -290,15 +290,15 @@ function black_hole_base_update()
                             inv.clear()
 
                             if (total <= 0) or (stable <= 0) then
-                                global.black_hole.counter = global.black_hole.counter + 1
-                                if global.black_hole.counter == 10 then
-                                    local energy_entity = global.black_hole.energy[energy].entity
+                                storage.black_hole.counter = storage.black_hole.counter + 1
+                                if storage.black_hole.counter == 10 then
+                                    local energy_entity = storage.black_hole.energy[energy].entity
                                     unregister_black_hole_energy(energy_entity)
                                     energy_entity.destroy()
-                                    global.black_hole.counter = 0
+                                    storage.black_hole.counter = 0
                                 end
                             end
-                            global.black_hole.dirty = true
+                            storage.black_hole.dirty = true
                         end
                     end
                 end
@@ -352,10 +352,10 @@ function black_hole_energy_function(matter_consumption_rate)
 end
 
 function black_hole_make_energy(energy, power_gen)
-    if global.black_hole.energy[energy].entity then
-        if global.black_hole.energy[energy].entity.valid then
+    if storage.black_hole.energy[energy].entity then
+        if storage.black_hole.energy[energy].entity.valid then
             --game.print("spawn energy: "..power_gen.."W")
-            local entity = global.black_hole.energy[energy].entity
+            local entity = storage.black_hole.energy[energy].entity
             entity.power_production = power_gen
         end
     end

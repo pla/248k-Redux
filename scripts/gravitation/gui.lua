@@ -16,38 +16,38 @@ function gr_gui.add_black_hole_gui(e,update)
 
     if update then
         player = e
-        id = global.black_hole.gui.id
-        if global.black_hole.base[id] then
-            active = global.black_hole.base[id].active
-            local entity = global.black_hole.base[id].entity
+        id = storage.black_hole.gui.id
+        if storage.black_hole.base[id] then
+            active = storage.black_hole.base[id].active
+            local entity = storage.black_hole.base[id].entity
             local inv = entity.get_inventory(defines.inventory.chest)
             total = inv.get_item_count() - inv.get_item_count("gr_materials_stabilizer_item")
             stabilizer = inv.get_item_count("gr_materials_stabilizer_item")
 
-            if global.black_hole.base[id].energy then
-                local energy = global.black_hole.base[id].energy
-                power_gen = global.black_hole.energy[energy].power_gen 
-                matter_consumption = global.black_hole.energy[energy].matter_consumption
-                stable = global.black_hole.energy[energy].stable 
-                totalmatter = global.black_hole.energy[energy].total
+            if storage.black_hole.base[id].energy then
+                local energy = storage.black_hole.base[id].energy
+                power_gen = storage.black_hole.energy[energy].power_gen 
+                matter_consumption = storage.black_hole.energy[energy].matter_consumption
+                stable = storage.black_hole.energy[energy].stable 
+                totalmatter = storage.black_hole.energy[energy].total
             end
         end
     else
         player = game.get_player(e["player_index"])
         id = e["entity"].unit_number
-        if global.black_hole.base[id] then
-            active = global.black_hole.base[id].active
-            local entity = global.black_hole.base[id].entity
+        if storage.black_hole.base[id] then
+            active = storage.black_hole.base[id].active
+            local entity = storage.black_hole.base[id].entity
             local inv = entity.get_inventory(defines.inventory.chest)
             total = inv.get_item_count() - inv.get_item_count("gr_materials_stabilizer_item")
             stabilizer = inv.get_item_count("gr_materials_stabilizer_item")
 
-            if global.black_hole.base[id].energy then
-                local energy = global.black_hole.base[id].energy
-                power_gen = global.black_hole.energy[energy].power_gen 
-                matter_consumption = global.black_hole.energy[energy].matter_consumption
-                stable = global.black_hole.energy[energy].stable
-                totalmatter = global.black_hole.energy[energy].total
+            if storage.black_hole.base[id].energy then
+                local energy = storage.black_hole.base[id].energy
+                power_gen = storage.black_hole.energy[energy].power_gen 
+                matter_consumption = storage.black_hole.energy[energy].matter_consumption
+                stable = storage.black_hole.energy[energy].stable
+                totalmatter = storage.black_hole.energy[energy].total
             end
         end
     end
@@ -58,16 +58,16 @@ function gr_gui.add_black_hole_gui(e,update)
 
     if player.gui.left["main248kblackholeframe"] then
         player.gui.left["main248kblackholeframe"].destroy()
-        global.black_hole.gui = {}
+        storage.black_hole.gui = {}
         return
     end
 
-    if global.black_hole then
-        if global.black_hole.base then
-            if not global.black_hole.base[id] then
+    if storage.black_hole then
+        if storage.black_hole.base then
+            if not storage.black_hole.base[id] then
                 if player.gui.left["main248kblackholeframe"] then
                     player.gui.left["main248kblackholeframe"].destroy()
-                    global.black_hole.gui = {}
+                    storage.black_hole.gui = {}
                     return
                 else
                     return
@@ -222,9 +222,9 @@ function gr_gui.add_black_hole_gui(e,update)
         style = "production_progressbar"
     })
 
-    global.black_hole.gui.frame = main248kblackholeframe
-    global.black_hole.gui.id = id
-    global.black_hole.gui.active = active
+    storage.black_hole.gui.frame = main248kblackholeframe
+    storage.black_hole.gui.id = id
+    storage.black_hole.gui.active = active
 end
 
 --=================================================================================
@@ -238,17 +238,17 @@ function gr_gui.on_change(e)
             local element = e["element"].name
 
             if element == "main248kblackholeonbutton" then
-                if global.black_hole then
-                    if global.black_hole.gui then
-                        if not global.black_hole.gui.active then
-                            if global.black_hole.gui.id then
-                                local id = global.black_hole.gui.id
+                if storage.black_hole then
+                    if storage.black_hole.gui then
+                        if not storage.black_hole.gui.active then
+                            if storage.black_hole.gui.id then
+                                local id = storage.black_hole.gui.id
                             
-                                if global.black_hole.base then
-                                    if global.black_hole.base[id] then
-                                        if global.black_hole.base[id].entity then
-                                            if can_make_black_hole_energy(global.black_hole.base[id].entity) then
-                                                make_black_hole_energy(global.black_hole.base[id].entity)
+                                if storage.black_hole.base then
+                                    if storage.black_hole.base[id] then
+                                        if storage.black_hole.base[id].entity then
+                                            if can_make_black_hole_energy(storage.black_hole.base[id].entity) then
+                                                make_black_hole_energy(storage.black_hole.base[id].entity)
                                                 gr_gui.update_main()
                                                 return
                                             end
@@ -258,20 +258,20 @@ function gr_gui.on_change(e)
                             end
                         end
 
-                        if global.black_hole.gui.active then
-                            if global.black_hole.gui.id then
-                                local id = global.black_hole.gui.id
+                        if storage.black_hole.gui.active then
+                            if storage.black_hole.gui.id then
+                                local id = storage.black_hole.gui.id
                             
-                                if global.black_hole.base then
-                                    if global.black_hole.base[id] then
-                                        if global.black_hole.base[id].entity then
-                                            if global.black_hole.base[id].active then
-                                                if global.black_hole.base[id].energy then
-                                                    local energy_unit = global.black_hole.base[id].energy
-                                                    local energy_entity = global.black_hole.energy[energy_unit].entity
+                                if storage.black_hole.base then
+                                    if storage.black_hole.base[id] then
+                                        if storage.black_hole.base[id].entity then
+                                            if storage.black_hole.base[id].active then
+                                                if storage.black_hole.base[id].energy then
+                                                    local energy_unit = storage.black_hole.base[id].energy
+                                                    local energy_entity = storage.black_hole.energy[energy_unit].entity
                                                     unregister_black_hole_energy(energy_entity)
                                                     energy_entity.destroy()
-                                                    global.black_hole.counter = 0
+                                                    storage.black_hole.counter = 0
                                                     gr_gui.update_main()
                                                     return
                                                 end
