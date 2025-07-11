@@ -193,7 +193,7 @@ script.on_event({
 
 script.on_configuration_changed(
     function()
-        if game.active_mods["Booktorio"] then
+        if script.active_mods["Booktorio"] then
             registerThread_248k()
         end
     end

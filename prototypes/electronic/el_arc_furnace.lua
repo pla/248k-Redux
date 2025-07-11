@@ -81,7 +81,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "output", position = {-3, 0}, direction = 0},
+              {flow_direction = "output", position = {-3, 0}, direction = 12},
             },
             production_type = "output"
           },
@@ -95,7 +95,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "output", position = {3, 0}, direction = 0},
+              {flow_direction = "output", position = {3, 0}, direction = 4},
               --{type = "output", position = {2, -2.5}}
             },
             production_type = "output"
@@ -110,11 +110,13 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "output", position = {0, 3}, direction = 0},
+              {flow_direction = "output", position = {0, 3}, direction = 8},
             },
             production_type = "output"
           },
       },
+
+      --[[
       --animation
       animation = {
         filename = sprite('entity_base.png'),
@@ -147,7 +149,48 @@ data:extend({
           }
         }
       },
-      
+      ]]
+      --Nuevo formato:
+      working_visualisations = {
+          {
+            animation = {
+              layers = {
+                {
+                  filename = sprite('entity_base.png'),
+                  size = {512,512},
+                  scale = 0.54,
+                  line_length = 1,
+                  --lines_per_file = 2,
+                  frame_count = 1,
+                  --animation_speed = 0.2,
+                  shift = {0,-0.3} 
+                },
+                {
+                  blend_mode = "additive",
+                  filename = sprite('entity_overlay.png'),
+                  size = {512,512},
+                  scale = 0.54,
+                  line_length = 3,
+                  lines_per_file = 1,
+                  frame_count = 3,
+                  animation_speed = 0.2,
+                  shift = {0,-0.3} 
+                },
+                {
+                blend_mode = "additive",
+                light = {
+                  type = "basic",
+                  intensity = 1,
+                  size = 15,
+                  color = {r=0.78 ,g=0.5 ,b=0.09 },
+                  }
+                }
+              }
+            },
+          }
+      },
+
+
       working_sound =
       {
         sound = {filename = "__base__/sound/chemical-plant-3.ogg" },
