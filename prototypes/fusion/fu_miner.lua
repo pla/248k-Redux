@@ -77,30 +77,32 @@ data:extend({
       },
       energy_usage = '1MW',
       --animation
-      animation = {
-        filename = sprite('base.png'),
-        size = {512*2,512*2},
-        scale = 0.4,
-        line_length = 1,
-        --lines_per_file = 2,
-        frame_count = 1,
-        --animation_speed = 0.2,
-        shift = {0,-0.9} 
-      },
-      working_visualisations = {
-        {
-          animation = 
+      graphics_set = {
+        animation = {
+          filename = sprite('base.png'),
+          size = {512*2,512*2},
+          scale = 0.4,
+          line_length = 1,
+          --lines_per_file = 2,
+          frame_count = 1,
+          --animation_speed = 0.2,
+          shift = {0,-0.9} 
+        },
+        working_visualisations = {
           {
-            filename = sprite('animation.png'),
-            size = {512*2,512*2},
-            scale = 0.4,
-            line_length = 3,
-            lines_per_file = 3,
-            frame_count = 9,
-            animation_speed = 0.2,
-            shift = {0,-0.9} 
+            animation = 
+            {
+              filename = sprite('animation.png'),
+              size = {512*2,512*2},
+              scale = 0.4,
+              line_length = 3,
+              lines_per_file = 3,
+              frame_count = 9,
+              animation_speed = 0.2,
+              shift = {0,-0.9} 
+            }
           }
-        }
+        },
       },
       --[[working_sound =
       {

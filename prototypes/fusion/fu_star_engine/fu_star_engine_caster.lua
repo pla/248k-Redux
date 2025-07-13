@@ -102,7 +102,8 @@ data:extend({
             },
         },
         --animation
-        animation = {
+        graphics_set = {
+          animation = {
             
                 filename = sprite('entity_animation.png'),
                 size = {480,500},
@@ -134,9 +135,9 @@ data:extend({
                 line_length = 1,
                 frame_count = 1,
                 animation_speed = 0.5,
-            },
+          },
         },
-        
+
         working_sound = { 
             sound = { filename = '__base__/sound/heat-exchanger.ogg'},
             apparent_volume = 2.5,

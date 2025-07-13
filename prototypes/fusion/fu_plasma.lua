@@ -117,36 +117,38 @@ data:extend({
           },
       },
       --animation
-      animation = {
-        filename = sprite('entity_base.png'),
-        size = {512,512},
-        scale = 0.54,
-        line_length = 1,
-        --lines_per_file = 2,
-        frame_count = 1,
-        --animation_speed = 0.2,
-        shift = {0,-0.3} 
-      },
-      working_visualisations = {
-        {
-          animation = 
+      graphics_set = {
+        animation = {
+          filename = sprite('entity_base.png'),
+          size = {512,512},
+          scale = 0.54,
+          line_length = 1,
+          --lines_per_file = 2,
+          frame_count = 1,
+          --animation_speed = 0.2,
+          shift = {0,-0.3} 
+        },
+        working_visualisations = {
           {
-            filename = sprite('entity_animation.png'),
-            size = {512,512},
-            scale = 0.54,
-            line_length = 2,
-            lines_per_file = 2,
-            frame_count = 4,
-            animation_speed = 0.2,
-            shift = {0,-0.3} 
-          },
-          light = {
-            type = "basic",
-            intensity = 1,
-            size = 15,
-            color = {r=0.79 ,g=0.08 ,b=0.87 },
+            animation = 
+            {
+              filename = sprite('entity_animation.png'),
+              size = {512,512},
+              scale = 0.54,
+              line_length = 2,
+              lines_per_file = 2,
+              frame_count = 4,
+              animation_speed = 0.2,
+              shift = {0,-0.3} 
+            },
+            light = {
+              type = "basic",
+              intensity = 1,
+              size = 15,
+              color = {r=0.79 ,g=0.08 ,b=0.87 },
+            }
           }
-        }
+        },
       },
       working_sound =
       {

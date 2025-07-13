@@ -146,38 +146,39 @@ data:extend({
             },
         },
         --animation
-        animation = {
-          filename = sprite('base.png'),
-          size = {1080, 1080},
-          scale = 0.52,
-          shift = {0,2.6},
-          line_length = 1,
-          lines_per_file = 1,
-          frame_count = 1,
-          animation_speed = 1,
-        },
-        working_visualisations = {
-          {
-            animation = 
+        graphics_set = {
+          animation = {
+            filename = sprite('base.png'),
+            size = {1080, 1080},
+            scale = 0.52,
+            shift = {0,2.6},
+            line_length = 1,
+            lines_per_file = 1,
+            frame_count = 1,
+            animation_speed = 1,
+          },
+          working_visualisations = {
             {
-              filename = sprite('animation.png'),
-              size = {1080, 1080},
-              scale = 0.52,
-              line_length = 3,
-              lines_per_file = 3,
-              frame_count = 9,
-              animation_speed = 0.3,
-              shift = {0,2.6} 
-            },
-            light = {
-              type = "basic",
-              intensity = 1,
-              size = 24,
-              color = {r=0.87 ,g=0.64 ,b=0.08 },
+              animation = 
+              {
+                filename = sprite('animation.png'),
+                size = {1080, 1080},
+                scale = 0.52,
+                line_length = 3,
+                lines_per_file = 3,
+                frame_count = 9,
+                animation_speed = 0.3,
+                shift = {0,2.6} 
+              },
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 24,
+                color = {r=0.87 ,g=0.64 ,b=0.08 },
+              }
             }
-          }
+          },
         },
-        
         working_sound = { 
             sound = { filename = '__base__/sound/heat-exchanger.ogg'},
             apparent_volume = 2.5,

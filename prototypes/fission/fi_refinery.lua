@@ -170,7 +170,8 @@ data:extend({
         },
 
         --animation
-        animation = {
+        graphics_set = {
+          animation = {
             filename = sprite('base.png'),
             size = {1024, 1024},
             scale = 0.339,
@@ -201,7 +202,7 @@ data:extend({
               }
             }
           },
-
+        },
         working_sound = { 
             sound = { filename ='__base__/sound/electric-mining-drill.ogg'},
             apparent_volume = 2.7,

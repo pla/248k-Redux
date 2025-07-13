@@ -109,6 +109,7 @@ data:extend({
             apparent_volume = 1.5,
         },
     },
+    
     --kerosene
     {
         name = 'el_burner_kerosene_entity',

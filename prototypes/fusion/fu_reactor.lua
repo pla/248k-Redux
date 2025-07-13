@@ -116,38 +116,39 @@ data:extend({
           }
         },
         --animation
-        animation = {
-          filename = sprite('stelar_entity_base.png'),
-          size = {512*2,512*2},
-          scale = 0.56,
-          line_length = 1,
-          --lines_per_file = 2,
-          frame_count = 1,
-          --animation_speed = 0.2,
-          shift = {2.4,-1.7} 
-        },
-        working_visualisations = {
-          {
-            animation = 
+        graphics_set = {
+          animation = {
+            filename = sprite('stelar_entity_base.png'),
+            size = {512*2,512*2},
+            scale = 0.56,
+            line_length = 1,
+            --lines_per_file = 2,
+            frame_count = 1,
+            --animation_speed = 0.2,
+            shift = {2.4,-1.7} 
+          },
+          working_visualisations = {
             {
-              filename = sprite('stelar_entity_overlay.png'),
-              size = {512*2,512*2},
-              scale = 0.56,
-              line_length = 3,
-              lines_per_file = 3,
-              frame_count = 9,
-              animation_speed = 0.3,
-              shift = {2.4,-1.7} 
-            },
-            light = {
-              type = "basic",
-              intensity = 1,
-              size = 26,
-              color = {r=0.79 ,g=0.08 ,b=0.87 },
+              animation = 
+              {
+                filename = sprite('stelar_entity_overlay.png'),
+                size = {512*2,512*2},
+                scale = 0.56,
+                line_length = 3,
+                lines_per_file = 3,
+                frame_count = 9,
+                animation_speed = 0.3,
+                shift = {2.4,-1.7} 
+              },
+              light = {
+                type = "basic",
+                intensity = 1,
+                size = 26,
+                color = {r=0.79 ,g=0.08 ,b=0.87 },
+              }
             }
-          }
+          },
         },
-        
         working_sound = { 
             sound = { filename = '__base__/sound/nuclear-reactor-1.ogg'},
             apparent_volume = 2.5,
@@ -234,28 +235,29 @@ data:extend({
           production_type = "output"
         }
       },
-      animation = {
-        filename = sprite('tokamak_entity_animation.png'),
-        size = {512*2,512*2},
-        scale = 0.56,
-        line_length = 3,
-        lines_per_file = 3,
-        frame_count = 9,
-        animation_speed = 0.3,
-        shift = {2.4,-1.7} 
-      },
+      graphics_set = {
+        animation = {
+          filename = sprite('tokamak_entity_animation.png'),
+          size = {512*2,512*2},
+          scale = 0.56,
+          line_length = 3,
+          lines_per_file = 3,
+          frame_count = 9,
+          animation_speed = 0.3,
+          shift = {2.4,-1.7} 
+        },
 
-      working_visualisations = {
-        {
-          light = {
-            type = "basic",
-            intensity = 1,
-            size = 26,
-            color = {r=0.79 ,g=0.08 ,b=0.87 },
+        working_visualisations = {
+          {
+            light = {
+              type = "basic",
+              intensity = 1,
+              size = 26,
+              color = {r=0.79 ,g=0.08 ,b=0.87 },
+            }
           }
-        }
+        },
       },
-      
       working_sound = { 
           sound = { filename = '__base__/sound/nuclear-reactor-1.ogg'},
           apparent_volume = 2.5,

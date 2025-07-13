@@ -111,7 +111,8 @@ data:extend({
           },
       },
       --animation
-      animation = {
+      graphics_set = {
+        animation = {
           north = {
               filename = sprite('entity_animation.png'),
               size = {480,448},
@@ -144,6 +145,7 @@ data:extend({
               frame_count = 4,
               animation_speed = 0.5,
           },
+      },
       },
       working_sound =
       {

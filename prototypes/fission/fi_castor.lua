@@ -50,41 +50,42 @@ data:extend({
         },
         energy_usage = '100kW',
         --animation
-        animation = {
-            north = {
-                filename = sprite('entity_animation.png'),
-                size = {480,448},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 1,
-            },
-            east = {
-                filename = sprite('entity_animation.png'),
-                size = {480,448},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 1,
-            },
-            south = {
-                filename = sprite('entity_animation.png'),
-                size = {480,448},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 1,
-            },
-            west = {
-                filename = sprite('entity_animation.png'),
-                size = {480,448},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 1,
+        graphics_set = {
+            animation = {
+                north = {
+                    filename = sprite('entity_animation.png'),
+                    size = {480,448},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 1,
+                },
+                east = {
+                    filename = sprite('entity_animation.png'),
+                    size = {480,448},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 1,
+                },
+                south = {
+                    filename = sprite('entity_animation.png'),
+                    size = {480,448},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 1,
+                },
+                west = {
+                    filename = sprite('entity_animation.png'),
+                    size = {480,448},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 1,
+                },
             },
         },
-        
         working_sound = { 
             sound = { filename = '__base__/sound/nuclear-reactor-1.ogg'},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.3 },

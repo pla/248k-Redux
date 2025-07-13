@@ -93,56 +93,57 @@ data:extend({
             },
         },
         --animation
-        animation = {
-            north = {
-                filename = sprite('entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-                shift = {0,-1},
+        graphics_set = {
+            animation = {
+                north = {
+                    filename = sprite('entity_animation.png'),
+                    size = {512*2,512*2},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 0.5,
+                    shift = {0,-1},
+                },
+                east = {
+                    filename = sprite('entity_animation.png'),
+                    size = {512*2,512*2},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 0.5,
+                    shift = {0,-1},
+                },
+                south = {
+                    filename = sprite('entity_animation.png'),
+                    size = {512*2,512*2},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 0.5,
+                    shift = {0,-1},
+                },
+                west = {
+                    filename = sprite('entity_animation.png'),
+                    size = {512*2,512*2},
+                    scale = 0.2,
+                    line_length = 1,
+                    frame_count = 1,
+                    animation_speed = 0.5,
+                    shift = {0,-1},
+                },
             },
-            east = {
-                filename = sprite('entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-                shift = {0,-1},
-            },
-            south = {
-                filename = sprite('entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-                shift = {0,-1},
-            },
-            west = {
-                filename = sprite('entity_animation.png'),
-                size = {512*2,512*2},
-                scale = 0.2,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-                shift = {0,-1},
+
+            working_visualisations = {
+                {
+                light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 12,
+                    color = {r=0.08 ,g=0.51 ,b=0.87 },
+                }
+                }
             },
         },
-
-        working_visualisations = {
-            {
-              light = {
-                type = "basic",
-                intensity = 1,
-                size = 12,
-                color = {r=0.08 ,g=0.51 ,b=0.87 },
-              }
-            }
-          },
-        
         working_sound = { 
             sound = { filename = '__base__/sound/nuclear-reactor-1.ogg'},
             apparent_volume = 2.5,

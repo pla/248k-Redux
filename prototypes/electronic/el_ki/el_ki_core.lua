@@ -155,25 +155,27 @@ data:extend({
                 production_type = "input"
             },
         },
-        animation = {
-            
-            filename = sprite('entity_animation.png'),
-            width = 960,
-            height = 930,
-            line_length = 3,
-			lines_per_file = 3,
-            animation_speed = 0.3,
-            frame_count = 9,
-            scale = 0.2,
-        },
-        working_visualisations = {
-            {
-              light = {
-                type = "basic",
-                intensity = 1,
-                size = 15,
-              }
-            }
+        graphics_set = {
+            animation = {
+                
+                filename = sprite('entity_animation.png'),
+                width = 960,
+                height = 930,
+                line_length = 3,
+                lines_per_file = 3,
+                animation_speed = 0.3,
+                frame_count = 9,
+                scale = 0.2,
+            },
+            working_visualisations = {
+                {
+                light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15,
+                }
+                }
+            },
         },
         working_sound = { 
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},
@@ -331,25 +333,27 @@ data:extend({
                 production_type = "input"
             }
         },
-        animation = {
-            
-            filename = sprite('entity_animation_2.png'),
-            width = 960,
-            height = 930,
-            line_length = 3,
-			lines_per_file = 3,
-            animation_speed = 0.3,
-            frame_count = 9,
-            scale = 0.2,
-        },
-        working_visualisations = {
-            {
-              light = {
-                type = "basic",
-                intensity = 1,
-                size = 15,
-              }
-            }
+        graphics_set = {
+            animation = {
+                
+                filename = sprite('entity_animation_2.png'),
+                width = 960,
+                height = 930,
+                line_length = 3,
+                lines_per_file = 3,
+                animation_speed = 0.3,
+                frame_count = 9,
+                scale = 0.2,
+            },
+            working_visualisations = {
+                {
+                light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15,
+                }
+                }
+            },
         },
         working_sound = { 
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},
@@ -535,25 +539,27 @@ data:extend({
                 production_type = "input"
             }
         },
-        animation = {
-            
-            filename = sprite('entity_animation_3.png'),
-            width = 960,
-            height = 930,
-            line_length = 3,
-			lines_per_file = 3,
-            animation_speed = 0.3,
-            frame_count = 9,
-            scale = 0.2,
-        },
-        working_visualisations = {
-            {
-              light = {
-                type = "basic",
-                intensity = 1,
-                size = 15,
-              }
-            }
+        graphics_set = {
+            animation = {
+                
+                filename = sprite('entity_animation_3.png'),
+                width = 960,
+                height = 930,
+                line_length = 3,
+                lines_per_file = 3,
+                animation_speed = 0.3,
+                frame_count = 9,
+                scale = 0.2,
+            },
+            working_visualisations = {
+                {
+                light = {
+                    type = "basic",
+                    intensity = 1,
+                    size = 15,
+                }
+                }
+            },
         },
         working_sound = { 
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},

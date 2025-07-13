@@ -89,14 +89,16 @@ data:extend({
         }
     },
     --animation
-    animation = {
-        filename = sprite('entity_animation.png'),
-        size = {420,448},
-        scale = 0.265,
-        line_length = 1,
-        frame_count = 1,
-        animation_speed = 0.5,
-        shift = {0,-0.5}
+    graphics_set = {
+        animation = {
+            filename = sprite('entity_animation.png'),
+            size = {420,448},
+            scale = 0.265,
+            line_length = 1,
+            frame_count = 1,
+            animation_speed = 0.5,
+            shift = {0,-0.5}
+        },
     },
     map_color = {r=0, g=0, b=1, a=1},
     working_sound =

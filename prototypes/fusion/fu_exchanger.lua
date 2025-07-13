@@ -110,41 +110,42 @@ data:extend({
             },
         },
         --animation
-        animation = {
-            north = {
-                filename = sprite('entity_animation.png'),
-                size = {480,500},
-                scale = 0.27,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-            },
-            east = {
-                filename = sprite('entity_animation.png'),
-                size = {480,500},
-                scale = 0.27,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-            },
-            south = {
-                filename = sprite('entity_animation.png'),
-                size = {480,500},
-                scale = 0.27,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-            },
-            west = {
-                filename = sprite('entity_animation.png'),
-                size = {480,500},
-                scale = 0.27,
-                line_length = 1,
-                frame_count = 1,
-                animation_speed = 0.5,
-            },
+        graphics_set = {
+          animation = {
+              north = {
+                  filename = sprite('entity_animation.png'),
+                  size = {480,500},
+                  scale = 0.27,
+                  line_length = 1,
+                  frame_count = 1,
+                  animation_speed = 0.5,
+              },
+              east = {
+                  filename = sprite('entity_animation.png'),
+                  size = {480,500},
+                  scale = 0.27,
+                  line_length = 1,
+                  frame_count = 1,
+                  animation_speed = 0.5,
+              },
+              south = {
+                  filename = sprite('entity_animation.png'),
+                  size = {480,500},
+                  scale = 0.27,
+                  line_length = 1,
+                  frame_count = 1,
+                  animation_speed = 0.5,
+              },
+              west = {
+                  filename = sprite('entity_animation.png'),
+                  size = {480,500},
+                  scale = 0.27,
+                  line_length = 1,
+                  frame_count = 1,
+                  animation_speed = 0.5,
+              },
+          },
         },
-        
         working_sound = { 
             sound = { filename = '__base__/sound/heat-exchanger.ogg'},
             apparent_volume = 2.5,

@@ -117,37 +117,39 @@ data:extend({
           },
       },
       --animation
-      animation = {
-        filename = sprite('entity_base.png'),
-        size = {512,512},
-        scale = 0.54,
-        line_length = 1,
-        --lines_per_file = 2,
-        frame_count = 1,
-        --animation_speed = 0.2,
-        shift = {0,-0.3} 
-      },
-      working_visualisations = {
-        {
-          animation = 
+      graphics_set = {
+        animation = {
+          filename = sprite('entity_base.png'),
+          size = {512,512},
+          scale = 0.54,
+          line_length = 1,
+          --lines_per_file = 2,
+          frame_count = 1,
+          --animation_speed = 0.2,
+          shift = {0,-0.3} 
+        },
+        working_visualisations = {
           {
-            filename = sprite('entity_overlay.png'),
-            size = {512,512},
-            scale = 0.54,
-            line_length = 3,
-            lines_per_file = 3,
-            frame_count = 9,
-            animation_speed = 0.2,
-            shift = {0,-0.3} 
+            animation = 
+            {
+              filename = sprite('entity_overlay.png'),
+              size = {512,512},
+              scale = 0.54,
+              line_length = 3,
+              lines_per_file = 3,
+              frame_count = 9,
+              animation_speed = 0.2,
+              shift = {0,-0.3} 
+            }
+          },
+          {
+            light = {
+              type = "basic",
+              intensity = 1,
+              size = 15
+            }
           }
         },
-        {
-          light = {
-            type = "basic",
-            intensity = 1,
-            size = 15
-          }
-        }
       },
       working_sound =
       {
