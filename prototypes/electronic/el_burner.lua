@@ -153,8 +153,8 @@ data:extend({
             pipe_connections = {
                 {flow_direction = "input-output", position = {1, 0}, direction = 4},
                 {flow_direction = "input-output", position = {-1, 0}, direction = 12},
-                {flow_direction = "input-output", position = {0, 1}, direction = 0},
-                {flow_direction = "input-output", position = {0, -1}, direction = 8},
+                {flow_direction = "input-output", position = {0, 1}, direction = 8},
+                {flow_direction = "input-output", position = {0, -1}, direction = 0},
             },
         },
         fluid_input = {

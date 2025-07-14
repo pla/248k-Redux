@@ -78,7 +78,7 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {flow_direction = "output", position = {-3, 0}, direction = 0},
+            {flow_direction = "output", position = {-3, 0}, direction = 12},
           },
           production_type = "output"
         },
@@ -93,13 +93,12 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {flow_direction = "output", position = {3, 0}, direction = 0},
+            {flow_direction = "output", position = {3, 0}, direction = 4},
             --{type = "output", position = {2, -2.5}}
           },
           production_type = "output"
         },
         {
-          
           base_area = 20,
           height = 2,
           filter = 'fu_hydrogen',
@@ -109,7 +108,7 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {flow_direction = "output", position = {0, 3}, direction = 0},
+            {flow_direction = "output", position = {0, 3}, direction = 8},
           },
           production_type = "output"
         },

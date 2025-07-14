@@ -68,7 +68,7 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
-                {flow_direction = "input", position = {1, 0}, direction = 0},  --Toca especificar la direccion de la tuberia, tambien se cambio la position de 2,0 a 1,0
+                {flow_direction = "input", position = {1, 0}, direction = 4},  --Toca especificar la direccion de la tuberia, tambien se cambio la position de 2,0 a 1,0
                 --tambien se cambio type a flow_direction
                 --{type = "output", position = {-2, 0}},  
             },
@@ -82,7 +82,7 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
-                {flow_direction = "output", position = {1, 0}, direction = 4},
+                {flow_direction = "output", position = {-1, 0}, direction = 12},
                 --{type = "output", position = {-2, 0}},  
                 --{type = "output", position = {-2, 0}},  
             },

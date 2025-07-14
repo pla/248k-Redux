@@ -58,7 +58,7 @@ data:extend({
               
               pipe_connections =
               {
-                {flow_direction = "input", position = {-2, 8.5}, direction = 0}
+                {flow_direction = "input", position = {-2, 8.5}, direction = 8}
               },
               production_type = "input"
             },
@@ -70,7 +70,7 @@ data:extend({
               
               pipe_connections =
               {
-                {flow_direction = "input", position = {2, 8.5}, direction = 0}
+                {flow_direction = "input", position = {2, 8.5}, direction = 8}
               },
               production_type = "input"
             },

@@ -33,8 +33,8 @@ data:extend({
         flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-10.4,-4.4}, {8.4,4.4}},
-        selection_box = {{-10.5,-4.5}, {8.5,4.5}},
+        collision_box = {{-9.4,-4.4}, {9.4 ,4.4}},
+        selection_box = {{-9.5,-4.5}, {9.5,4.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
             mining_time = 1,
@@ -49,16 +49,17 @@ data:extend({
         },
         energy_usage = '0.7GW',
         --fluids
+        flow_rate = 5000,
         fluid_boxes = {
             { 
               base_area = 1,
               height = 2,
               base_level = -1,
-              volume = 100,
+              volume = 1000,
               
               pipe_connections =
               {
-                {flow_direction = "input", position = {8, 0}, direction = 0},
+                {flow_direction = "input", position = {-9, 0}, direction = 12},
               },
               production_type = "input"
             },
@@ -66,11 +67,11 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
-              volume = 100,
+              volume = 1000,
                 
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {8, 2}, direction = 0},
+                  {flow_direction = "input", position = {-9, 2}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -78,11 +79,11 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = -1,
-              volume = 100,
+              volume = 1000,
                 
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {8, -2}, direction = 0},
+                  {flow_direction = "input", position = {-9, -2}, direction = 124},
                 },
                 production_type = "input"
             },
@@ -90,11 +91,11 @@ data:extend({
                 base_area = 1,
                 height = 2,
                 base_level = 1,
-              volume = 100,
+              volume = 1000,
                 
                 pipe_connections =
                 {
-                  {flow_direction = "output", position = {-10, -1}, direction = 0},
+                  {flow_direction = "output", position = {9, -2}, direction = 4},
                 },
                 production_type = "output"
             },
@@ -102,11 +103,23 @@ data:extend({
               base_area = 1,
               height = 2,
               base_level = 1,
-              volume = 100,
+              volume = 1000,
               
               pipe_connections =
               {
-                {flow_direction = "output", position = {-10, 1}, direction = 0},
+                {flow_direction = "output", position = {9, 0}, direction = 4},
+              },
+              production_type = "output"
+            },
+            { 
+              base_area = 1,
+              height = 2,
+              base_level = 1,
+              volume = 1000,
+              
+              pipe_connections =
+              {
+                {flow_direction = "output", position = {9, 2}, direction = 4},
               },
               production_type = "output"
             },
@@ -119,7 +132,7 @@ data:extend({
               filename = sprite('base.png'),
               size = {1080, 1080},
               scale = 0.58,
-              shift = {-1.0, 0.2},
+              shift = {0, 0.2},
               line_length = 1,
               lines_per_file = 1,
               frame_count = 1,
@@ -136,7 +149,7 @@ data:extend({
                 lines_per_file = 3,
                 frame_count = 9,
                 animation_speed = 0.3,
-                shift = {-1.0, 0.2} 
+                shift = {0, 0.2} 
               }
             }
           },
