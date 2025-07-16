@@ -70,7 +70,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "input", position = {2, 6}, direction = 0}
+              {flow_direction = "input", position = {2, 6}, direction = 8}
             },
             production_type = "input"
           },
@@ -110,7 +110,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "output", position = {-2, 6}, direction = 0}
+              {flow_direction = "output", position = {-2, 6}, direction = 8}
             },
             production_type = "output"
           }
@@ -190,7 +190,7 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {flow_direction = "input", position = {2, 6}, direction = 0}
+            {flow_direction = "input", position = {2, 6}, direction = 8}
           },
           production_type = "input"
         },
@@ -230,7 +230,7 @@ data:extend({
           pipe_picture = grey_south_pipe_picture,
           pipe_connections =
           {
-            {flow_direction = "output", position = {-2, 6}, direction = 0}
+            {flow_direction = "output", position = {-2, 6}, direction = 8}
           },
           production_type = "output"
         }

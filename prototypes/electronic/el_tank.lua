@@ -90,21 +90,21 @@ data:extend({
             base_area = 5000,
             height = 1,
             base_level = 0,
-            volume = 100,
+            volume = 100000,
             pipe_covers = pipecoverspictures(),
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "input-output", position = {-3, 1}, direction = 0},
-              {flow_direction = "input-output", position = {-3, -1}, direction = 0},
+              {flow_direction = "input-output", position = {-3, 1}, direction = 12},
+              {flow_direction = "input-output", position = {-3, -1}, direction = 12},
 
-              {flow_direction = "input-output", position = {3, 1}, direction = 0},
-              {flow_direction = "input-output", position = {3, -1}, direction = 0},
+              {flow_direction = "input-output", position = {3, 1}, direction = 4},
+              {flow_direction = "input-output", position = {3, -1}, direction = 4},
 
-              {flow_direction = "input-output", position = {1, 3}, direction = 0},
+              {flow_direction = "input-output", position = {1, 3}, direction = 8},
               {flow_direction = "input-output", position = {1, -3}, direction = 0},
 
-              {flow_direction = "input-output", position = {-1, 3}, direction = 0},
+              {flow_direction = "input-output", position = {-1, 3}, direction = 8},
               {flow_direction = "input-output", position = {-1, -3}, direction = 0}
             },
             production_type = "input-output"

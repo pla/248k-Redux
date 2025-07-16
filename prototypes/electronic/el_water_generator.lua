@@ -73,8 +73,8 @@ data:extend({
             pipe_covers = pipecoverspictures(),
             pipe_picture = south_basic_pipe_picture,
             pipe_connections = {
-                {flow_direction = "input-output", position = {1, 0}, direction = 0},  
-                {flow_direction = "input-output", position = {-1, 0}, direction = 0},  
+                {flow_direction = "input-output", position = {1, 0}, direction = 4},  
+                {flow_direction = "input-output", position = {-1, 0}, direction = 12},  
             },
         },
         fluid_input = {

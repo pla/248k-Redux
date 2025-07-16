@@ -61,7 +61,7 @@ data:extend({
               pipe_picture = grey_south_pipe_picture,
               pipe_connections =
               {
-                {flow_direction = "output", position = {0, 1}, direction = 0},
+                {flow_direction = "output", position = {0, 1}, direction = 8},
               },
               production_type = "output"
             },

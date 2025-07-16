@@ -122,7 +122,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 4},
+                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -150,7 +150,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 12},
+                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 8},
                 },
                 production_type = "input"
             },
@@ -272,7 +272,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 4},
+                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -300,7 +300,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 12},
+                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 8},
                 },
                 production_type = "input"
             },
@@ -314,7 +314,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {2.5, 0.5}, direction = 0},
+                  {flow_direction = "input", position = {2.5, 0.5}, direction = 4},
                 },
                 production_type = "input"
             },
@@ -450,7 +450,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 4},
+                  {flow_direction = "input", position = {-0.5, -2.5}, direction = 0},
                 },
                 production_type = "input"
             },
@@ -478,7 +478,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 12},
+                  {flow_direction = "input", position = {-0.5, 2.5}, direction = 8},
                 },
                 production_type = "input"
             },
@@ -492,7 +492,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {2.5, 0.5}, direction = 0},
+                  {flow_direction = "input", position = {2.5, 0.5}, direction = 4},
                 },
                 production_type = "input"
             },
@@ -506,7 +506,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {2.5, -0.5}, direction = 0},
+                  {flow_direction = "input", position = {2.5, -0.5}, direction = 4},
                 },
                 production_type = "input"
             },
@@ -520,7 +520,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-2.5, 0.5}, direction = 0},
+                  {flow_direction = "input", position = {-2.5, 0.5}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -534,7 +534,7 @@ data:extend({
                 pipe_picture = grey_south_long_north_pipe_picture,
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {-2.5, -0.5}, direction = 0},
+                  {flow_direction = "input", position = {-2.5, -0.5}, direction = 12},
                 },
                 production_type = "input"
             }

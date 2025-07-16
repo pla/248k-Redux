@@ -49,7 +49,6 @@ data:extend({
         },
         energy_usage = '1GW',
         --fluids
-        flow_rate = 5000,
         fluid_boxes = {
             --in
             --left

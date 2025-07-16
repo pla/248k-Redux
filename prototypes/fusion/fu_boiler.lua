@@ -73,7 +73,7 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {flow_direction = "input", position = {-1.5, -0.5}, direction = 0}
+                {flow_direction = "input", position = {-1.5, -0.5}, direction = 12}
               },
               production_type = "input"
             },
@@ -86,7 +86,7 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {flow_direction = "output", position = {1.5, -0.5}, direction = 0}
+                {flow_direction = "output", position = {1.5, -0.5}, direction = 4}
               },
               production_type = "output"
             },
@@ -99,7 +99,7 @@ data:extend({
               pipe_covers = pipecoverspictures(),
               pipe_connections =
               {
-                {flow_direction = "output", position = {0.5, 1.5}, direction = 0}
+                {flow_direction = "output", position = {0.5, 1.5}, direction = 8}
               },
               production_type = "output"
             },

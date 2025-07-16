@@ -76,7 +76,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "input", position = {-1, 0}, direction = 4}
+              {flow_direction = "input", position = {-1, 0}, direction = 12}
             },
             production_type = "input"
           },
@@ -90,7 +90,7 @@ data:extend({
             pipe_picture = grey_south_pipe_picture,
             pipe_connections =
             {
-              {flow_direction = "output", position = {1, 0}, direction = 12},
+              {flow_direction = "output", position = {1, 0}, direction = 4},
               --{type = "output", position = {2, -2.5}}
             },
             production_type = "output"

@@ -24,7 +24,7 @@ function gui.add_core_gui(e,update)
 
     if update then
         player = e
-        id = global.ki.gui.core.id
+        id = storage.ki.gui.core.id
     else
         player = game.get_player(e["player_index"])
         id = e["entity"].unit_number
@@ -36,16 +36,16 @@ function gui.add_core_gui(e,update)
 
     if player.gui.left["main248kcoreframe"] then
         player.gui.left["main248kcoreframe"].destroy()
-        global.ki.gui.core = {}
+        storage.ki.gui.core = {}
         return
     end
 
-    if global.ki then
-        if global.ki.core then
-            if not global.ki.core[id] then
+    if storage.ki then
+        if storage.ki.core then
+            if not storage.ki.core[id] then
                 if player.gui.left["main248kcoreframe"] then
                     player.gui.left["main248kcoreframe"].destroy()
-                    global.ki.gui.core = {}
+                    storage.ki.gui.core = {}
                     return
                 else
                     return
@@ -55,8 +55,8 @@ function gui.add_core_gui(e,update)
     end
 
 
-    local channel = global.ki.core[id].channel
-    local linked = #global.ki.channel[channel].beacons
+    local channel = storage.ki.core[id].channel
+    local linked = #storage.ki.channel[channel].beacons
 
     local main248kcoreframe = player.gui.left.add({
         type = "frame",
@@ -87,7 +87,7 @@ function gui.add_core_gui(e,update)
         name = "main248kcorechannelslider",
         value = channel,
         minimun_value = 1,
-        maximum_value = #global.ki.channel + 1,
+        maximum_value = #storage.ki.channel + 1,
         style = "notched_slider"
     })
 
@@ -120,14 +120,14 @@ function gui.add_core_gui(e,update)
         caption = linked
     })
 
-    global.ki.gui.core.frame = main248kcoreframe
-    global.ki.gui.core.id = id
+    storage.ki.gui.core.frame = main248kcoreframe
+    storage.ki.gui.core.id = id
 end
 
 function gui.add_main_gui(player)
     if player.gui.left["main248kframe"] then
         player.gui.left["main248kframe"].destroy()
-        global.ki.gui.main = {}
+        storage.ki.gui.main = {}
     end
 
     local main248kframe = player.gui.left.add({
@@ -157,9 +157,9 @@ function gui.add_main_gui(player)
     local main248kprefchannelslider = main248kprefchannelframe.add({
         type = "slider",
         name = "main248kprefchannelslider",
-        value = global.ki.standardchannel,
+        value = storage.ki.standardchannel,
         minimun_value = 0,
-        maximum_value = #global.ki.channel + 1,
+        maximum_value = #storage.ki.channel + 1,
         style = "notched_slider"
     })
 
@@ -167,7 +167,7 @@ function gui.add_main_gui(player)
         type = "textfield",
         name = "main248kprefchanneltextfield",
         numeric = "true",
-        text = global.ki.standardchannel
+        text = storage.ki.standardchannel
     })
     main248kprefchanneltextfield.style.maximal_width = 30
 
@@ -189,7 +189,7 @@ function gui.add_main_gui(player)
     local main248ksupportedlabel = main248ksupportedframe.add({
         type = "label",
         name = "main248ksupportedlabel",
-        caption = global.ki.supported
+        caption = storage.ki.supported
     })
 
     local main248ktotalframe = main248kcontentframe.add({
@@ -203,7 +203,7 @@ function gui.add_main_gui(player)
     local main248ktotallabel = main248ktotalframe.add({
         type = "label",
         name = "main248ktotallabel",
-        caption = global.ki.total
+        caption = storage.ki.total
     })
 
     local main248kselectchannelframe = main248kcontentframe.add({
@@ -217,9 +217,9 @@ function gui.add_main_gui(player)
     local main248kselectchannelslider = main248kselectchannelframe.add({
         type = "slider",
         name = "main248kselectchannelslider",
-        value = global.ki.selectchannel,
+        value = storage.ki.selectchannel,
         minimun_value = 0,
-        maximum_value = #global.ki.channel + 1,
+        maximum_value = #storage.ki.channel + 1,
         style = "notched_slider"
     })
 
@@ -227,7 +227,7 @@ function gui.add_main_gui(player)
         type = "textfield",
         name = "main248kselectchanneltextfield",
         numeric = "true",
-        text = global.ki.selectchannel
+        text = storage.ki.selectchannel
     })
     main248kselectchanneltextfield.style.maximal_width = 30
 
@@ -238,7 +238,7 @@ function gui.add_main_gui(player)
         style = mod_gui.button_style
     })
 
-    global.ki.gui.main.frame = main248kframe
+    storage.ki.gui.main.frame = main248kframe
 end
 
 function gui.add_buffer1_gui(e,update)
@@ -247,7 +247,7 @@ function gui.add_buffer1_gui(e,update)
 
     if update then
         player = e
-        id = global.ki.gui.buffer1.id
+        id = storage.ki.gui.buffer1.id
     else
         player = game.get_player(e["player_index"])
         id = e["entity"].unit_number
@@ -259,16 +259,16 @@ function gui.add_buffer1_gui(e,update)
 
     if player.gui.left["main248kbuffer1frame"] then
         player.gui.left["main248kbuffer1frame"].destroy()
-        global.ki.gui.buffer1 = {}
+        storage.ki.gui.buffer1 = {}
         return
     end
 
-    if global.ki then
-        if global.ki.buffer1 then
-            if not global.ki.buffer1[id] then
+    if storage.ki then
+        if storage.ki.buffer1 then
+            if not storage.ki.buffer1[id] then
                 if player.gui.left["main248kbuffer1frame"] then
                     player.gui.left["main248kbuffer1frame"].destroy()
-                    global.ki.gui.buffer1 = {}
+                    storage.ki.gui.buffer1 = {}
                     return
                 else
                     return
@@ -277,7 +277,7 @@ function gui.add_buffer1_gui(e,update)
         end
     end
 
-    local channel = global.ki.buffer1[id].channel
+    local channel = storage.ki.buffer1[id].channel
 
     local main248kbuffer1frame = player.gui.left.add({
         type = "frame",
@@ -308,7 +308,7 @@ function gui.add_buffer1_gui(e,update)
         name = "main248kbuffer1channelslider",
         value = channel,
         minimun_value = 1,
-        maximum_value = #global.ki.channel + 1,
+        maximum_value = #storage.ki.channel + 1,
         style = "notched_slider"
     })
 
@@ -327,8 +327,8 @@ function gui.add_buffer1_gui(e,update)
         style = mod_gui.button_style
     })
 
-    global.ki.gui.buffer1.frame = main248kbuffer1frame
-    global.ki.gui.buffer1.id = id
+    storage.ki.gui.buffer1.frame = main248kbuffer1frame
+    storage.ki.gui.buffer1.id = id
 end
 
 function gui.add_buffer2_gui(e,update)
@@ -337,7 +337,7 @@ function gui.add_buffer2_gui(e,update)
 
     if update then
         player = e
-        id = global.ki.gui.buffer2.id
+        id = storage.ki.gui.buffer2.id
     else
         player = game.get_player(e["player_index"])
         id = e["entity"].unit_number
@@ -349,16 +349,16 @@ function gui.add_buffer2_gui(e,update)
 
     if player.gui.left["main248kbuffer2frame"] then
         player.gui.left["main248kbuffer2frame"].destroy()
-        global.ki.gui.buffer2 = {}
+        storage.ki.gui.buffer2 = {}
         return
     end
 
-    if global.ki then
-        if global.ki.buffer2 then
-            if not global.ki.buffer2[id] then
+    if storage.ki then
+        if storage.ki.buffer2 then
+            if not storage.ki.buffer2[id] then
                 if player.gui.left["main248kbuffer2frame"] then
                     player.gui.left["main248kbuffer2frame"].destroy()
-                    global.ki.gui.buffer2 = {}
+                    storage.ki.gui.buffer2 = {}
                     return
                 else
                     return
@@ -367,7 +367,7 @@ function gui.add_buffer2_gui(e,update)
         end
     end
 
-    local channel = global.ki.buffer2[id].channel
+    local channel = storage.ki.buffer2[id].channel
 
     local main248kbuffer2frame = player.gui.left.add({
         type = "frame",
@@ -398,7 +398,7 @@ function gui.add_buffer2_gui(e,update)
         name = "main248kbuffer2channelslider",
         value = channel,
         minimun_value = 1,
-        maximum_value = #global.ki.channel + 1,
+        maximum_value = #storage.ki.channel + 1,
         style = "notched_slider"
     })
 
@@ -417,8 +417,8 @@ function gui.add_buffer2_gui(e,update)
         style = mod_gui.button_style
     })
 
-    global.ki.gui.buffer2.frame = main248kbuffer2frame
-    global.ki.gui.buffer2.id = id
+    storage.ki.gui.buffer2.frame = main248kbuffer2frame
+    storage.ki.gui.buffer2.id = id
 end
 
 --=================================================================================
@@ -444,9 +444,9 @@ function gui.on_change(e)
                 if player.cursor_stack.can_set_stack({name = "el_ki_selection_tool"}) then
                     player.cursor_stack.set_stack({name = "el_ki_selection_tool"})
 
-                    if global.ki.gui.main then
-                        if global.ki.gui.main.frame then
-                            local main248kframe = global.ki.gui.main.frame -- this global value(gui element) need to be defined per player
+                    if storage.ki.gui.main then
+                        if storage.ki.gui.main.frame then
+                            local main248kframe = storage.ki.gui.main.frame -- this storage value(gui element) need to be defined per player
                             --Quick and dirty remedy for crash that can cause in multiplay
                             if not (
                                 main248kframe.valid
@@ -476,11 +476,11 @@ function gui.on_change(e)
             end
 
             if element == "main248kcorechannelbutton" then
-                if global.ki.gui.core then
-                    if (global.ki.gui.core.frame and global.ki.gui.core.id) then
+                if storage.ki.gui.core then
+                    if (storage.ki.gui.core.frame and storage.ki.gui.core.id) then
 
-                        local main248kcoreframe = global.ki.gui.core.frame
-                        local id = global.ki.gui.core.id -- this global value(gui element) need to be defined per player
+                        local main248kcoreframe = storage.ki.gui.core.frame
+                        local id = storage.ki.gui.core.id -- this storage value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
                         if not (
                             main248kcoreframe.valid
@@ -506,11 +506,11 @@ function gui.on_change(e)
             end
 
             if element == "main248kbuffer1channelbutton" then
-                if global.ki.gui.buffer1 then
-                    if (global.ki.gui.buffer1.frame and global.ki.gui.buffer1.id) then
+                if storage.ki.gui.buffer1 then
+                    if (storage.ki.gui.buffer1.frame and storage.ki.gui.buffer1.id) then
 
-                        local main248kbuffer1frame = global.ki.gui.buffer1.frame
-                        local id = global.ki.gui.buffer1.id -- this global value(gui element) need to be defined per player
+                        local main248kbuffer1frame = storage.ki.gui.buffer1.frame
+                        local id = storage.ki.gui.buffer1.id -- this storage value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
                         if not (
                             main248kbuffer1frame.valid
@@ -536,11 +536,11 @@ function gui.on_change(e)
             end
 
             if element == "main248kbuffer2channelbutton" then
-                if global.ki.gui.buffer2 then
-                    if (global.ki.gui.buffer2.frame and global.ki.gui.buffer2.id) then
+                if storage.ki.gui.buffer2 then
+                    if (storage.ki.gui.buffer2.frame and storage.ki.gui.buffer2.id) then
 
-                        local main248kbuffer2frame = global.ki.gui.buffer2.frame
-                        local id = global.ki.gui.buffer2.id -- this global value(gui element) need to be defined per player
+                        local main248kbuffer2frame = storage.ki.gui.buffer2.frame
+                        local id = storage.ki.gui.buffer2.id -- this storage value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
                         if not (
                             main248kbuffer2frame.valid
@@ -566,9 +566,9 @@ function gui.on_change(e)
             end
 
             if element == "main248kprefchannelbutton" then
-                if global.ki.gui.main then
-                    if global.ki.gui.main.frame then
-                        local main248kframe = global.ki.gui.main.frame -- this global value(gui element) need to be defined per player
+                if storage.ki.gui.main then
+                    if storage.ki.gui.main.frame then
+                        local main248kframe = storage.ki.gui.main.frame -- this storage value(gui element) need to be defined per player
                         --Quick and dirty remedy for crash that can cause in multiplay
                         if not (
                             main248kframe.valid
@@ -628,23 +628,23 @@ function gui.on_selected(e)
                         for i,v in pairs(e["entities"]) do
                             if (v.name == 'el_ki_beacon_entity') or (v.name == 'fi_ki_beacon_entity') or (v.name == 'fu_ki_beacon_entity') then
                                 local id = v.unit_number
-                                local oldchannel = global.ki.beacon[id].channel
+                                local oldchannel = storage.ki.beacon[id].channel
 
-                                for x,f in pairs(global.ki.channel[oldchannel].beacons) do
+                                for x,f in pairs(storage.ki.channel[oldchannel].beacons) do
                                     if f == id then
-                                        table.remove(global.ki.channel[oldchannel].beacons, x)
+                                        table.remove(storage.ki.channel[oldchannel].beacons, x)
                                         break
                                     end
                                 end
 
-                                global.ki.beacon[id].channel = global.ki.selectchannel
-                                table.insert(global.ki.channel[global.ki.selectchannel].beacons, id)
+                                storage.ki.beacon[id].channel = storage.ki.selectchannel
+                                table.insert(storage.ki.channel[storage.ki.selectchannel].beacons, id)
 
-                                player.create_local_flying_text({text="CH "..tostring(global.ki.selectchannel), position=v.position})
+                                player.create_local_flying_text({text="CH "..tostring(storage.ki.selectchannel), position=v.position})
                             end
                         end
 
-                        global.ki.dirty = true
+                        storage.ki.dirty = true
                         gui.update_main()
                     end
                 end
@@ -694,7 +694,7 @@ function change_valid_channel(slider_channel,text_channel,id)
         return
     end
 
-    if not (slider_channel ==  global.ki.core[id].channel) then
+    if not (slider_channel ==  storage.ki.core[id].channel) then
         if is_valid_channel(slider_channel,"core") then
             change_channel(id,slider_channel,"core")
         end
@@ -702,7 +702,7 @@ function change_valid_channel(slider_channel,text_channel,id)
         return
     end
 
-    if not (text_channel ==  global.ki.core[id].channel) then
+    if not (text_channel ==  storage.ki.core[id].channel) then
         if is_valid_channel(text_channel,"core") then
             change_channel(id,text_channel,"core")
         end
@@ -721,7 +721,7 @@ function change_valid_bufferchannel(slider_channel,text_channel,id,object)
         return
     end
 
-    if not (slider_channel ==  global.ki[object][id].channel) then
+    if not (slider_channel ==  storage.ki[object][id].channel) then
         if is_valid_channel(slider_channel,object) then
             change_channel(id,slider_channel,object)
         end
@@ -729,7 +729,7 @@ function change_valid_bufferchannel(slider_channel,text_channel,id,object)
         return
     end
 
-    if not (text_channel ==  global.ki[object][id].channel) then
+    if not (text_channel ==  storage.ki[object][id].channel) then
         if is_valid_channel(text_channel,object) then
             change_channel(id,slider_channel,object)
         end
@@ -741,23 +741,23 @@ end
 function change_valid_standardchannel(slider_channel,text_channel)
     if slider_channel == text_channel then
         if is_valid_standardchannel(slider_channel) then
-            global.ki.standardchannel = slider_channel
+            storage.ki.standardchannel = slider_channel
         end
         gui.update_main()
         return
     end
 
-    if not (slider_channel ==  global.ki.standardchannel) then
+    if not (slider_channel ==  storage.ki.standardchannel) then
         if is_valid_standardchannel(slider_channel) then
-            global.ki.standardchannel = slider_channel
+            storage.ki.standardchannel = slider_channel
         end
         gui.update_main()
         return
     end
 
-    if not (text_channel ==  global.ki.standardchannel) then
+    if not (text_channel ==  storage.ki.standardchannel) then
         if is_valid_standardchannel(text_channel) then
-            global.ki.standardchannel = text_channel
+            storage.ki.standardchannel = text_channel
         end
         gui.update_main()
         return
@@ -767,23 +767,23 @@ end
 function change_valid_selectchannel(slider_channel,text_channel)
     if slider_channel == text_channel then
         if is_valid_standardchannel(slider_channel) then
-            global.ki.selectchannel = slider_channel
+            storage.ki.selectchannel = slider_channel
         end
         gui.update_main()
         return
     end
 
-    if not (slider_channel ==  global.ki.selectchannel) then
+    if not (slider_channel ==  storage.ki.selectchannel) then
         if is_valid_standardchannel(slider_channel) then
-            global.ki.selectchannel = slider_channel
+            storage.ki.selectchannel = slider_channel
         end
         gui.update_main()
         return
     end
 
-    if not (text_channel ==  global.ki.selectchannel) then
+    if not (text_channel ==  storage.ki.selectchannel) then
         if is_valid_standardchannel(text_channel) then
-            global.ki.selectchannel = text_channel
+            storage.ki.selectchannel = text_channel
         end
         gui.update_main()
         return
@@ -791,8 +791,8 @@ function change_valid_selectchannel(slider_channel,text_channel)
 end
 
 function is_valid_channel(channel,object)
-    if #global.ki.channel >= channel then
-        if not global.ki.channel[channel][object] then
+    if #storage.ki.channel >= channel then
+        if not storage.ki.channel[channel][object] then
             return true
         end
     end
@@ -800,17 +800,17 @@ function is_valid_channel(channel,object)
 end
 
 function is_valid_standardchannel(channel)
-    if #global.ki.channel >= channel then
+    if #storage.ki.channel >= channel then
         return true
     end
     return false
 end
 
 function change_channel(id,new_channel,type)
-    global.ki.channel[global.ki[type][id].channel][type] = nil
-    global.ki[type][id].channel = new_channel
-    global.ki.channel[new_channel][type] = id
-    global.ki.dirty = true
+    storage.ki.channel[storage.ki[type][id].channel][type] = nil
+    storage.ki[type][id].channel = new_channel
+    storage.ki.channel[new_channel][type] = id
+    storage.ki.dirty = true
 end
 
 return gui
