@@ -3,7 +3,7 @@
 --TODO
 --===================================================================================================================
 
---init global 
+--init storage 
 --when builded register
 --when destroyed unregister
 
@@ -14,7 +14,7 @@
 --check nth tick for stabilizer and other
 
 --calc output, stable
---write in global
+--write in storage
 
 --output power, clear inv
 
@@ -173,7 +173,7 @@ end
 function unregister_black_hole(entity)
     local unit = entity.unit_number
     if storage.black_hole.base[unit].energy then
-        --game.print("unregister base.energy: "..global.black_hole.base[unit].energy)
+        --game.print("unregister base.energy: "..storage.black_hole.base[unit].energy)
         unregister_black_hole_energy(nil,storage.black_hole.base[unit].energy)
         unregister_black_hole_base(entity,nil)
     else

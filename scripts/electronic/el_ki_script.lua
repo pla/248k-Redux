@@ -529,8 +529,8 @@ function el_ki_buffer2_working()
         end
     end
 end
-
-function el_ki_core_update()
+--Funcion original
+--[[function el_ki_core_update()
     for i in pairs(storage.ki.core) do
 
         storage.ki.core[i].oldmodules = util.table.deepcopy(storage.ki.core[i].modules)
@@ -560,9 +560,53 @@ function el_ki_core_update()
             end
         end
     end 
+end]]
+
+function el_ki_core_update()
+    if not storage.ki or not storage.ki.core then return end
+
+    for i, core in pairs(storage.ki.core) do
+        core.oldmodules = util.table.deepcopy(core.modules or {})
+
+        local slave = core.slave
+        if slave and slave.valid then
+            local slaveinv = slave.get_module_inventory()
+            local slavemodules = slaveinv and slaveinv.get_contents() or {}
+
+            core.modules = {}
+
+            for module_name, count in pairs(slavemodules) do
+                local amount = tonumber(count) or 0
+                for _ = 1, amount do
+                    table.insert(core.modules, module_name)
+                end
+            end
+        else
+            core.modules = {}
+        end
+
+        local changed = false
+
+        if #core.modules ~= #core.oldmodules then
+            changed = true
+        else
+            for index, module in ipairs(core.modules) do
+                if module ~= core.oldmodules[index] then
+                    changed = true
+                    break
+                end
+            end
+        end
+
+        if changed then
+            storage.ki.dirty = true
+        end
+    end
 end
 
-function el_ki_buffer1_update()
+
+--Funcion original
+--[[function el_ki_buffer1_update()
     for i in pairs(storage.ki.buffer1) do
 
         storage.ki.buffer1[i].oldmodules = util.table.deepcopy(storage.ki.buffer1[i].modules)
@@ -592,7 +636,50 @@ function el_ki_buffer1_update()
             end
         end
     end
+end]]
+
+function el_ki_buffer1_update()
+    if not storage.ki or not storage.ki.buffer1 then return end
+
+    for i, buffer in pairs(storage.ki.buffer1) do
+        buffer.oldmodules = util.table.deepcopy(buffer.modules or {})
+
+        local slave = buffer.slave
+        if slave and slave.valid then
+            local slaveinv = slave.get_module_inventory()
+            local slavemodules = slaveinv and slaveinv.get_contents() or {}
+
+            buffer.modules = {}
+
+            for module_name, count in pairs(slavemodules) do
+                local amount = tonumber(count) or 0
+                for _ = 1, amount do
+                    table.insert(buffer.modules, module_name)
+                end
+            end
+        else
+            buffer.modules = {}
+        end
+
+        local changed = false
+
+        if #buffer.modules ~= #buffer.oldmodules then
+            changed = true
+        else
+            for index, module in ipairs(buffer.modules) do
+                if module ~= buffer.oldmodules[index] then
+                    changed = true
+                    break
+                end
+            end
+        end
+
+        if changed then
+            storage.ki.dirty = true
+        end
+    end
 end
+
 
 function el_ki_buffer2_update()
     for i in pairs(storage.ki.buffer2) do
@@ -708,8 +795,25 @@ function get_unsupported_beacons()
     return unsupported
 end
 
-function make_beacon_text(entity)
+--Funcion original
+--[[function make_beacon_text(entity)
     entity.surface.create_entity({name="flying-text", position=entity.position, text="CH: "..storage.ki.beacon[entity.unit_number].channel, color={r=1, g=1, b=1}})
+end]] 
+
+function make_beacon_text(entity)
+  local channel = storage.ki.beacon[entity.unit_number] and storage.ki.beacon[entity.unit_number].channel or "?"
+  
+  rendering.draw_text{
+    text = "CH: " .. channel,
+    color = {r = 1, g = 1, b = 1},
+    surface = entity.surface,
+    position = entity.position,
+    target = entity,
+    target_offset = {0, -1.5},
+    alignment = "center",
+    use_rich_text = false,
+    time_to_live = 120
+  }
 end
 
 function remove_request_ghost(entity)
@@ -927,7 +1031,7 @@ function make_container_ki_buffer2(entity)
     storage.ki.buffer2[entity.unit_number]["container"] = container
 end
 
-function destroy_slave_ki_core(entity,slave,plyer_index,robot)
+function destroy_slave_ki_core(entity,slave,player_index,robot)
     local id = entity.unit_number
     local success = false
     
