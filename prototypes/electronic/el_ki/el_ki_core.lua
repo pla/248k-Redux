@@ -232,6 +232,7 @@ data:extend({
             height = 64
         },
         inventory_size = 20,
+        module_slots = 2,
     },
     --===============================================================
     {
@@ -410,6 +411,7 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     },
     --===============================================================
     {
@@ -616,5 +618,6 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     }
 })
