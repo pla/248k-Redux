@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_water_generator/el_water_generator_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_water_generator/el_water_generator_'..name
 end
 
 local function water_output()

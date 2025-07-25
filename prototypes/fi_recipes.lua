@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/'..name
+    return '__248k-Redux-graphics__/ressources/'..name
 end
 
 data:extend({
@@ -951,10 +951,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_stone.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_stone.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -983,10 +983,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_iron.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_iron.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -1015,10 +1015,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_copper.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_copper.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',
@@ -1048,10 +1048,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_uranium.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_uranium.png"
             }
         },
         subgroup = 'fi_item_subgroup_f',

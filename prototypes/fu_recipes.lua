@@ -196,10 +196,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -224,10 +224,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -252,10 +252,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -279,10 +279,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1656,7 +1656,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"recipe-name.fu_burn_oxygen_recipe"},
         category = 'fu_burner_category',
-        icon = '__248k-Redux__/ressources/elements/fu_oxygen.png',
+        icon = '__248k-Redux-graphics__/ressources/elements/fu_oxygen.png',
         icon_size = 64,
         enabled = true,
         hidden = true,
@@ -1840,10 +1840,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1870,10 +1870,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1900,10 +1900,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1927,10 +1927,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -2161,10 +2161,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_slag.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_slag.png"
             }
         },
     },

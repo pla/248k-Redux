@@ -6,6 +6,7 @@
     "factorio_version": "2.0",
     "description": "Port of the 248k mod by PreLeyZero from 1.1 to Factorio 2.0. May have compatibility issues with other mods.",
     "dependencies": [
-        "base >= 2.0.0"
+        "base >= 2.0.0",
+        "248k-Redux-graphics >= 1.0.0"
     ]
 }

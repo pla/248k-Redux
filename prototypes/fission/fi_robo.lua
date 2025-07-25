@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/fission/fi_robo/fi_robo_'..name
+    return '__248k-Redux-graphics__/ressources/fission/fi_robo/fi_robo_'..name
 end
 
 --item
@@ -138,7 +138,7 @@ data:extend({
         },
 		circuit_connector_sprites = {
             led_red = {
-                filename = "__248k-Redux__/ressources/64x64_empty.png",
+                filename = "__248k-Redux-graphics__/ressources/64x64_empty.png",
                 width = 64,
                 height = 64,
                 shift = {0, 0},
@@ -146,7 +146,7 @@ data:extend({
                 size = 1
             },
             led_green = {
-                filename = "__248k-Redux__/ressources/64x64_empty.png",
+                filename = "__248k-Redux-graphics__/ressources/64x64_empty.png",
                 width = 64,
                 height = 64,
                 shift = {0, 0},
@@ -154,7 +154,7 @@ data:extend({
                 size = 1
             },
             led_blue = {
-                filename = "__248k-Redux__/ressources/64x64_empty.png",
+                filename = "__248k-Redux-graphics__/ressources/64x64_empty.png",
                 width = 64,
                 height = 64,
                 shift = {0, 0},
@@ -162,7 +162,7 @@ data:extend({
                 size = 1
             },
             led_light = {
-                filename = "__248k-Redux__/ressources/64x64_empty.png",
+                filename = "__248k-Redux-graphics__/ressources/64x64_empty.png",
                 width = 64,
                 height = 64,
                 shift = {0, 0},

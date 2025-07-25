@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/gravitation/gr_lab/gr_lab_'..name
+    return '__248k-Redux-graphics__/ressources/gravitation/gr_lab/gr_lab_'..name
 end
 
 --item

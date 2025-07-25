@@ -308,7 +308,7 @@ data:extend({
         type = 'recipe',
         enabled = 'false',
         category = 'el_special_fluid',
-        icon = '__248k-Redux__/ressources/fluids/el_pressurized_water.png',
+        icon = '__248k-Redux-graphics__/ressources/fluids/el_pressurized_water.png',
         icon_size = 64,
         main_product = 'el_pressurized_water',
         ingredients = {
@@ -408,4 +408,4 @@ table.insert(data.raw.lab['biusart-lab'].inputs, 'fu_space_probe_science_item')
 table.insert(data.raw.lab['biusart-lab'].inputs, 'fi_ki_science')
 table.insert(data.raw.lab['biusart-lab'].inputs, 'fu_ki_science')
 
-data.raw.tool["fu_space_probe_science_item"].icon = "__248k-Redux__/ressources/fusion/fu_space_probe/fu_space_probe_science_item_krastorio.png"
+data.raw.tool["fu_space_probe_science_item"].icon = "__248k-Redux-graphics__/ressources/fusion/fu_space_probe/fu_space_probe_science_item_krastorio.png"
