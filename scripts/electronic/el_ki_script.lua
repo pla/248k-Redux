@@ -77,7 +77,6 @@ end
 --=================================================================================
 
 function el_ki_on_built(e)
-    
     if e['created_entity'] then
         if e['created_entity'].name == 'el_ki_core_entity' then
             make_ki_core(e['created_entity'])
@@ -469,34 +468,26 @@ end
 function el_ki_buffer1_working() 
     for i in pairs(storage.ki.buffer1) do
         if storage.ki.buffer1[i].entity.valid then
+            local entity = storage.ki.buffer1[i].entity
             local oldactive = storage.ki.buffer1[i].active
-            storage.ki.buffer1[i].active = storage.ki.buffer1[i].entity.is_crafting()
 
+            storage.ki.buffer1[i].active = entity.is_crafting()
             if storage.ki.buffer1[i].active then
-                if storage.ki.buffer1[i].entity.energy < storage.ki.buffer1[i].entity.prototype.energy_usage then
+                if entity.energy < entity.prototype.energy_usage then
                     storage.ki.buffer1[i].active = false
                     storage.ki.dirty = true
                 end
             end
 
-            if not oldactive == storage.ki.buffer1[i].active then
+            if oldactive ~= storage.ki.buffer1[i].active then
                 storage.ki.dirty = true
             end
-
-            --if storage.ki.buffer1[i].entity.products_finished >= 3 then
-            --    if storage.ki.buffer1[i].container then
-            --        local container = storage.ki.buffer1[i].container
-            --        local container_inv = container.get_inventory(defines.inventory.chest)
-
-            --        if container_inv.can_insert({name='fi_ki_science', count=1}) then
-            --            container_inv.insert({name='fi_ki_science', count=1})
-            --            storage.ki.buffer1[i].entity.products_finished = 0
-            --        end
-            --    end
-            --end
+        else
         end
     end
 end
+
+
 
 function el_ki_buffer2_working() 
     for i in pairs(storage.ki.buffer2) do
@@ -514,204 +505,152 @@ function el_ki_buffer2_working()
             if not oldactive == storage.ki.buffer2[i].active then
                 storage.ki.dirty = true
             end
-
-            --if storage.ki.buffer2[i].entity.products_finished >= 3 then
-            --    if storage.ki.buffer2[i].container then
-            --        local container = storage.ki.buffer2[i].container
-            --        local container_inv = container.get_inventory(defines.inventory.chest)
-
-            --        if container_inv.can_insert({name='fu_ki_science', count=1}) then
-            --            container_inv.insert({name='fu_ki_science', count=1})
-            --            storage.ki.buffer2[i].entity.products_finished = 0
-            --        end
-            --    end
-            --end
         end
     end
 end
---Funcion original
---[[function el_ki_core_update()
-    for i in pairs(storage.ki.core) do
 
-        storage.ki.core[i].oldmodules = util.table.deepcopy(storage.ki.core[i].modules)
-
-        if storage.ki.core[i].slave then
-            if storage.ki.core[i].slave.valid then
-                local slaveinv = storage.ki.core[i].slave.get_module_inventory()
-                local slavemodules = slaveinv.get_contents()
-                storage.ki.core[i].modules = {}
-            
-                for x,v in pairs(slavemodules) do 
-                    for f=1,v,1 do 
-                        table.insert(storage.ki.core[i].modules,x)
-                    end
-                end
-            end
-        end
-
-        if not (#storage.ki.core[i].modules == #storage.ki.core[i].oldmodules) then
-            storage.ki.dirty = true
-        else
-            for x,v in pairs(storage.ki.core[i].modules) do
-                if not v == storage.ki.core[i].oldmodules[x] then
-                    storage.ki.dirty = true
-                    break
-                end
-            end
-        end
-    end 
-end]]
-
+--Actualizado
 function el_ki_core_update()
-    if not storage.ki or not storage.ki.core then return end
+  if not storage.ki or not storage.ki.core then return end
 
-    for i, core in pairs(storage.ki.core) do
-        core.oldmodules = util.table.deepcopy(core.modules or {})
+  for i, core in pairs(storage.ki.core) do
+    core.oldmodules = util.table.deepcopy(core.modules or {})
 
-        local slave = core.slave
-        if slave and slave.valid then
-            local slaveinv = slave.get_module_inventory()
-            local slavemodules = slaveinv and slaveinv.get_contents() or {}
+    local slave = core.slave
+    if slave and slave.valid then
+      local slaveinv = slave.get_module_inventory()
+      local slavemodules = slaveinv and slaveinv.get_contents() or {}
 
-            core.modules = {}
-
-            for module_name, count in pairs(slavemodules) do
-                local amount = tonumber(count) or 0
-                for _ = 1, amount do
-                    table.insert(core.modules, module_name)
-                end
-            end
-        else
-            core.modules = {}
+      core.modules = {}
+      if slavemodules[1] then
+        for _, module in pairs(slavemodules) do
+          local amount = tonumber(module.count) or 0
+          for _ = 1, amount do
+            table.insert(core.modules, module.name)
+          end
         end
-
-        local changed = false
-
-        if #core.modules ~= #core.oldmodules then
-            changed = true
-        else
-            for index, module in ipairs(core.modules) do
-                if module ~= core.oldmodules[index] then
-                    changed = true
-                    break
-                end
-            end
+      else
+        for module_name, count in pairs(slavemodules) do
+          local amount = tonumber(count) or 0
+          for _ = 1, amount do
+            table.insert(core.modules, module_name)
+          end
         end
-
-        if changed then
-            storage.ki.dirty = true
-        end
+      end
+    else
+      core.modules = {}
     end
+
+    local changed = false
+
+    if #core.modules ~= #core.oldmodules then
+      changed = true
+    else
+      for index, module in ipairs(core.modules) do
+        if module ~= core.oldmodules[index] then
+          changed = true
+          break
+        end
+      end
+    end
+
+    if changed then
+      storage.ki.dirty = true
+    end
+  end
 end
 
-
---Funcion original
---[[function el_ki_buffer1_update()
-    for i in pairs(storage.ki.buffer1) do
-
-        storage.ki.buffer1[i].oldmodules = util.table.deepcopy(storage.ki.buffer1[i].modules)
-
-        if storage.ki.buffer1[i].slave then
-            if storage.ki.buffer1[i].slave.valid then
-                local slaveinv = storage.ki.buffer1[i].slave.get_module_inventory()
-                local slavemodules = slaveinv.get_contents()
-                storage.ki.buffer1[i].modules = {}
-                
-                for x,v in pairs(slavemodules) do 
-                    for f=1,v,1 do 
-                        table.insert(storage.ki.buffer1[i].modules,x)
-                    end
-                end
-            end
-        end
-
-        if not (#storage.ki.buffer1[i].modules == #storage.ki.buffer1[i].oldmodules) then
-            storage.ki.dirty = true
-        else
-            for x,v in pairs(storage.ki.buffer1[i].modules) do
-                if not v == storage.ki.buffer1[i].oldmodules[x] then
-                    storage.ki.dirty = true
-                    break
-                end
-            end
-        end
-    end
-end]]
 
 function el_ki_buffer1_update()
-    if not storage.ki or not storage.ki.buffer1 then return end
+  for i in pairs(storage.ki.buffer1) do
+    local buffer = storage.ki.buffer1[i]
 
-    for i, buffer in pairs(storage.ki.buffer1) do
-        buffer.oldmodules = util.table.deepcopy(buffer.modules or {})
+    buffer.oldmodules = util.table.deepcopy(buffer.modules or {})
 
-        local slave = buffer.slave
-        if slave and slave.valid then
-            local slaveinv = slave.get_module_inventory()
-            local slavemodules = slaveinv and slaveinv.get_contents() or {}
-
-            buffer.modules = {}
-
-            for module_name, count in pairs(slavemodules) do
-                local amount = tonumber(count) or 0
-                for _ = 1, amount do
-                    table.insert(buffer.modules, module_name)
-                end
+    if buffer.slave then
+      if buffer.slave.valid then
+        local slaveinv = buffer.slave.get_module_inventory()
+        local slavemodules = slaveinv and slaveinv.get_contents() or {}
+        buffer.modules = {}
+        if slavemodules[1] then
+          for _, module in pairs(slavemodules) do
+            local amount = tonumber(module.count) or 0
+            for f = 1, amount do
+              table.insert(buffer.modules, module.name)
             end
+          end
         else
-            buffer.modules = {}
-        end
-
-        local changed = false
-
-        if #buffer.modules ~= #buffer.oldmodules then
-            changed = true
-        else
-            for index, module in ipairs(buffer.modules) do
-                if module ~= buffer.oldmodules[index] then
-                    changed = true
-                    break
-                end
+          for name, amount in pairs(slavemodules) do
+            amount = tonumber(amount) or 0
+            for f = 1, amount do
+              table.insert(buffer.modules, name)
             end
+          end
         end
-
-        if changed then
-            storage.ki.dirty = true
-        end
+      else
+      end
+    else
     end
-end
 
+    -- Detectar cambios
+    if #buffer.modules ~= #buffer.oldmodules then
+      storage.ki.dirty = true
+    else
+      for x, v in ipairs(buffer.modules) do
+        if v ~= buffer.oldmodules[x] then
+          storage.ki.dirty = true
+          break
+        end
+      end
+    end
+  end
+end
 
 function el_ki_buffer2_update()
-    for i in pairs(storage.ki.buffer2) do
+  for i in pairs(storage.ki.buffer2) do
+    local buffer = storage.ki.buffer2[i]
 
-        storage.ki.buffer2[i].oldmodules = util.table.deepcopy(storage.ki.buffer2[i].modules)
+    buffer.oldmodules = util.table.deepcopy(buffer.modules or {})
 
-        if storage.ki.buffer2[i].slave then
-            if storage.ki.buffer2[i].slave.valid then
-                local slaveinv = storage.ki.buffer2[i].slave.get_module_inventory()
-                local slavemodules = slaveinv.get_contents()
-                storage.ki.buffer2[i].modules = {}
-                
-                for x,v in pairs(slavemodules) do 
-                    for f=1,v,1 do 
-                        table.insert(storage.ki.buffer2[i].modules,x)
-                    end
-                end
+    if buffer.slave then
+      if buffer.slave.valid then
+        local slaveinv = buffer.slave.get_module_inventory()
+        local slavemodules = slaveinv and slaveinv.get_contents() or {}
+        buffer.modules = {}
+        if slavemodules[1] then
+          for _, module in pairs(slavemodules) do
+            local amount = tonumber(module.count) or 0
+            for f = 1, amount do
+              table.insert(buffer.modules, module.name)
             end
-        end
-
-        if not (#storage.ki.buffer2[i].modules == #storage.ki.buffer2[i].oldmodules) then
-            storage.ki.dirty = true
+          end
         else
-            for x,v in pairs(storage.ki.buffer2[i].modules) do
-                if not v == storage.ki.buffer2[i].oldmodules[x] then
-                    storage.ki.dirty = true
-                    break
-                end
+          for name, amount in pairs(slavemodules) do
+            amount = tonumber(amount) or 0
+            for f = 1, amount do
+              table.insert(buffer.modules, name)
             end
+          end
         end
+      else
+      end
+    else
     end
+
+    if #buffer.modules ~= #buffer.oldmodules then
+      storage.ki.dirty = true
+    else
+      for x, v in ipairs(buffer.modules) do
+        if v ~= buffer.oldmodules[x] then
+          storage.ki.dirty = true
+          break
+        end
+      end
+    end
+  end
 end
+
+
 
 function el_ki_beacon_update()
     el_ki_buffer1_adder()
@@ -795,11 +734,6 @@ function get_unsupported_beacons()
     return unsupported
 end
 
---Funcion original
---[[function make_beacon_text(entity)
-    entity.surface.create_entity({name="flying-text", position=entity.position, text="CH: "..storage.ki.beacon[entity.unit_number].channel, color={r=1, g=1, b=1}})
-end]] 
-
 function make_beacon_text(entity)
   local channel = storage.ki.beacon[entity.unit_number] and storage.ki.beacon[entity.unit_number].channel or "?"
   
@@ -830,65 +764,67 @@ function make_not_operable_icon(entity)
 end
 
 function el_ki_buffer1_adder() 
-    for i,v in pairs(storage.ki.channel) do
+    for i, v in pairs(storage.ki.channel) do
         if not (i == 0) then
             if storage.ki.channel[i].core then
-                
                 local coreid = storage.ki.channel[i].core
                 storage.ki.core[coreid].totalmodules = {}
                 storage.ki.core[coreid].fu_ki_plus_1_modules = {}
                 storage.ki.core[coreid].fu_ki_plus_2_modules = {}
-                
-                
-                for x,f in pairs(storage.ki.core[coreid].modules) do
-                    table.insert(storage.ki.core[coreid].totalmodules,f)
-                end
-                
 
+                -- Módulos base del core
+                for x, f in pairs(storage.ki.core[coreid].modules) do
+                    table.insert(storage.ki.core[coreid].totalmodules, f)
+                end
+                -- Buffer1
                 if storage.ki.channel[i].buffer1 then
                     local buffer1id = storage.ki.channel[i].buffer1
                     if storage.ki.buffer1[buffer1id].active == true then
-                        for x,f in pairs(storage.ki.buffer1[buffer1id].modules) do
-                            table.insert(storage.ki.core[coreid].totalmodules,f)
+                        for x, f in pairs(storage.ki.buffer1[buffer1id].modules) do
+                            table.insert(storage.ki.core[coreid].totalmodules, f)
                         end
+                    else
                     end
+                else
                 end
 
+                -- Buffer2
                 if storage.ki.channel[i].buffer2 then  
                     local buffer2id = storage.ki.channel[i].buffer2
                     if storage.ki.buffer2[buffer2id].active == true then
-                        for x,f in pairs(storage.ki.buffer2[buffer2id].modules) do
-                            table.insert(storage.ki.core[coreid].totalmodules,f)
+                        for x, f in pairs(storage.ki.buffer2[buffer2id].modules) do
+                            table.insert(storage.ki.core[coreid].totalmodules, f)
                         end
+                    else
                     end
+                else
                 end
-
+                -- Multiplicación por tecnologías
                 if game.forces[1] then
                     if game.forces[1].technologies['fu_ki_plus_2_tech'].researched then
                         local moduletable = {}
-                        for _,v in pairs(storage.ki.core[coreid].totalmodules) do 
+                        for _, v in pairs(storage.ki.core[coreid].totalmodules) do 
                             table.insert(moduletable, v)
                             table.insert(moduletable, v)
                             table.insert(moduletable, v)
                         end
-                    
                         storage.ki.core[coreid].fu_ki_plus_2_modules = moduletable
                     elseif game.forces[1].technologies['fu_ki_plus_1_tech'].researched then
                         local moduletable = {}
-                        for _,v in pairs(storage.ki.core[coreid].totalmodules) do 
+                        for _, v in pairs(storage.ki.core[coreid].totalmodules) do 
                             table.insert(moduletable, v)
                             table.insert(moduletable, v)
                         end
-                    
                         storage.ki.core[coreid].fu_ki_plus_1_modules = moduletable
+                    else
                     end
                 end
+            else
             end
         end
     end
-
-
 end
+
 
 function make_channel(unit)
     if storage.ki.channel then
