@@ -526,7 +526,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="red-wire", amount=10},
+            --{type="item", name="red-wire", amount=10},
+            {type="item", name="copper-plate", amount=10},
+            {type="item", name="electronic-circuit", amount=10},
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
@@ -553,7 +555,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="red-wire", amount=8},
+            --{type="item", name="red-wire", amount=8},
+            {type="item", name="copper-plate", amount=8},
+            {type="item", name="electronic-circuit", amount=8},            
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
@@ -580,7 +584,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="red-wire", amount=8},
+            --{type="item", name="red-wire", amount=8},
+            {type="item", name="copper-plate", amount=8},
+            {type="item", name="electronic-circuit", amount=8},            
             {type="item", name="el_energy_crystal_item", amount=1},
         },
         results = {
@@ -607,7 +613,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="red-wire", amount=8},
+            --{type="item", name="red-wire", amount=8},
+            {type="item", name="copper-plate", amount=8},
+            {type="item", name="electronic-circuit", amount=8},            
         },
         results = {
             {type="fluid", name="el_ki_memory_fluid", amount=200, temperature =500},
@@ -855,7 +863,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="green-wire", amount=10},
+            --{type="item", name="green-wire", amount=10},
+            {type="item", name="iron-plate", amount=10},
+            {type="item", name="electronic-circuit", amount=10}, 
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
@@ -882,7 +892,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="green-wire", amount=8},
+            --{type="item", name="green-wire", amount=10},
+            {type="item", name="iron-plate", amount=8},
+            {type="item", name="electronic-circuit", amount=8},
             {type="item", name="el_energy_crystal_item", amount=2},
         },
         results = {
@@ -909,7 +921,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="green-wire", amount=8},
+            --{type="item", name="green-wire", amount=8},
+            {type="item", name="iron-plate", amount=8},
+            {type="item", name="electronic-circuit", amount=8},
             {type="item", name="el_energy_crystal_item", amount=1},
         },
         results = {
@@ -936,7 +950,9 @@ data:extend({
         ingredients = {
             --{type="fluid", name="water", amount=480},
             --{type="fluid", name="steam", amount=240, temperature=165},
-            {type="item", name="green-wire", amount=8},
+            --{type="item", name="green-wire", amount=8},
+            {type="item", name="iron-plate", amount=8},
+            {type="item", name="electronic-circuit", amount=8},
         },
         results = {
             {type="fluid", name="el_ki_cpu_fluid", amount=200, temperature =500},

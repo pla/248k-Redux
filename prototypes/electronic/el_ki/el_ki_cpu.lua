@@ -42,7 +42,7 @@ data:extend({
         },
         crafting_categories = {'el_ki_cpu_category'},
         crafting_speed = 1,
-        ingredient_count = 2,
+        ingredient_count = 3,
         --fixed_recipe = 'el_ki_cpu_fluid_recipe',
         energy_source = {
             type = 'electric',
