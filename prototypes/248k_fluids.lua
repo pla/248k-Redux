@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/fluids/'..name
+    return '__248k-Redux-graphics__/ressources/fluids/'..name
 end
 
 local function burner_power()

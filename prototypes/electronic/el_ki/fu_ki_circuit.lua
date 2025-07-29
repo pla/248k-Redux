@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_ki/fu_ki_circuit/fu_ki_circuit_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_ki/fu_ki_circuit/fu_ki_circuit_'..name
 end
 
 --item

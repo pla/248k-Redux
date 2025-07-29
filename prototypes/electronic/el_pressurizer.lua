@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_pressurizer/el_pressurizer_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_pressurizer/el_pressurizer_'..name
 end
 
 --item
@@ -152,6 +152,16 @@ data:extend({
         sound = {filename = "__base__/sound/chemical-plant-3.ogg" },
         apparent_volume = 0.05,
       },
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template, 
+      {
+        { variation = 17, main_offset = util.by_pixel(-10.125, -4.875), shadow_offset = util.by_pixel(-10.125, -4.875), show_shadow = true },
+        { variation = 17, main_offset = util.by_pixel(-10.125, -4.875), shadow_offset = util.by_pixel(-10.125, -4.875), show_shadow = true },
+        { variation = 17, main_offset = util.by_pixel(-10.125, -4.875), shadow_offset = util.by_pixel(-10.125, -4.875), show_shadow = true },
+        { variation = 17, main_offset = util.by_pixel(-10.125, -4.875), shadow_offset = util.by_pixel(-10.125, -4.875), show_shadow = true },
+      }
+    )
   },
 })
 

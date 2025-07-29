@@ -1,5 +1,5 @@
 local function sprite(name)
-    return '__248k-Redux__/ressources/booktorio/bk_sprite_'..name
+    return '__248k-Redux-graphics__/ressources/booktorio/bk_sprite_'..name
 end
 
 data:extend(
@@ -31,7 +31,7 @@ data:extend(
 	{
 		type     = "sprite",
 		name     = "bk_sprite_4",		
-		filename = '__248k-Redux__/ressources/fusion/fu_fusor/fu_fusor_entity_animation.png',
+		filename = '__248k-Redux-graphics__/ressources/fusion/fu_fusor/fu_fusor_entity_animation.png',
 		width    = 512*2,
 		height   = 512*2,
 		scale    = 0.4
@@ -39,7 +39,7 @@ data:extend(
 	{
 		type     = "sprite",
 		name     = "bk_sprite_5",		
-		filename = '__248k-Redux__/ressources/fusion/fu_boiler/fu_boiler_entity_animation.png',
+		filename = '__248k-Redux-graphics__/ressources/fusion/fu_boiler/fu_boiler_entity_animation.png',
 		width    = 512,
 		height   = 512,
 		scale    = 0.7

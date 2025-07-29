@@ -1,5 +1,5 @@
 local function sprite(name)
-    return '__248k-Redux__/ressources/'..name
+    return '__248k-Redux-graphics__/ressources/'..name
 end
 
 --settings check
@@ -11,6 +11,7 @@ data:extend({
     {
         name = 'el_solar_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_solar_item"},
         enabled = false,
         ingredients = {
             {type = "item", name = "el_aluminum_item", amount = 30},
@@ -32,6 +33,7 @@ data:extend({
     {
         name = 'el_lithium_basic_battery_recipe',
         type = 'recipe',
+        localised_name = {"item-name.battery"},
         enabled = false,
         category = 'crafting',
         subgroup = 'el_item_subgroup_b',
@@ -51,6 +53,7 @@ data:extend({
     {
         name = 'el_lithium_battery_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_lithium_battery"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -67,6 +70,7 @@ data:extend({
     {
         name = 'el_burner_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_burner_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -81,6 +85,7 @@ data:extend({
     {
         name = 'el_burner_kerosene_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_burner_kerosene_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -97,6 +102,7 @@ data:extend({
     {
         name = 'el_water_generator_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_water_generator_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -116,6 +122,7 @@ data:extend({
     {
         name = 'el_pressurizer_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_pressurizer_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -133,6 +140,7 @@ data:extend({
     {
         name = 'el_water_pressure_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_pressurized_water"},
         enabled = false,
         category = 'el_special_fluid',
         icon = sprite('fluids/el_pressurized_water.png'),
@@ -152,6 +160,7 @@ data:extend({
     {
         name = 'el_diesel_train_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_diesel_train_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -170,6 +179,7 @@ data:extend({
     {
         name = 'el_kerosene_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_kerosene"},
         enabled = false,
         category = 'oil-processing',
         main_product = 'el_kerosene',
@@ -186,16 +196,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_kerosene.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_kerosene.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         }
     },
     {
         name = 'el_tank_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_tank_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -212,6 +223,7 @@ data:extend({
     {
         name = 'el_desulfurized_kerosene_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_desulfurized_kerosene"},
         enabled = false,
         category = 'chemistry',
         main_product = 'el_desulfurized_kerosene',
@@ -228,6 +240,7 @@ data:extend({
     {
         name = 'el_usage_acidic_water_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.sulfuric-acid"},
         enabled = false,
         category = 'chemistry',
         subgroup = 'el_item_subgroup_e',
@@ -246,6 +259,7 @@ data:extend({
     {
         name = 'el_train_fuel_diesel_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_train_fuel_diesel_item"},
         enabled = false,
         category = 'crafting-with-fluid',
         subgroup = 'el_item_subgroup_d',
@@ -262,6 +276,7 @@ data:extend({
     {
         name = 'el_train_equipment_generator_recipe',
         type = 'recipe',
+        localised_name = {"equipment-name.el_train_equipment_generator_item"},
         enabled = false,
         category = 'crafting',
         subgroup = 'el_item_subgroup_d',
@@ -279,6 +294,7 @@ data:extend({
     {
         name = 'el_train_equipment_accelerator_recipe',
         type = 'recipe',
+        localised_name = {"equipment-name.el_train_equipment_accelerator_item"},
         enabled = false,
         category = 'crafting',
         subgroup = 'el_item_subgroup_d',
@@ -296,6 +312,7 @@ data:extend({
     {
         name = 'el_grow_energy_crystal_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_energy_crystal_item"},
         enabled = false,
         category = 'el_grower_category',
         ingredients = {
@@ -312,6 +329,7 @@ data:extend({
     {
         name = 'el_train_fuel_diesel_energized_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_train_fuel_diesel_energized_item"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -327,6 +345,7 @@ data:extend({
     {
         name = 'el_ki_beacon_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_ki_beacon_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -342,6 +361,7 @@ data:extend({
     {
         name = 'fi_ki_beacon_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fi_ki_beacon_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -358,6 +378,7 @@ data:extend({
     {
         name = 'fu_ki_beacon_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_ki_beacon_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -375,6 +396,7 @@ data:extend({
     {
         name = 'el_ki_core_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_ki_core_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -397,6 +419,7 @@ data:extend({
     {
         name = 'fi_ki_core_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fi_ki_core_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -417,6 +440,7 @@ data:extend({
     {
         name = 'fu_ki_core_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_ki_core_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -441,6 +465,7 @@ data:extend({
     {
         name = 'el_ki_memory_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_ki_memory_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -457,6 +482,7 @@ data:extend({
     {
         name = 'fi_ki_circuit_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fi_ki_circuit_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -473,6 +499,7 @@ data:extend({
     {
         name = 'fu_ki_circuit_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_ki_circuit_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -492,6 +519,7 @@ data:extend({
     {
         name = 'el_ki_memory_fluid_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_memory_fluid"},
         enabled = false,
         category = 'el_ki_memory_category',
         main_product = 'el_ki_memory_fluid',
@@ -508,16 +536,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_memory_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_memory_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         } 
     },
     {
         name = 'el_ki_memory_fluid_recipe_1',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_memory_fluid"},
         enabled = false,
         category = 'el_ki_memory_category',
         main_product = 'el_ki_memory_fluid',
@@ -534,16 +563,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_memory_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_memory_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         } 
     },
     {
         name = 'el_ki_memory_fluid_recipe_2',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_memory_fluid"},
         enabled = false,
         category = 'el_ki_memory_category',
         main_product = 'el_ki_memory_fluid',
@@ -560,16 +590,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_memory_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_memory_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         } 
     },
     {
         name = 'el_ki_memory_fluid_recipe_3',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_memory_fluid"},
         enabled = false,
         category = 'el_ki_memory_category',
         main_product = 'el_ki_memory_fluid',
@@ -585,16 +616,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_memory_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_memory_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_ki_circuit_fluid"},
         enabled = false,
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
@@ -610,16 +642,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fu_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fu_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe_1',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_ki_circuit_fluid"},
         enabled = false,
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
@@ -635,16 +668,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fu_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fu_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe_2',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_ki_circuit_fluid"},
         enabled = false,
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
@@ -659,16 +693,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fu_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fu_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         } 
     },
     {
         name = 'fu_ki_circuit_fluid_recipe_3',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_ki_circuit_fluid"},
         enabled = false,
         category = 'fu_ki_circuit_category',
         main_product = 'fu_ki_circuit_fluid',
@@ -683,16 +718,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fu_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fu_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fi_ki_circuit_fluid"},
         enabled = false,
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
@@ -708,16 +744,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe_1',
         type = 'recipe',
+        localised_name = {"fluid-name.fi_ki_circuit_fluid"},
         enabled = false,
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
@@ -733,16 +770,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe_2',
         type = 'recipe',
+        localised_name = {"fluid-name.fi_ki_circuit_fluid"},
         enabled = false,
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
@@ -757,16 +795,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         } 
     },
     {
         name = 'fi_ki_circuit_fluid_recipe_3',
         type = 'recipe',
+        localised_name = {"fluid-name.fi_ki_circuit_fluid"},
         enabled = false,
         category = 'fi_ki_circuit_category',
         main_product = 'fi_ki_circuit_fluid',
@@ -780,10 +819,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/fi_ki_circuit_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/fi_ki_circuit_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         } 
     },
@@ -791,6 +830,7 @@ data:extend({
     {
         name = 'el_ki_cpu_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_ki_cpu_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -808,6 +848,7 @@ data:extend({
     {
         name = 'el_ki_cpu_fluid_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_cpu_fluid"},
         enabled = false,
         category = 'el_ki_cpu_category',
         main_product = 'el_ki_cpu_fluid',
@@ -824,16 +865,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_cpu_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_cpu_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         } 
     },
     {
         name = 'el_ki_cpu_fluid_recipe_1',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_cpu_fluid"},
         enabled = false,
         category = 'el_ki_cpu_category',
         main_product = 'el_ki_cpu_fluid',
@@ -850,16 +892,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_cpu_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_cpu_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         } 
     },
     {
         name = 'el_ki_cpu_fluid_recipe_2',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_cpu_fluid"},
         enabled = false,
         category = 'el_ki_cpu_category',
         main_product = 'el_ki_cpu_fluid',
@@ -876,16 +919,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_cpu_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_cpu_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         } 
     },
     {
         name = 'el_ki_cpu_fluid_recipe_3',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_cpu_fluid"},
         enabled = false,
         category = 'el_ki_cpu_category',
         main_product = 'el_ki_cpu_fluid',
@@ -901,10 +945,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_ki_cpu_fluid.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_ki_cpu_fluid.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         } 
     },
@@ -913,6 +957,7 @@ data:extend({
     {
         name = 'el_ki_cpu_memory_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_ki_cpu_fluid"},
         enabled = false,
         category = 'el_ki_core_category',
         icon = sprite('fluids/el_pressurized_water.png'),
@@ -928,6 +973,7 @@ data:extend({
     {
         name = 'fi_ki_cpu_memory_circuit_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fi_ki_science"},
         enabled = false,
         category = 'fi_ki_core_category',
         ingredients = {
@@ -944,6 +990,7 @@ data:extend({
     {
         name = 'fu_ki_cpu_memory_circuit_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_ki_science"},
         enabled = false,
         category = 'fu_ki_core_category',
         ingredients = {
@@ -961,6 +1008,7 @@ data:extend({
     {
         name = 'el_arc_furnace_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_arc_furnace_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -976,6 +1024,7 @@ data:extend({
     {
         name = 'el_caster_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_caster_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -991,6 +1040,7 @@ data:extend({
     {
         name = 'el_purifier_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_purifier_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -1006,6 +1056,7 @@ data:extend({
     {
         name = 'el_grower_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_grower_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -1023,6 +1074,7 @@ data:extend({
     {
         name = 'el_purify_stone_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_pure_aluminum"},
         enabled = false,
         category = 'el_purifier_category',
         main_product = 'el_dirty_water',
@@ -1041,16 +1093,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_stone.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_stone.png"
             }
         } 
     },
     {
         name = 'el_purify_stone_2_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_pure_aluminum"},
         enabled = false,
         category = 'el_purifier_category',
         main_product = 'el_dirty_water',
@@ -1068,10 +1121,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_stone.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_stone.png"
             }
         }
         
@@ -1079,6 +1132,7 @@ data:extend({
     {
         name = 'el_purify_iron_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_pure_iron"},
         enabled = false,
         category = 'el_purifier_category',
         main_product = 'el_dirty_water',
@@ -1096,10 +1150,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_iron.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_iron.png"
             }
         }
         
@@ -1107,6 +1161,7 @@ data:extend({
     {
         name = 'el_purify_copper_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_pure_copper"},
         enabled = false,
         category = 'el_purifier_category',
         main_product = 'el_dirty_water',
@@ -1124,16 +1179,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_copper.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_copper.png"
             }
         } 
     },
     {
         name = 'el_purify_stone_acidic_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_energy_crystal_item"},
         enabled = false,
         category = 'el_purifier_category',
         main_product = 'el_energy_crystal_item',
@@ -1155,6 +1211,7 @@ data:extend({
     {
         name = 'el_purify_uranium_acidic_recipe',
         type = 'recipe',
+        localised_name = {"item-name.uranium-235"},
         enabled = false,
         category = 'el_purifier_category',
         main_product = 'el_energy_crystal_item',
@@ -1178,6 +1235,7 @@ data:extend({
     {
         name = 'el_aluminum_item_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_aluminum_item"},
         enabled = false,
         category = 'smelting',
         ingredients = {
@@ -1193,6 +1251,7 @@ data:extend({
     {
         name = 'el_lithium_ore_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_lithium_item"},
         enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'el_lithium_item',
@@ -1209,6 +1268,7 @@ data:extend({
     {
         name = 'el_arc_pure_iron_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_arc_pure_iron"},
         enabled = false,
         category = 'el_arc_furnace_category',
         ingredients = {
@@ -1224,6 +1284,7 @@ data:extend({
     {
         name = 'el_cast_pure_iron_recipe',
         type = 'recipe',
+        localised_name = {"item-name.iron-plate"},
         enabled = false,
         category = 'el_caster_category',
         ingredients = {
@@ -1240,6 +1301,7 @@ data:extend({
     {
         name = 'el_cast_pure_steel_recipe',
         type = 'recipe',
+        localised_name = {"item-name.steel-plate"},
         enabled = false,
         category = 'el_caster_category',
         ingredients = {
@@ -1256,6 +1318,7 @@ data:extend({
     {
         name = 'el_arc_pure_copper_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_arc_pure_copper"},
         enabled = false,
         category = 'el_arc_furnace_category',
         ingredients = {
@@ -1271,6 +1334,7 @@ data:extend({
     {
         name = 'el_cast_pure_copper_recipe',
         type = 'recipe',
+        localised_name = {"item-name.copper-plate"},
         enabled = false,
         category = 'el_caster_category',
         ingredients = {
@@ -1287,6 +1351,7 @@ data:extend({
     {
         name = 'el_arc_pure_aluminum_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_arc_pure_aluminum"},
         enabled = false,
         category = 'el_arc_furnace_category',
         ingredients = {
@@ -1302,6 +1367,7 @@ data:extend({
     {
         name = 'el_cast_pure_aluminum_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_aluminum_item"},
         enabled = false,
         category = 'el_caster_category',
         ingredients = {
@@ -1318,6 +1384,7 @@ data:extend({
     {
         name = 'el_ceramic_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_ceramic"},
         enabled = false,
         category = 'crafting-with-fluid',
         ingredients = {
@@ -1333,6 +1400,7 @@ data:extend({
     {
         name = 'el_ceramic_1_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_ceramic"},
         enabled = false,
         category = 'el_arc_furnace_category',
         ingredients = {
@@ -1349,6 +1417,7 @@ data:extend({
     {
         name = 'el_ALK_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_materials_ALK"},
         enabled = false,
         ingredients = {
             {type="item", name="el_materials_ceramic", amount=2},
@@ -1363,6 +1432,7 @@ data:extend({
     {
         name = 'el_dirty_water_vent_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.water"},
         enabled = false,
         subgroup = 'el_item_subgroup_a',
         category = 'crafting-with-fluid',
@@ -1378,6 +1448,7 @@ data:extend({
     {
         name = 'el_dirty_water_vent_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.water"},
         enabled = false,
         subgroup = 'el_item_subgroup_a',
         category = 'el_purifier_category',
@@ -1393,6 +1464,7 @@ data:extend({
     {
         name = 'el_dirty_water_landfill_recipe',
         type = 'recipe',
+        localised_name = {"item-name.landfill"},
         enabled = false,
         subgroup = 'el_item_subgroup_a',
         category = 'crafting-with-fluid',
@@ -1408,6 +1480,7 @@ data:extend({
     {
         name = 'el_kerosene_basic_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_kerosene"},
         enabled = false,
         category = 'oil-processing',
         main_product = 'el_kerosene',
@@ -1423,16 +1496,17 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_kerosene.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_kerosene.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         } 
     },
     {
         name = 'el_charger_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.el_charger_entity"},
         enabled = false,
         category = 'crafting',
         ingredients = {
@@ -1448,6 +1522,7 @@ data:extend({
     {
         name = 'el_charge_crystal_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_energy_crystal_charged_item"},
         enabled = false,
         category = 'el_charger_category',
         ingredients = {
@@ -1462,6 +1537,7 @@ data:extend({
     {
         name = 'el_grenade_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_grenade"},
         enabled = false,
         category = 'crafting',
         main_product = 'el_grenade',

@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/elements/'..name
+    return '__248k-Redux-graphics__/ressources/elements/'..name
 end
 
 data:extend({

@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-  return '__248k-Redux__/ressources/electronic/el_grower/el_grower_'..name
+  return '__248k-Redux-graphics__/ressources/electronic/el_grower/el_grower_'..name
 end
 
 --item
@@ -158,5 +158,15 @@ data:extend({
       sound = {filename = "__base__/sound/chemical-plant-3.ogg" },
       apparent_volume = 0.1,
     },
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template, 
+      {
+        { variation =  4, main_offset = util.by_pixel(-8.625, -62.875), shadow_offset = util.by_pixel(-8.625, -62.875), show_shadow = true },
+        { variation =  4, main_offset = util.by_pixel(-8.625, -62.875), shadow_offset = util.by_pixel(-8.625, -62.875), show_shadow = true },
+        { variation =  4, main_offset = util.by_pixel(-8.625, -62.875), shadow_offset = util.by_pixel(-8.625, -62.875), show_shadow = true },
+        { variation =  4, main_offset = util.by_pixel(-8.625, -62.875), shadow_offset = util.by_pixel(-8.625, -62.875), show_shadow = true },
+      }
+    )
 },
 })

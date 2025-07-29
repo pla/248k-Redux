@@ -1,5 +1,5 @@
 local function sprite(name)
-    return '__248k-Redux__/ressources/grenade/'..name
+    return '__248k-Redux-graphics__/ressources/grenade/'..name
 end
 
 local el_explosion = table.deepcopy(data.raw['explosion']['grenade-explosion'])

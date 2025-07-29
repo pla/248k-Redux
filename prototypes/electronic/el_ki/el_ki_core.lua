@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_ki/el_ki_core/el_ki_core_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_ki/el_ki_core/el_ki_core_'..name
 end
 
 local function core_input(core_number)
@@ -181,6 +181,16 @@ data:extend({
             sound = { filename ='__base__/sound/nuclear-reactor-1.ogg'},
             apparent_volume = 2.5,
         },
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template,
+      {
+        { variation =  2, main_offset = util.by_pixel(-0.75, -62.875), shadow_offset = util.by_pixel(-0.75, -62.875), show_shadow = true },
+        { variation =  2, main_offset = util.by_pixel(-0.75, -62.875), shadow_offset = util.by_pixel(-0.75, -62.875), show_shadow = true },
+        { variation =  2, main_offset = util.by_pixel(-0.75, -62.875), shadow_offset = util.by_pixel(-0.75, -62.875), show_shadow = true },
+        { variation =  2, main_offset = util.by_pixel(-0.75, -62.875), shadow_offset = util.by_pixel(-0.75, -62.875), show_shadow = true },
+      }
+    )
     },
     --slave
     {
@@ -222,6 +232,7 @@ data:extend({
             height = 64
         },
         inventory_size = 20,
+        module_slots = 2,
     },
     --===============================================================
     {
@@ -400,6 +411,7 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     },
     --===============================================================
     {
@@ -606,5 +618,6 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     }
 })

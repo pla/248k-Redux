@@ -3,6 +3,7 @@ data:extend({
     {
         name = 'fu_fusor_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_fusor_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'low-density-structure', amount = 100},
@@ -23,6 +24,7 @@ data:extend({
     {
         name = 'fu_stelar_reactor_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_stelar_reactor_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'fu_materials_magnet', amount = 100},
@@ -42,6 +44,7 @@ data:extend({
     {
         name = 'fu_tokamak_reactor_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_tokamak_reactor_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'fu_materials_magnet', amount = 200},
@@ -63,6 +66,7 @@ data:extend({
     {
         name = 'fu_boiler_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_boiler_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'heat-exchanger', amount = 4},
@@ -81,6 +85,7 @@ data:extend({
     {
         name = 'fu_burner_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_burner_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'el_burner_item', amount = 1},
@@ -96,6 +101,7 @@ data:extend({
     {
         name = 'fu_fusion_card_1_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_fusion_card"},
         category = 'fu_fusor_crafting_category',
         enabled = false,
         ingredients = {
@@ -111,6 +117,7 @@ data:extend({
     {
         name = 'fu_fusion_card_2_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_fusion_card"},
         category = 'fu_fusor_crafting_category',
         enabled = false,
         ingredients = {
@@ -126,6 +133,7 @@ data:extend({
     {
         name = 'fu_fusion_card_4_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_fusion_card"},
         category = 'fu_fusor_crafting_category',
         enabled = false,
         ingredients = {
@@ -141,6 +149,7 @@ data:extend({
     {
         name = 'fu_fusion_card_5_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_fusion_card"},
         category = 'fu_fusor_crafting_category',
         enabled = false,
         ingredients = {
@@ -155,10 +164,11 @@ data:extend({
     {
         name = 'fu_fusion_card_7_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_fusion_card"},
         category = 'fu_fusor_crafting_category',
         enabled = false,
         ingredients = {
-            {type="fluid", name="fu_protium", amount=20000},
+            {type="fluid", name="fu_protium", amount=2000},
         },
         results = {
             {type = 'item', name = 'fu_materials_fusion_card', amount = 1},
@@ -170,25 +180,26 @@ data:extend({
     {
         name = 'fu_boiler_hydrogen_oxygen_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'fu_boiler_crafting_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
-            {type="fluid", name="water", amount=150},
+            {type="fluid", name="water", amount=15},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=100},
-            {type="fluid", name="fu_oxygen", amount=50}
+            {type="fluid", name="fu_hydrogen", amount=10},
+            {type="fluid", name="fu_oxygen", amount=5}
         },
         energy_required = 1,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -197,25 +208,26 @@ data:extend({
     {
         name = 'fu_boiler_hydrogen_oxygen_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'fu_boiler_crafting_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
-            {type="fluid", name="water", amount=300},
+            {type="fluid", name="water", amount=30},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=200},
-            {type="fluid", name="fu_oxygen", amount=100}
+            {type="fluid", name="fu_hydrogen", amount=20},
+            {type="fluid", name="fu_oxygen", amount=10}
         },
         energy_required = 1,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -224,25 +236,26 @@ data:extend({
     {
         name = 'fu_boiler_hydrogen_oxygen_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'fu_boiler_crafting_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
-            {type="fluid", name="water", amount=650},
+            {type="fluid", name="water", amount=65},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=500},
-            {type="fluid", name="fu_oxygen", amount=150},
+            {type="fluid", name="fu_hydrogen", amount=50},
+            {type="fluid", name="fu_oxygen", amount=15},
         },
         energy_required = 1,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -251,24 +264,25 @@ data:extend({
     {
         name = 'fu_boiler_hydrogen_oxygen_3_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'fu_boiler_crafting_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
-            {type="fluid", name="water", amount=1100},
+            {type="fluid", name="water", amount=110},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=1000},
+            {type="fluid", name="fu_hydrogen", amount=100},
         },
         energy_required = 1,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -277,14 +291,15 @@ data:extend({
     {
         name = 'fu_hydrogen_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_protium"},
         category = 'oil-processing',
         main_product = 'fu_protium',
         enabled = false,
         ingredients = {
-            {type="fluid", name="fu_hydrogen", amount=100000},
+            {type="fluid", name="fu_hydrogen", amount=10000},
         },
         results = {
-            {type="fluid", name="fu_protium", amount=99998},
+            {type="fluid", name="fu_protium", amount=10000},
             {type="fluid", name="fu_deuterium", amount=10},
             {type="fluid", name="fu_tritium", amount=1}
         },
@@ -294,6 +309,7 @@ data:extend({
     {
         name = 'fu_lithium_6_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lithium_6"},
         category = 'chemistry',
         enabled = false,
         ingredients = {
@@ -309,6 +325,7 @@ data:extend({
     {
         name = 'fu_lead_ore_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_lead_ore_item"},
         category = 'crafting-with-fluid',
         enabled = false,
         ingredients = {
@@ -324,6 +341,7 @@ data:extend({
     {
         name = 'fu_lead_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_lead_item"},
         enabled = false,
         category = 'el_caster_category',
         ingredients = {
@@ -339,6 +357,7 @@ data:extend({
     {
         name = 'fu_lead_crushed_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_crushed_lead_item"},
         category = 'fi_crushing',
         enabled = false,
         ingredients = {
@@ -352,6 +371,7 @@ data:extend({
     {
         name = 'fu_lead_molten_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_cold"},
         category = 'crafting-with-fluid',
         enabled = false,
         ingredients = {
@@ -367,6 +387,7 @@ data:extend({
     {
         name = 'fu_stelerator_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_hot"},
         category = 'fu_stelar_reactor_crafting_category',
         enabled = false,
         ingredients = {
@@ -381,6 +402,7 @@ data:extend({
     {
         name = 'fu_stelerator_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_hot"},
         category = 'fu_stelar_reactor_crafting_category',
         enabled = false,
         ingredients = {
@@ -396,6 +418,7 @@ data:extend({
     {
         name = 'fu_stelerator_3_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_hot"},
         category = 'fu_stelar_reactor_crafting_category',
         enabled = false,
         ingredients = {
@@ -411,6 +434,7 @@ data:extend({
     {
         name = 'fu_stelerator_2_neutron_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_charged_container"},
         category = 'fu_stelar_reactor_crafting_category',
         main_product = 'fu_materials_charged_container',
         enabled = false,
@@ -432,6 +456,7 @@ data:extend({
     {
         name = 'fu_stelerator_3_neutron_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_charged_container"},
         category = 'fu_stelar_reactor_crafting_category',
         main_product = 'fu_materials_charged_container',
         enabled = false,
@@ -455,6 +480,7 @@ data:extend({
     {
         name = 'fu_tokamak_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_hot"},
         category = 'fu_tokamak_reactor_crafting_category',
         enabled = false,
         ingredients = {
@@ -469,6 +495,7 @@ data:extend({
     {
         name = 'fu_tokamak_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_hot"},
         category = 'fu_tokamak_reactor_crafting_category',
         enabled = false,
         ingredients = {
@@ -485,6 +512,7 @@ data:extend({
     {
         name = 'fu_exchanger_item_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_exchanger_entity"},
         enabled = false,
         ingredients = {
             {type="item", name="heat-exchanger", amount=10},
@@ -500,6 +528,7 @@ data:extend({
     {
         name = 'fu_exchanger_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.steam"},
         category = 'fu_exchanger_crafting_category',
         main_product = 'steam',
         enabled = false,
@@ -519,6 +548,7 @@ data:extend({
     {
         name = 'fu_exchanger_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.steam"},
         category = 'fu_exchanger_crafting_category',
         main_product = 'steam',
         enabled = false,
@@ -538,6 +568,7 @@ data:extend({
     {
         name = 'fu_exchanger_3_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_cold"},
         category = 'fu_exchanger_crafting_category',
         main_product = 'fu_lead_fluid_cold',
         enabled = false,
@@ -556,6 +587,7 @@ data:extend({
     {
         name = 'fu_turbine_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_turbine_entity"},
         enabled = false,
         ingredients = {
             {type="item", name="steam-turbine", amount=5},
@@ -571,6 +603,7 @@ data:extend({
     {
         name = 'fu_exchanger_4_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hot_steam"},
         category = 'fu_exchanger_crafting_category',
         main_product = 'fu_hot_steam',
         enabled = false,
@@ -591,6 +624,7 @@ data:extend({
     {
         name = 'fu_robo_logistic_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_robo_logistic_entity"},
         enabled = false,
         ingredients = {
             {type="item", name="logistic-robot", amount=2},
@@ -608,6 +642,7 @@ data:extend({
     {
         name = 'fu_robo_construction_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_robo_construction_entity"},
         enabled = false,
         ingredients = {
             {type="item", name="construction-robot", amount=2},
@@ -626,6 +661,7 @@ data:extend({
     {
         name = 'fu_activator_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_activator_entity"},
         enabled = false,
         ingredients = {
             {type="item", name="fi_crafter_item", amount=2},
@@ -642,6 +678,7 @@ data:extend({
     {
         name = 'fu_activator_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_deuterium"},
         category = 'fu_activator_crafting_category',
         main_product = 'fu_deuterium',
         enabled = false,
@@ -659,6 +696,7 @@ data:extend({
     {
         name = 'fu_activator_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_tritium"},
         category = 'fu_activator_crafting_category',
         main_product = 'fu_tritium',
         enabled = false,
@@ -677,6 +715,7 @@ data:extend({
     {
         name = 'fu_star_engine_cooler_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_star_engine_cooler_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'low-density-structure', amount = 200},
@@ -696,6 +735,7 @@ data:extend({
     {
         name = 'fu_star_engine_cooler_up_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_star_engine_cooler_up_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'low-density-structure', amount = 200},
@@ -715,6 +755,7 @@ data:extend({
     {
         name = 'fu_star_engine_heater_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_star_engine_heater_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'low-density-structure', amount = 200},
@@ -734,6 +775,7 @@ data:extend({
     {
         name = 'fu_star_engine_heater_left_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_star_engine_heater_left_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'low-density-structure', amount = 200},
@@ -753,6 +795,7 @@ data:extend({
     {
         name = 'fu_star_engine_core_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_star_engine_core_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'low-density-structure', amount = 1000},
@@ -776,14 +819,15 @@ data:extend({
     {
         name = 'fu_star_engine_heater_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_protium_heated"},
         category = 'fu_star_engine_heater_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_a',
         ingredients = {
-            {type="fluid", name="fu_protium", amount=13000},
+            {type="fluid", name="fu_protium", amount=1300},
         },
         results = {
-            {type="fluid", name="fu_protium_heated", amount=13000},
+            {type="fluid", name="fu_protium_heated", amount=1300},
         },
         energy_required = 1,
     },
@@ -791,11 +835,12 @@ data:extend({
     {
         name = 'fu_star_engine_core_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_iron_heated"},
         category = 'fu_star_engine_core_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_b',
         ingredients = {
-            {type="fluid", name="fu_protium_heated", amount=13000*2},
+            {type="fluid", name="fu_protium_heated", amount=1300*2},
         },
         results = {
             {type="fluid", name="fu_iron_heated", amount=500*2},
@@ -805,11 +850,12 @@ data:extend({
     {
         name = 'fu_star_engine_core_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_copper_heated"},
         category = 'fu_star_engine_core_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_b',
         ingredients = {
-            {type="fluid", name="fu_protium_heated", amount=29000},
+            {type="fluid", name="fu_protium_heated", amount=2600},
         },
         results = {
             {type="fluid", name="fu_copper_heated", amount=500*2},
@@ -819,63 +865,68 @@ data:extend({
     {
         name = 'fu_star_engine_core_3_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_sulfur_heated"},
         category = 'fu_star_engine_core_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_b',
         ingredients = {
-            {type="fluid", name="fu_protium_heated", amount=16000},
+            {type="fluid", name="fu_protium_heated", amount=1300},
         },
         results = {
             {type="fluid", name="fu_sulfur_heated", amount=500*2},
         },
-        energy_required = 1,
+        energy_required = 0.5,
     },
     {
         name = 'fu_star_engine_core_4_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lithium_7_heated"},
         category = 'fu_star_engine_core_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_b',
         ingredients = {
-            {type="fluid", name="fu_protium_heated", amount=3000},
+            {type="fluid", name="fu_protium_heated", amount=1300},
         },
         results = {
-            {type="fluid", name="fu_lithium_7_heated", amount=500*2},
+            {type="fluid", name="fu_lithium_7_heated", amount=2000*2},
         },
-        energy_required = 1,
+        energy_required = 0.5,
     },
     {
         name = 'fu_star_engine_core_5_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_uranium_235_heated"},
         category = 'fu_star_engine_core_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_b',
         ingredients = {
-            {type="fluid", name="fu_protium_heated", amount=92000},
+            {type="fluid", name="fu_protium_heated", amount=10400},
         },
         results = {
             {type="fluid", name="fu_uranium_235_heated", amount=500*2},
         },
-        energy_required = 1,
+        energy_required = 4,
     },
     {
         name = 'fu_star_engine_core_6_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_uranium_238_heated"},
         category = 'fu_star_engine_core_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_b',
         ingredients = {
-            {type="fluid", name="fu_protium_heated", amount=92000},
+            {type="fluid", name="fu_protium_heated", amount=10400},
         },
         results = {
             {type="fluid", name="fu_uranium_238_heated", amount=500*2},
         },
-        energy_required = 1,
+        energy_required = 4,
     },
     --cooler
     {
         name = 'fu_star_engine_cooler_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_iron"},
         category = 'fu_star_engine_cooler_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_c',
@@ -890,6 +941,7 @@ data:extend({
     {
         name = 'fu_star_engine_cooler_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_copper"},
         category = 'fu_star_engine_cooler_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_c',
@@ -904,6 +956,7 @@ data:extend({
     {
         name = 'fu_star_engine_cooler_3_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_sulfur"},
         category = 'fu_star_engine_cooler_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_c',
@@ -913,25 +966,27 @@ data:extend({
         results = {
             {type="fluid", name="fu_sulfur", amount=500},
         },
-        energy_required = 1,
+        energy_required = 0.5,
     },
     {
         name = 'fu_star_engine_cooler_4_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lithium_7"},
         category = 'fu_star_engine_cooler_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_c',
         ingredients = {
-            {type="fluid", name="fu_lithium_7_heated", amount=500},
+            {type="fluid", name="fu_lithium_7_heated", amount=2000},
         },
         results = {
-            {type="fluid", name="fu_lithium_7", amount=500},
+            {type="fluid", name="fu_lithium_7", amount=2000},
         },
-        energy_required = 1,
+        energy_required = 0.5,
     },
     {
         name = 'fu_star_engine_cooler_5_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_uranium_235"},
         category = 'fu_star_engine_cooler_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_c',
@@ -941,11 +996,12 @@ data:extend({
         results = {
             {type="fluid", name="fu_uranium_235", amount=500},
         },
-        energy_required = 1,
+        energy_required = 4,
     },
     {
         name = 'fu_star_engine_cooler_6_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_uranium_238"},
         category = 'fu_star_engine_cooler_crafting_category',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_c',
@@ -955,12 +1011,13 @@ data:extend({
         results = {
             {type="fluid", name="fu_uranium_238", amount=500},
         },
-        energy_required = 1,
+        energy_required = 4,
     },
     --caster
     {
         name = 'fu_star_engine_caster_1_recipe',
         type = 'recipe',
+        localised_name = {"item-name.iron-plate"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_d',
@@ -975,6 +1032,7 @@ data:extend({
     {
         name = 'fu_star_engine_caster_2_recipe',
         type = 'recipe',
+        localised_name = {"item-name.copper-plate"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_d',
@@ -989,6 +1047,7 @@ data:extend({
     {
         name = 'fu_star_engine_caster_3_recipe',
         type = 'recipe',
+        localised_name = {"item-name.sulfur"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_d',
@@ -1003,6 +1062,7 @@ data:extend({
     {
         name = 'fu_star_engine_caster_4_recipe',
         type = 'recipe',
+        localised_name = {"item-name.el_lithium_item"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_d',
@@ -1017,6 +1077,7 @@ data:extend({
     {
         name = 'fu_star_engine_caster_5_recipe',
         type = 'recipe',
+        localised_name = {"item-name.uranium-235"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_d',
@@ -1031,6 +1092,7 @@ data:extend({
     {
         name = 'fu_star_engine_caster_6_recipe',
         type = 'recipe',
+        localised_name = {"item-name.uranium-238"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_star_engine_subgroup_d',
@@ -1046,6 +1108,7 @@ data:extend({
     {
         name = 'fu_space_probe_sputnik_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_sputnik_item"},
         category = 'advanced-crafting',
         enabled = false,
         ingredients = {
@@ -1065,6 +1128,7 @@ data:extend({
     {
         name = 'fu_space_probe_probe_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_probe_item"},
         category = 'advanced-crafting',
         enabled = false,
         ingredients = {
@@ -1083,6 +1147,7 @@ data:extend({
     {
         name = 'fu_space_probe_deep_probe_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_deep_probe_item"},
         category = 'advanced-crafting',
         enabled = false,
         ingredients = {
@@ -1102,6 +1167,7 @@ data:extend({
     {
         name = 'fu_space_probe_data_card_2_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_data_card_2_item"},
         category = 'crafting-with-fluid',
         enabled = false,
         ingredients = {
@@ -1118,6 +1184,7 @@ data:extend({
     {
         name = 'fu_space_probe_ore_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_down_matter_item"},
         category = 'el_purifier_category',
         enabled = false,
         main_product = 'fu_space_probe_down_matter_item',
@@ -1136,6 +1203,7 @@ data:extend({
     {
         name = 'fu_space_probe_science_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_science_item"},
         category = 'crafting',
         enabled = false,
         ingredients = {
@@ -1151,6 +1219,7 @@ data:extend({
     {
         name = 'fu_space_probe_science_recipe_1',
         type = 'recipe',
+        localised_name = {"item-name.fu_space_probe_science_item_1"},
         category = 'crafting',
         enabled = false,
         ingredients = {
@@ -1167,6 +1236,7 @@ data:extend({
     {
         name = 'fu_crystal_from_fluid_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fi_energy_crystal_item"},
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_item_subgroup_a-b',
@@ -1182,6 +1252,7 @@ data:extend({
     {
         name = 'fu_laser_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_laser_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'concrete', amount = 100},
@@ -1200,6 +1271,7 @@ data:extend({
     {
         name = 'fu_laser_crystal_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_energy_crystal"},
         category = 'fu_laser_category',
         enabled = false,
         main_product = 'fu_materials_energy_crystal',
@@ -1218,6 +1290,7 @@ data:extend({
     {
         name = 'fu_refined_crystal_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_refined_crystal"},
         category = 'el_grower_category',
         enabled = false,
         subgroup = 'fu_item_subgroup_a-b',
@@ -1234,6 +1307,7 @@ data:extend({
     {
         name = 'fu_plasma_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_plasma_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'concrete', amount = 100},
@@ -1252,6 +1326,7 @@ data:extend({
     {
         name = 'fu_magnet_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_magnet_entity"},
         enabled = false,
         ingredients = {
             {type = 'item', name = 'concrete', amount = 100},
@@ -1270,6 +1345,7 @@ data:extend({
     {
         name = 'fu_magnet_1_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_magnet"},
         enabled = false,
         category = 'fu_magnet_category',
         main_product = 'fu_materials_magnet',
@@ -1288,6 +1364,7 @@ data:extend({
     {
         name = 'fu_KFK_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_KFK"},
         enabled = false,
         category = 'fi_compound_machine_category',
         ingredients = {
@@ -1305,6 +1382,7 @@ data:extend({
     {
         name = 'fu_TIM_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_TIM"},
         enabled = false,
         category = 'fi_compound_machine_category',
         ingredients = {
@@ -1321,6 +1399,7 @@ data:extend({
     {
         name = 'fu_metal_foam_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_metal_foam"},
         enabled = false,
         category = 'chemistry',
         ingredients = {
@@ -1337,6 +1416,7 @@ data:extend({
     {
         name = 'fu_carbon_fiber_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_carbon_fiber"},
         enabled = false,
         category = 'fi_fiberer_category',
         ingredients = {
@@ -1355,6 +1435,7 @@ data:extend({
     {
         name = 'fu_laser_card_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_laser_card"},
         enabled = false,
         category = 'fu_laser_category',
         main_product = 'fu_materials_laser_card',
@@ -1371,6 +1452,7 @@ data:extend({
     {
         name = 'fu_plasma_card_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_plasma_card"},
         enabled = false,
         category = 'fu_plasma_category',
         main_product = 'fu_materials_plasma_card',
@@ -1388,6 +1470,7 @@ data:extend({
     {
         name = 'fu_magnet_card_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_magnet_card"},
         enabled = false,
         category = 'fu_magnet_category',
         main_product = 'fu_materials_magnet_card',
@@ -1406,6 +1489,7 @@ data:extend({
     {
         name = 'fu_pure_ore_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_pure_lead"},
         enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fu_materials_pure_lead',
@@ -1425,6 +1509,7 @@ data:extend({
     {
         name = 'fu_arc_pure_lead_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_arc_pure_lead"},
         enabled = false,
         category = 'el_arc_furnace_category',
         ingredients = {
@@ -1440,6 +1525,7 @@ data:extend({
     {
         name = 'fu_tech_sign_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_tech_sign_item"},
         enabled = false,
         main_product = 'fu_tech_sign_item',
         ingredients = {
@@ -1457,6 +1543,7 @@ data:extend({
     {
         name = 'fu_heat_lead_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_lead_fluid_cold"},
         category = 'crafting-with-fluid',
         enabled = false,
         ingredients = {
@@ -1470,6 +1557,7 @@ data:extend({
     {
         name = 'fu_empty_container_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_empty_container"},
         enabled = false,
         ingredients = {
             {type="item", name="fu_materials_magnet", amount=2},
@@ -1485,6 +1573,7 @@ data:extend({
     {
         name = 'fu_neutron_fluid_container_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_neutron_fluid"},
         category = 'crafting-with-fluid',
         main_product = 'fu_neutron_fluid',
         enabled = false,
@@ -1500,6 +1589,7 @@ data:extend({
     {
         name = 'fu_neutron_fluid_233_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_neutron_fluid"},
         category = 'crafting-with-fluid',
         main_product = 'fu_neutron_fluid',
         enabled = false,
@@ -1515,6 +1605,7 @@ data:extend({
     {
         name = 'fu_neutron_fluid_235_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_neutron_fluid"},
         category = 'crafting-with-fluid',
         main_product = 'fu_neutron_fluid',
         enabled = false,
@@ -1530,6 +1621,7 @@ data:extend({
     {
         name = 'fu_neutron_fluid_232_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_neutron_fluid"},
         category = 'crafting-with-fluid',
         main_product = 'fu_neutron_fluid',
         enabled = false,
@@ -1545,6 +1637,7 @@ data:extend({
     {
         name = 'fu_neutron_fluid_MOX_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_neutron_fluid"},
         category = 'crafting-with-fluid',
         main_product = 'fu_neutron_fluid',
         enabled = false,
@@ -1561,8 +1654,9 @@ data:extend({
     {
         name = 'fu_burn_oxygen_recipe',
         type = 'recipe',
+        localised_name = {"recipe-name.fu_burn_oxygen_recipe"},
         category = 'fu_burner_category',
-        icon = '__248k-Redux__/ressources/elements/fu_oxygen.png',
+        icon = '__248k-Redux-graphics__/ressources/elements/fu_oxygen.png',
         icon_size = 64,
         enabled = true,
         hidden = true,
@@ -1577,6 +1671,7 @@ data:extend({
     {
         name = 'fu_burn_steam_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.water"},
         category = 'fu_burner_category',
         enabled = true,
         hidden = true,
@@ -1593,6 +1688,7 @@ data:extend({
     {
         name = 'fu_burn_water_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.water"},
         category = 'fu_burner_category',
         icon = data.raw.fluid["water"].icon,
         icon_size = data.raw.fluid["water"].icon_size,
@@ -1608,6 +1704,7 @@ data:extend({
     {
         name = 'fu_burn_dirty_water_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.water"},
         category = 'fu_burner_category',
         hidden = true,
         ingredients = {
@@ -1623,6 +1720,7 @@ data:extend({
     {
         name = 'fu_miner_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_miner_entity"},
         category = 'crafting',
         enabled = false,
         ingredients = {
@@ -1642,6 +1740,7 @@ data:extend({
     {
         name = 'fu_mining_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_stone"},
         category = 'fu_miner_category',
         enabled = false,
         ingredients = {},
@@ -1655,6 +1754,7 @@ data:extend({
     {
         name = 'fu_extract_stone_recipe',
         type = 'recipe',
+        localised_name = {"item-name.stone"},
         category = 'chemistry',
         enabled = false,
         main_product = 'stone',
@@ -1675,6 +1775,7 @@ data:extend({
     {
         name = 'fu_crush_stone_recipe',
         type = 'recipe',
+        localised_name = {"item-name.stone"},
         category = 'fi_crushing',
         enabled = false,
         ingredients = {
@@ -1690,6 +1791,7 @@ data:extend({
     {
         name = 'fu_drill_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_miner_fuel_item"},
         category = 'crafting',
         enabled = false,
         ingredients = {
@@ -1705,6 +1807,7 @@ data:extend({
     {
         name = 'fu_charge_crystal_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_energy_charged_crystal"},
         enabled = false,
         category = 'el_charger_category',
         ingredients = {
@@ -1719,27 +1822,28 @@ data:extend({
     {
         name = 'fu_charger_hydrogen_oxygen_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'el_charger_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
             {type="item", name="fi_materials_gold", amount=1},
-            {type="fluid", name="water", amount=150},
+            {type="fluid", name="water", amount=15},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=100},
-            {type="fluid", name="fu_oxygen", amount=50},
-            {type="item", name="fi_materials_gold", amount=1, probability=0.25},
+            {type="fluid", name="fu_hydrogen", amount=10},
+            {type="fluid", name="fu_oxygen", amount=5},
+            {type="item", name="fi_materials_gold", amount=1, probability=0.50},
         },
         energy_required = 5,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_1.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_1.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1748,27 +1852,28 @@ data:extend({
     {
         name = 'fu_charger_hydrogen_oxygen_1_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'el_charger_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
             {type="item", name="fi_materials_gold", amount=1},
-            {type="fluid", name="water", amount=300},
+            {type="fluid", name="water", amount=30},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=200},
-            {type="fluid", name="fu_oxygen", amount=100},
-            {type="item", name="fi_materials_gold", amount=1, probability=0.55},
+            {type="fluid", name="fu_hydrogen", amount=20},
+            {type="fluid", name="fu_oxygen", amount=10},
+            {type="item", name="fi_materials_gold", amount=1, probability=0.75},
         },
         energy_required = 5,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_2.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_2.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1777,16 +1882,17 @@ data:extend({
     {
         name = 'fu_charger_hydrogen_oxygen_2_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'el_charger_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
             {type="item", name="fi_materials_gold", amount=1},
-            {type="fluid", name="water", amount=650},
+            {type="fluid", name="water", amount=65},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=500},
-            {type="fluid", name="fu_oxygen", amount=150},
+            {type="fluid", name="fu_hydrogen", amount=50},
+            {type="fluid", name="fu_oxygen", amount=15},
             {type="item", name="fi_materials_gold", amount=1, probability=0.85},
         },
         energy_required = 5,
@@ -1794,10 +1900,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_3.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_3.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1806,24 +1912,25 @@ data:extend({
     {
         name = 'fu_charger_hydrogen_oxygen_3_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.fu_hydrogen"},
         category = 'el_charger_category',
         main_product = 'fu_hydrogen',
         enabled = false,
         ingredients = {
-            {type="fluid", name="water", amount=1100},
+            {type="fluid", name="water", amount=110},
         },
         results = {
-            {type="fluid", name="fu_hydrogen", amount=1000},
+            {type="fluid", name="fu_hydrogen", amount=100},
         },
         energy_required = 5,
         always_show_made_in = true,
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/elements/fu_hydrogen.png"
+                icon = "__248k-Redux-graphics__/ressources/elements/fu_hydrogen.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_4.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_4.png"
             }
         },
         subgroup = 'fu_item_subgroup_e',
@@ -1832,6 +1939,7 @@ data:extend({
     {
         name = 'fu_grenade_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_grenade"},
         enabled = false,
         category = 'crafting',
         main_product = 'fu_grenade',
@@ -1845,8 +1953,9 @@ data:extend({
         energy_required = 4,
     },
     {
-        name = 'fu_lab_recipe',
+        name = 'fu_lab_recipe', --Pendiente, falta que aparezca y modulos
         type = 'recipe',
+        localised_name = {"entity-name.fu_lab_entity"},
         enabled = false,
         category = 'crafting',
         main_product = 'fu_lab_item',
@@ -1866,6 +1975,7 @@ data:extend({
     {
         name = 'fu_ingot_recipe',
         type = 'recipe',
+        localised_name = {"entity-name.fu_ingot_entity"},
         enabled = false,
         category = 'crafting',
         main_product = 'fu_ingot_item',
@@ -1885,6 +1995,7 @@ data:extend({
     {
         name = 'fu_gold_ingot_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_gold_ingot"},
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_gold_ingot',
@@ -1903,6 +2014,7 @@ data:extend({
     {
         name = 'fu_gold_plate_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fi_materials_gold"},
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_gold',
@@ -1920,6 +2032,7 @@ data:extend({
     {
         name = 'fu_neodym_ingot_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_neodym_ingot"},
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_neodym_ingot',
@@ -1938,6 +2051,7 @@ data:extend({
     {
         name = 'fu_neodym_plate_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fi_materials_neodym"},
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_neodym',
@@ -1955,6 +2069,7 @@ data:extend({
     {
         name = 'fu_titan_ingot_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_titan_ingot"},
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_titan_ingot',
@@ -1973,6 +2088,7 @@ data:extend({
     {
         name = 'fu_titan_plate_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fi_materials_titan"},
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_titan',
@@ -1990,6 +2106,7 @@ data:extend({
     {
         name = 'fu_lead_ingot_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_materials_lead_ingot"},
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_lead_ingot',
@@ -2008,6 +2125,7 @@ data:extend({
     {
         name = 'fu_lead_plate_recipe',
         type = 'recipe',
+        localised_name = {"item-name.fu_lead_item"},
         enabled = false,
         category = 'crafting',
         main_product = 'fu_lead_item',
@@ -2025,15 +2143,16 @@ data:extend({
     {
         name = 'fu_treat_slag_recipe',
         type = 'recipe',
+        localised_name = {"fluid-name.el_dirty_water"},
         enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'el_dirty_water',
         ingredients = {
             {type="item", name="fu_materials_slag", amount=10},
-            {type="fluid", name="water", amount=25},
+            {type="fluid", name="water", amount=1000},
         },
         results = {
-            {type="fluid", name="el_dirty_water", amount=25},
+            {type="fluid", name="el_dirty_water", amount=1000},
         },
         energy_required = 0.2,
         always_show_made_in = true,
@@ -2042,10 +2161,10 @@ data:extend({
         icon_size = 64,
         icons = {
             {
-                icon = "__248k-Redux__/ressources/fluids/el_dirty_water.png"
+                icon = "__248k-Redux-graphics__/ressources/fluids/el_dirty_water.png"
             },
             {
-                icon = "__248k-Redux__/ressources/icons/overlay_slag.png"
+                icon = "__248k-Redux-graphics__/ressources/icons/overlay_slag.png"
             }
         },
     },
