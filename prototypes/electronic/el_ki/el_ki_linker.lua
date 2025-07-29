@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_ki/el_ki_linker/el_ki_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_ki/el_ki_linker/el_ki_'..name
 end
 
 data:extend({
@@ -75,7 +75,7 @@ data:extend({
     {
 		type     = "sprite",
 		name     = "el_ki_not_operable_icon",		
-		filename = "__248k-Redux__/ressources/electronic/el_ki/el_ki_linker/el_ki_not_operable_icon.png",
+		filename = "__248k-Redux-graphics__/ressources/electronic/el_ki/el_ki_linker/el_ki_not_operable_icon.png",
 		width    = 64,
 		height   = 64,
 		scale    = 1

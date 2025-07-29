@@ -1,6 +1,6 @@
 --local functions
 local function sprite(name)
-    return '__248k-Redux__/ressources/techs/'..name
+    return '__248k-Redux-graphics__/ressources/techs/'..name
 end
 --techs
 data:extend({
@@ -385,7 +385,7 @@ data:extend({
     {
         name = 'el_kerosene_tech',
         type = 'technology',
-        icon = '__248k-Redux__/ressources/techs/el_kerosene_tech.png',
+        icon = '__248k-Redux-graphics__/ressources/techs/el_kerosene_tech.png',
         icon_size = 128,
         prerequisites = {'el_ALK_tech'},
         effects = {

@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_ki/el_ki_beacon/el_ki_beacon_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_ki/el_ki_beacon/el_ki_beacon_'..name
 end
 
 local function config_blueprintable(name,int)
@@ -121,6 +121,7 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     },
 
     {
@@ -188,6 +189,7 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     },
     {
         name = 'fu_ki_beacon_entity',
@@ -253,6 +255,7 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     }
 
 })

@@ -123,7 +123,7 @@ data:extend({
     {
         type = "sprite",
         name = "sprite_248kmainbutton",
-        filename = "__248k-Redux__/ressources/groups/gr_group_icon.png",
+        filename = "__248k-Redux-graphics__/ressources/groups/gr_group_icon.png",
         priority = "extra-high",
         width = 64,
         height = 64,
@@ -153,11 +153,6 @@ style.ei_titlebar_draggable_spacer = {
 --overhaul
 require('scripts/overhaul')
 
---white hole
-require('scripts/gravitation/gr_make_white_hole_recipes')
-
---make item vent recipes
-require('scripts/electronic/el_burner')
 
 --science overhaul
 require('scripts/science_overhaul')

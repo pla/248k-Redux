@@ -112,8 +112,7 @@ script.on_nth_tick(60,
 
     el_ki_supported_adder()
 
-    if storage.ki.dirty then
-        --game.print("f")
+    if storage.ki.dirty then  
         el_ki_beacon_update()
         gui.update_main()
         storage.ki.dirty = false

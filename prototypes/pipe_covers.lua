@@ -1,5 +1,5 @@
 local function sprite(name)
-    return "__248k-Redux__/ressources/pipe_covers/"..name..".png"
+    return "__248k-Redux-graphics__/ressources/pipe_covers/"..name..".png"
 end
 
 empty_sprite = {

@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/fusion/fu_star_engine/fu_star_engine_heater_left/fu_star_engine_heater_left_'..name
+    return '__248k-Redux-graphics__/ressources/fusion/fu_star_engine/fu_star_engine_heater_left/fu_star_engine_heater_left_'..name
 end
 
 --item
@@ -33,7 +33,7 @@ data:extend({
         flags = {"player-creation","placeable-neutral","not-rotatable"},
         max_health = 300,
         corpse = 'big-remnants',
-        collision_box = {{-9.4,-4.4},{9.4,4.4}},
+        collision_box = {{-9.3,-4.4},{9.4,4.4}},
         selection_box = {{-9.5,-4.5},{9.5,4.5}},
         map_color = {r=0, g=0, b=1, a=1},
         minable = {
@@ -58,7 +58,7 @@ data:extend({
               
               pipe_connections =
               {
-                {flow_direction = "input", position = {9, 0}, direction = 4},
+                {flow_direction = "input", position = {-9, 0}, direction = 12},
               },
               production_type = "input"
             },
@@ -70,7 +70,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {9, 2}, direction = 4},
+                  {flow_direction = "input", position = {-9, 2}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -82,7 +82,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {flow_direction = "input", position = {9, -2}, direction = 4},
+                  {flow_direction = "input", position = {-9, -2}, direction = 12},
                 },
                 production_type = "input"
             },
@@ -94,7 +94,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {flow_direction = "output", position = {-9, -0}, direction = 12},
+                  {flow_direction = "output", position = {9, -0}, direction = 4},
                 },
                 production_type = "output"
             },
@@ -106,7 +106,7 @@ data:extend({
                 
                 pipe_connections =
                 {
-                  {flow_direction = "output", position = {-9, -2}, direction = 12},
+                  {flow_direction = "output", position = {9, -2}, direction = 4},
                 },
                 production_type = "output"
             },
@@ -118,7 +118,7 @@ data:extend({
               
               pipe_connections =
               {
-                {flow_direction = "output", position = {-9, 2}, direction = 12},
+                {flow_direction = "output", position = {9, 2}, direction = 4},
               },
               production_type = "output"
             },

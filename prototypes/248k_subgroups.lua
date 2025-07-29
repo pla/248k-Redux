@@ -1,5 +1,5 @@
 local function sprite(name)
-    return '__248k-Redux__/ressources/groups/'..name
+    return '__248k-Redux-graphics__/ressources/groups/'..name
 end
 
 data:extend({

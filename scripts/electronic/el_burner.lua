@@ -4,7 +4,7 @@ function make_burner_recipe(item)
         name = 'fu_burn_oxygen_recipe',
         type = 'recipe',
         category = 'fu_burner_category',
-        icon = '__248k-Redux__/ressources/elements/fu_oxygen.png',
+        icon = '__248k-Redux-graphics__/ressources/elements/fu_oxygen.png',
         icon_size = 64,
         enabled = true,
         hidden = true,

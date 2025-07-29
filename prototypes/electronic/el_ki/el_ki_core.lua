@@ -4,7 +4,7 @@ local function config(name)
 end
 
 local function sprite(name)
-    return '__248k-Redux__/ressources/electronic/el_ki/el_ki_core/el_ki_core_'..name
+    return '__248k-Redux-graphics__/ressources/electronic/el_ki/el_ki_core/el_ki_core_'..name
 end
 
 local function core_input(core_number)
@@ -232,6 +232,7 @@ data:extend({
             height = 64
         },
         inventory_size = 20,
+        module_slots = 2,
     },
     --===============================================================
     {
@@ -410,6 +411,7 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     },
     --===============================================================
     {
@@ -616,5 +618,6 @@ data:extend({
             height = 64
         },
         inventory_size = 1,
+        module_slots = 2,
     }
 })
