@@ -19,7 +19,7 @@ function gr_make_white_hole_recipe(item)
             {type = "item", name = item, amount = 1}
         }
     blank["results"] = {
-            {type = "item", name = item, amount = 1}
+            {type = "item", name = item, amount = 2}
         }
 
     --table.insert(data.raw.recipe, base)

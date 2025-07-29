@@ -153,11 +153,6 @@ style.ei_titlebar_draggable_spacer = {
 --overhaul
 require('scripts/overhaul')
 
---white hole
-require('scripts/gravitation/gr_make_white_hole_recipes')
-
---make item vent recipes
-require('scripts/electronic/el_burner')
 
 --science overhaul
 require('scripts/science_overhaul')
