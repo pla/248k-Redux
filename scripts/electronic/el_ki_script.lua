@@ -751,11 +751,13 @@ function make_beacon_text(entity)
 end
 
 function remove_request_ghost(entity)
-    if (entity.ghost_name == "el_ki_beacon_entity") or (entity.ghost_name == "fi_ki_beacon_entity") or (entity.ghost_name == "fu_ki_beacon_entity") then
-       if entity.item_requests then 
-            entity.item_requests = {}
-       end
-    end
+    --[[if (entity.ghost_name == "el_ki_beacon_entity") or  --no entiendo la funcion de esta funcion
+       (entity.ghost_name == "fi_ki_beacon_entity") or      --quitarla no causa errores o cambios
+       (entity.ghost_name == "fu_ki_beacon_entity") then
+        if entity.valid then
+            entity.destroy()
+        end
+    end]]
 end
 
 function make_not_operable_icon(entity)

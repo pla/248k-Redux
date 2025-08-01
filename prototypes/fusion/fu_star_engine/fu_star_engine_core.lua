@@ -205,5 +205,6 @@ data:extend({
             sound = { filename = '__base__/sound/heat-exchanger.ogg'},
             apparent_volume = 2.5,
         },
+        circuit_wire_max_distance = default_circuit_wire_max_distance,
     },
 })
