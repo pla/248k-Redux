@@ -156,6 +156,16 @@ data:extend({
         sound = {filename = "__base__/sound/chemical-plant-3.ogg" },
         apparent_volume = 0.3,
       },
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template,
+      {
+        { variation = 25, main_offset = util.by_pixel(-99.875,  77.5), shadow_offset = util.by_pixel(-99.875,  77.5), show_shadow = true },
+        { variation = 25, main_offset = util.by_pixel(-99.875,  77.5), shadow_offset = util.by_pixel(-99.875,  77.5), show_shadow = true },
+        { variation = 25, main_offset = util.by_pixel(-99.875,  77.5), shadow_offset = util.by_pixel(-99.875,  77.5), show_shadow = true },
+        { variation = 25, main_offset = util.by_pixel(-99.875,  77.5), shadow_offset = util.by_pixel(-99.875,  77.5), show_shadow = true },
+      }
+    )
   },
 })
 

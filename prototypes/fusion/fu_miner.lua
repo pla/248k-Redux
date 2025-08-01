@@ -43,7 +43,6 @@ data:extend({
       icon_size = 64,
       flags = {"player-creation","placeable-neutral"},
       max_health = 300,
-      fixed_recipe = '',
       corpse = 'big-remnants',
       collision_box = {{-5.4,-5.4},{5.4,5.4}},
       selection_box = {{-5.5,-5.5},{5.5,5.5}},

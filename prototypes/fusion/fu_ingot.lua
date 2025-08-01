@@ -155,6 +155,16 @@ data:extend({
         sound = {filename = "__base__/sound/electric-furnace.ogg" },
         apparent_volume = 0.1,
       },
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions.create_vector(
+      universal_connector_template,
+      {
+        { variation = 25, main_offset = util.by_pixel(-100.25,  74.625), shadow_offset = util.by_pixel(-100.25,  74.625), show_shadow = true },
+        { variation = 25, main_offset = util.by_pixel(-100.25,  74.625), shadow_offset = util.by_pixel(-100.25,  74.625), show_shadow = true },
+        { variation = 25, main_offset = util.by_pixel(-100.25,  74.625), shadow_offset = util.by_pixel(-100.25,  74.625), show_shadow = true },
+        { variation = 25, main_offset = util.by_pixel(-100.25,  74.625), shadow_offset = util.by_pixel(-100.25,  74.625), show_shadow = true },
+      }
+    )
   },
 })
 
