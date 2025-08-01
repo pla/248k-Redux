@@ -17,7 +17,10 @@ data:extend({
         icon_size = 64,
         stack_size = 1,
         subgroup = 'fu_item_subgroup_d',
-        rocket_launch_product = {'fu_space_probe_data_card_1_item',10},
+        send_to_orbit_mode = "automated",
+        rocket_launch_products = {
+            {type = "item", name = 'fu_space_probe_data_card_1_item', amount = 10}
+        },
         order = 'd-a',
     },
     {
@@ -27,7 +30,10 @@ data:extend({
         icon_size = 64,
         stack_size = 1,
         subgroup = 'fu_item_subgroup_d',
-        rocket_launch_product = {'fu_space_probe_data_card_3_item',10},
+        send_to_orbit_mode = "automated",
+        rocket_launch_products = {
+            {type = "item", name = 'fu_space_probe_data_card_3_item', amount = 10}
+        },
         order = 'd-b',
     },
     {
@@ -37,7 +43,10 @@ data:extend({
         icon_size = 64,
         stack_size = 1,
         subgroup = 'fu_item_subgroup_d',
-        rocket_launch_product = {'fu_space_probe_ore_item',100},
+        send_to_orbit_mode = "automated",
+        rocket_launch_products = {
+            {type = "item", name = 'fu_space_probe_ore_item', amount = 100}
+        },
         order = 'd-c',
     },
     --data cards
