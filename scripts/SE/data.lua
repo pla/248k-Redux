@@ -33,6 +33,7 @@ data.raw["assembling-machine"]["fu_exchanger_entity"].se_allow_in_space = true
 
 data.raw["assembling-machine"]["gr_crafter_entity"].se_allow_in_space = true
 
+--[[ Fix temporal SE crash
 se_delivery_cannon_recipes["el_materials_ALK"] = {name= "el_materials_ALK"}
 se_delivery_cannon_recipes["el_aluminum_item"] = {name= "el_aluminum_item"}
 se_delivery_cannon_recipes["el_materials_ceramic"] = {name= "el_materials_ceramic"}
@@ -53,3 +54,4 @@ se_delivery_cannon_recipes["fu_materials_refined_crystal"] = {name= "fu_material
 se_delivery_cannon_recipes["fu_materials_magnet"] = {name= "fu_materials_magnet"}
 se_delivery_cannon_recipes["fu_materials_KFK"] = {name= "fu_materials_KFK"}
 se_delivery_cannon_recipes["fu_materials_TIM"] = {name= "fu_materials_TIM"}
+]]
