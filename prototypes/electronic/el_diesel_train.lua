@@ -65,7 +65,7 @@ data:extend({
             type = "burner",
             fuel_categories = {'el_train_fuel'},
             fuel_inventory_size = 3,
-            effectitvity = 1,
+            effectivity = 1,
             emissions = {emissions_per_minute = 20},
             smoke = {
                 {

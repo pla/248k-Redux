@@ -16,7 +16,7 @@ data:extend({
         icon_size = 64,
         stack_size = 20,
         subgroup = 'el_item_subgroup_d',
-        placed_as_equipment_result = 'el_train_equipment_generator_item',
+        place_as_equipment_result = 'el_train_equipment_generator_item',
         order = 'c-a',
     },
     {
@@ -26,7 +26,7 @@ data:extend({
         icon_size = 64,
         stack_size = 20,
         subgroup = 'el_item_subgroup_d',
-        placed_as_equipment_result = 'el_train_equipment_accelerator_item',
+        place_as_equipment_result = 'el_train_equipment_accelerator_item',
         order = 'c-b',
     },
 

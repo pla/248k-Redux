@@ -22,6 +22,7 @@ data:extend({
             {type = "item", name = 'fu_space_probe_data_card_1_item', amount = 10}
         },
         order = 'd-a',
+        weight = 1000 * kg
     },
     {
         name = 'fu_space_probe_probe_item',
@@ -35,6 +36,7 @@ data:extend({
             {type = "item", name = 'fu_space_probe_data_card_3_item', amount = 10}
         },
         order = 'd-b',
+        weight = 1000 * kg
     },
     {
         name = 'fu_space_probe_deep_probe_item',
@@ -48,6 +50,7 @@ data:extend({
             {type = "item", name = 'fu_space_probe_ore_item', amount = 100}
         },
         order = 'd-c',
+        weight = 1000 * kg
     },
     --data cards
     {
@@ -58,6 +61,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'd-a',
+        weight = 1 * kg
     },
     {
         name = 'fu_space_probe_data_card_2_item',
@@ -67,6 +71,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'd-b',
+        weight = 1 * kg
     },
     {
         name = 'fu_space_probe_data_card_3_item',
@@ -76,6 +81,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'd-c',
+        weight = 1 * kg
     },
     -- matter
     --ore
@@ -87,6 +93,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_d',
         order = 'd-d',
+        weight = 10 * kg
     },
     {
         name = 'fu_space_probe_down_matter_item',
@@ -96,6 +103,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'd-d',
+        weight = 100 * kg
     },
     {
         name = 'fu_space_probe_up_matter_item',
@@ -105,6 +113,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'd-e',
+        weight = 100 * kg
     },
     --science
     {
