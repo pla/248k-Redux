@@ -16,7 +16,7 @@ data:extend({
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_e',
-        placed_as_equipment_result = 'fi_train_equipment_generator_item',
+        place_as_equipment_result = 'fi_train_equipment_generator_item',
         order = 'a-a',
     },
     {
@@ -26,7 +26,7 @@ data:extend({
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_e',
-        placed_as_equipment_result = 'fi_equipment_player_reactor_item',
+        place_as_equipment_result = 'fi_equipment_player_reactor_item',
         order = 'a-b',
     },
     {
@@ -36,7 +36,7 @@ data:extend({
         icon_size = 64,
         stack_size = 20,
         subgroup = 'fi_item_subgroup_e',
-        placed_as_equipment_result = 'fi_equipment_player_shield_item',
+        place_as_equipment_result = 'fi_equipment_player_shield_item',
         order = 'a-c',
     },
 

@@ -300,7 +300,7 @@ data:extend({
         icon_size = 64,
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
-        placed_as_equipment_result = 'gr_materials_charge_item',
+        place_as_equipment_result = 'gr_materials_charge_item',
         order = 'c-a',
     },
     {
