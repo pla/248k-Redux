@@ -84,8 +84,9 @@ require('prototypes/fi_recipes')
 require('prototypes/fu_recipes')
 require('prototypes/gr_recipes')
 
-
+-- TODO menu simulations
 --require('scripts/menu_simulation')
+
 require('scripts/clean_up')
 
 --fix early kerosene
@@ -135,20 +136,7 @@ if data.raw.technology["atomic-bomb"] then
     table.insert(data.raw.technology["atomic-bomb"].effects, {type ="unlock-recipe", recipe ="fi_atomic_bomb_recipe"})
 end
 
-local style = data.raw["gui-style"]["default"]
-style.ei_subheader_frame = {
-    type = "frame_style",
-    parent = "subheader_frame",
-    horizontally_stretchable = "on"
-}
-style.ei_titlebar_draggable_spacer = {
-    type = "empty_widget_style",
-    parent = "draggable_space",
-    height = 24,
-    horizontally_stretchable = "on",
-    left_margin = 4,
-    right_margin = 4
-}
+require("prototypes/styles")
 
 --overhaul
 require('scripts/overhaul')
