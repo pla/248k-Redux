@@ -1,3 +1,5 @@
+--TODO booktorio, check if file can be removed
+
 local function sprite(name)
     return '__248k-Redux__/ressources/booktorio/bk_sprite_'..name
 end

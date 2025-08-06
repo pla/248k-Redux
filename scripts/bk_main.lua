@@ -1,7 +1,7 @@
 --tables
 local table_248k_diesel_train =
 {
-	{"Fuels", "Burn value", "Vehicle acceleration", "Top speed", "Equipment", "Effects"},
+	{"Fuels", "REMOVE ME Burn value", "Vehicle acceleration", "Top speed", "Equipment", "Effects"},
     {"[item=el_train_fuel_diesel_item]", "100MJ", "100%", "100%","[item=el_train_equipment_accelerator_item]", "acceleration: +35%"},
     {"[item=el_train_fuel_diesel_energized_item]", "135MJ", "55%", "130%", "[item=el_train_equipment_generator_item]", "power: +600kW"},
     {"[item=fi_fuel_train_crystal_item]", "350MJ", "60%", "155%", "[item=fi_train_equipment_generator_item]", "power: +2.4MW"},

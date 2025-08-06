@@ -1,5 +1,5 @@
 require('scripts/electronic/el_ki_script')
-require('scripts/bk_main')
+--TODO check if file can be deleted require('scripts/bk_main')
 require('scripts/gravitation/gr_black_hole_script')
 local gui = require('scripts/gui')
 local gr_gui = require('scripts/gravitation/gui')
