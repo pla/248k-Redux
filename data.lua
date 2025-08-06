@@ -101,11 +101,6 @@ if data.raw["fluid-turret"]["flamethrower-turret"] then
     table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "el_desulfurized_kerosene", damage_modifier = 1})
 end
 
-
---booktorio
-if mods["Booktorio"] then
-    require('bk_sprites')
-end
 --informatron
 if mods["informatron"] then
     require('bk_sprites')

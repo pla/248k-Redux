@@ -32,10 +32,6 @@ script.on_init(
         el_ki_init(e)
         gr_black_hole_init(e)
 
-        if script.active_mods["Booktorio"] then
-            registerThread_248k()
-        end
-
         for i,v in pairs(game.players) do
             gui.add_top_gui(game.players[i])
         end
@@ -192,8 +188,6 @@ script.on_event({
 
 script.on_configuration_changed(
     function()
-        if script.active_mods["Booktorio"] then
-            registerThread_248k()
-        end
+-- TODO remove
     end
 )

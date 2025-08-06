@@ -127,15 +127,3 @@ local thread_248k =
         }
     },
 }
-
---Function for call Booktorio remote interface
-function registerThread_248k()
-	if remote.interfaces["Booktorio"] then
-		remote.call("Booktorio", "add_thread", thread_248k) 
-	end
-end
-
---Suggested events where register/add the new thread
---script.on_init(registerThread)
---script.on_configuration_changed(registerThread)
---{type = "blueprint", text = "Waterturbine setup - 40MW", blueprint= ""},
