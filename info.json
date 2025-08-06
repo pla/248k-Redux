@@ -8,6 +8,7 @@
     "dependencies": [
         "base >= 2.0.0",
         "? Krastorio2",
-        "? space-age"
+        "? space-age",
+        "? informatron"
     ]
 }
