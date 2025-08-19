@@ -17,6 +17,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'el_item_subgroup_a',
         order = 'a-a',
+        weight = 4 * kg
     },
     {
         name = 'el_materials_pure_copper',
@@ -26,6 +27,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'el_item_subgroup_a',
         order = 'a-b',
+        weight = 4 * kg
     },
     {
         name = 'el_materials_pure_aluminum',
@@ -35,6 +37,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'el_item_subgroup_a',
         order = 'a-c',
+        weight = 4 * kg
     },
     {
         name = 'el_materials_ceramic',
@@ -44,6 +47,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'el_item_subgroup_a',
         order = 'a-c',
+        weight = 2 * kg
     },
     {
         name = 'el_materials_ALK',
@@ -53,5 +57,6 @@ data:extend({
         stack_size = 100,
         subgroup = 'el_item_subgroup_a',
         order = 'a-c',
+        weight = 2.5 * kg
     },
 })

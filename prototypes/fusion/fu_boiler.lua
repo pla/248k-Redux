@@ -54,6 +54,7 @@ data:extend({
             }
         },
         energy_usage = '150MW',
+        module_slots = 2,
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {

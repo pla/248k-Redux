@@ -53,6 +53,7 @@ data:extend({
             fuel_categories = {'fi_basic_fuel'}
         },
         energy_usage = '200kW',
+        module_slots = 2,
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {

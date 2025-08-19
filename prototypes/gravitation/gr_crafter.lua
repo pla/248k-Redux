@@ -48,6 +48,7 @@ data:extend({
             type = 'void',
         },
         energy_usage = '1W',
+        module_slots = 4,
         allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {

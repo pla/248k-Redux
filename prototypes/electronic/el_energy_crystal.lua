@@ -52,6 +52,7 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '15MJ',
+        weight = 1 * kg
     },
     {
         name = 'el_energy_crystal_charged_item',
@@ -68,5 +69,6 @@ data:extend({
         fuel_top_speed_multiplier = 1,
         fuel_value = '20MJ',
         burnt_result = 'el_energy_crystal_item',
+        weight = 1 * kg
     }
 })

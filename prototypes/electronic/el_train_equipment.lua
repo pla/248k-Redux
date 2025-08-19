@@ -18,6 +18,7 @@ data:extend({
         subgroup = 'el_item_subgroup_d',
         place_as_equipment_result = 'el_train_equipment_generator_item',
         order = 'c-a',
+        weight = 50 * kg
     },
     {
         name = 'el_train_equipment_accelerator_item',
@@ -28,6 +29,7 @@ data:extend({
         subgroup = 'el_item_subgroup_d',
         place_as_equipment_result = 'el_train_equipment_accelerator_item',
         order = 'c-b',
+        weight = 50 * kg
     },
 
 })

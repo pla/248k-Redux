@@ -328,6 +328,7 @@ data:extend({
         localised_name = {"item-name.fu_lead_ore_item"},
         category = 'crafting-with-fluid',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="stone", amount=10},
             {type="fluid", name="sulfuric-acid", amount=20},
@@ -344,6 +345,7 @@ data:extend({
         localised_name = {"item-name.fu_lead_item"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fu_arc_pure_lead", amount=100},
         },
@@ -360,6 +362,7 @@ data:extend({
         localised_name = {"item-name.fu_crushed_lead_item"},
         category = 'fi_crushing',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_lead_item", amount=1},
         },
@@ -374,6 +377,7 @@ data:extend({
         localised_name = {"fluid-name.fu_lead_fluid_cold"},
         category = 'crafting-with-fluid',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_crushed_lead_item", amount=1},
         },
@@ -1240,6 +1244,7 @@ data:extend({
         category = 'crafting-with-fluid',
         enabled = false,
         subgroup = 'fu_item_subgroup_a-b',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="petroleum-gas", amount=400},
             {type="item", name="fi_catalyst_crystal_item", amount=1}
@@ -1294,6 +1299,7 @@ data:extend({
         category = 'el_grower_category',
         enabled = false,
         subgroup = 'fu_item_subgroup_a-b',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fi_crystal_fluid", amount=100},
             {type="item", name="fi_energy_crystal_item", amount=2}
@@ -1367,6 +1373,7 @@ data:extend({
         localised_name = {"item-name.fu_materials_KFK"},
         enabled = false,
         category = 'fi_compound_machine_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="petroleum-gas", amount=20},
             {type="item", name="fu_materials_carbon_fiber", amount=1},
@@ -1385,6 +1392,7 @@ data:extend({
         localised_name = {"item-name.fu_materials_TIM"},
         enabled = false,
         category = 'fi_compound_machine_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fu_metal_foam", amount=20},
             {type="item", name="fi_materials_titan", amount=4},
@@ -1402,6 +1410,7 @@ data:extend({
         localised_name = {"fluid-name.fu_metal_foam"},
         enabled = false,
         category = 'chemistry',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="steam", amount=100},
             {type="item", name="el_aluminum_item", amount=4},
@@ -1419,6 +1428,7 @@ data:extend({
         localised_name = {"item-name.fu_materials_carbon_fiber"},
         enabled = false,
         category = 'fi_fiberer_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fi_crushed_coal_item", amount=6},
             --{type="fluid", name="steam", amount=240, temperature=165},
@@ -1512,6 +1522,7 @@ data:extend({
         localised_name = {"fluid-name.fu_arc_pure_lead"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_pure_lead", amount=1},
         },
@@ -1528,6 +1539,7 @@ data:extend({
         localised_name = {"item-name.fu_tech_sign_item"},
         enabled = false,
         main_product = 'fu_tech_sign_item',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_laser_card", amount=1},
             {type="item", name="fu_materials_plasma_card", amount=1},
@@ -1778,6 +1790,7 @@ data:extend({
         localised_name = {"item-name.stone"},
         category = 'fi_crushing',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_stone", amount=1},
         },
@@ -1794,6 +1807,7 @@ data:extend({
         localised_name = {"item-name.fu_miner_fuel_item"},
         category = 'crafting',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fi_materials_GFK", amount=1},
             {type="item", name="fi_materials_titan", amount=1},
@@ -1810,6 +1824,7 @@ data:extend({
         localised_name = {"item-name.fu_materials_energy_charged_crystal"},
         enabled = false,
         category = 'el_charger_category',
+        allow_productivity = true,
         ingredients = {
             {type='item', name='fu_materials_energy_crystal', amount=1},
         },
@@ -1999,6 +2014,7 @@ data:extend({
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_gold_ingot',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fi_arc_gold", amount=175},
         },
@@ -2018,6 +2034,7 @@ data:extend({
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_gold',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_gold_ingot", amount=1},
         },
@@ -2036,6 +2053,7 @@ data:extend({
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_neodym_ingot',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fi_arc_neodym", amount=175},
         },
@@ -2055,6 +2073,7 @@ data:extend({
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_neodym',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_neodym_ingot", amount=1},
         },
@@ -2073,6 +2092,7 @@ data:extend({
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_titan_ingot',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fi_arc_titan", amount=175},
         },
@@ -2092,6 +2112,7 @@ data:extend({
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_titan',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_titan_ingot", amount=1},
         },
@@ -2110,6 +2131,7 @@ data:extend({
         enabled = false,
         category = 'fu_ingot_category',
         main_product = 'fu_materials_lead_ingot',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fu_arc_pure_lead", amount=175},
         },
@@ -2129,6 +2151,7 @@ data:extend({
         enabled = false,
         category = 'crafting',
         main_product = 'fu_lead_item',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fu_materials_lead_ingot", amount=1},
         },

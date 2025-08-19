@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.16
+Date: 18.08.2025
+  Changes:
+    - Fixel train wheels not showing.
+    - Fixed module slots not showing on multiple machines.
+    - Enabled productivity for multiple recipes.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.15
 Date: 6.08.2025
   Changes:

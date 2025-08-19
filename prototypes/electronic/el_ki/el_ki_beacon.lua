@@ -31,6 +31,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'el_item_subgroup_f',
         order = 'b-a',
+        weight = 20 * kg
     },
     {
         name = 'fi_ki_beacon_item',
@@ -41,6 +42,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_k',
         order = 'b-a',
+        weight = 50 * kg
     },
     {
         name = 'fu_ki_beacon_item',
@@ -51,6 +53,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_k',
         order = 'b-a',
+        weight = 100 * kg
     },
 
 })

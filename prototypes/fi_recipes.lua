@@ -83,6 +83,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_basic_fuel_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'uranium-235', amount = 1},
             {type = 'item', name = 'uranium-238', amount = 19},
@@ -98,6 +99,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_basic_thorium_fuel_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_thorium232_item', amount = 10},
             {type = 'item', name = 'uranium-238', amount = 10},
@@ -113,6 +115,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_advanced_fuel_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_plutonium239_item', amount = 1},
             {type = 'item', name = 'uranium-238', amount = 19},
@@ -128,6 +131,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_advanced_thorium_fuel_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_uranium233_item', amount = 4},
             {type = 'item', name = 'uranium-238', amount = 16},
@@ -143,6 +147,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_pure_fuel_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'uranium-235', amount = 1},
             {type = 'item', name = 'fi_plutonium239_item', amount = 1},
@@ -178,6 +183,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_compound_material_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'el_aluminum_item', amount = 15},
             {type = 'item', name = 'steel-plate', amount = 10},
@@ -194,6 +200,7 @@ data:extend({
         localised_name = {"item-name.low-density-structure"},
         enabled = false,
         category = 'fi_crafting_category',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_materials_glass_fiber', amount = 3},
             {type = 'item', name = 'el_materials_ALK', amount = 3},
@@ -231,6 +238,7 @@ data:extend({
         enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'fi_thorium232_item',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = 'stone', amount = 80},
             {type = "item", name = 'el_energy_crystal_item', amount = 2},
@@ -397,6 +405,7 @@ data:extend({
         localised_name = {"item-name.fi_energy_crystal_item"},
         enabled = false,
         category = 'el_grower_category',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "el_energy_crystal_item", amount = 1},
             {type = "fluid", name = "fi_crystal_fluid", amount = 50},
@@ -413,6 +422,7 @@ data:extend({
         localised_name = {"item-name.fi_catalyst_crystal_item"},
         enabled = false,
         category = 'centrifuging',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = 'el_train_fuel_diesel_energized_item', amount = 1},
         },
@@ -428,6 +438,7 @@ data:extend({
         localised_name = {"item-name.fi_base_crystal_item"},
         enabled = false,
         category = 'crafting-with-fluid',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="fi_crystal_fluid", amount=100},
             {type="item", name="fi_catalyst_crystal_item", amount=1},
@@ -443,6 +454,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_crystal_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'el_energy_crystal_item', amount = 1},
         },
@@ -459,6 +471,7 @@ data:extend({
         enabled = false,
         category = 'chemistry',
         main_product = 'fi_crystal_fluid',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "fi_crushed_crystal_item", amount = 1},
             {type = "item", name = "fi_crushed_lithium_item", amount = 1},
@@ -474,6 +487,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_fuel_train_crystal_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_energy_crystal_charged_item', amount = 1},
             {type = 'item', name = 'el_train_fuel_diesel_item', amount = 4},
@@ -490,6 +504,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_lithium_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'el_lithium_item', amount = 1},
         },
@@ -505,6 +520,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_iron_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'iron-plate', amount = 1},
         },
@@ -520,6 +536,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_copper_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'copper-plate', amount = 1},
         },
@@ -535,6 +552,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_aluminum_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'el_aluminum_item', amount = 1},
         },
@@ -550,6 +568,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_coal_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'coal', amount = 1},
         },
@@ -565,6 +584,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_stone_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'stone', amount = 1},
         },
@@ -580,6 +600,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_uranium_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'uranium-238', amount = 1},
         },
@@ -595,6 +616,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.fi_industrial_steel_blend_item"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_crushed_coal_item', amount = 3},
             {type = 'item', name = 'fi_crushed_iron_item', amount = 4},
@@ -611,6 +633,7 @@ data:extend({
         localised_name = {"item-name.fi_industrial_steel_item"},
         enabled = false,
         category = 'smelting',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_industrial_steel_blend_item', amount = 4},
         },
@@ -626,6 +649,7 @@ data:extend({
         localised_name = {"item-name.steel-plate"},
         enabled = false,
         category = 'smelting',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_industrial_steel_blend_item', amount = 1},
         },
@@ -816,6 +840,7 @@ data:extend({
         enabled = false,
         category = 'fi_fiberer_category',
         main_product = 'fi_materials_natural_fiber',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "wood", amount = 1},
             --{type="fluid", name="steam", amount=240, temperature=165},
@@ -833,6 +858,7 @@ data:extend({
         enabled = false,
         category = 'fi_fiberer_category',
         main_product = 'fi_materials_glass_fiber',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "fi_crushed_glass_item", amount = 2},
             --{type="fluid", name="steam", amount=240, temperature=165},
@@ -849,6 +875,7 @@ data:extend({
         localised_name = {"fluid-name.fi_arc_glass"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "stone", amount = 3},
         },
@@ -865,6 +892,7 @@ data:extend({
         localised_name = {"item-name.fi_materials_glass"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_arc_glass", amount = 100},
         },
@@ -881,6 +909,7 @@ data:extend({
         localised_name = {"item-name.fi_crushed_glass_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_materials_glass', amount = 1},
         },
@@ -914,6 +943,7 @@ data:extend({
         enabled = false,
         category = 'chemistry',
         main_product = 'fi_strong_acid',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "water", amount = 100},
             {type = "fluid", name = "sulfuric-acid", amount = 50},
@@ -1065,6 +1095,7 @@ data:extend({
         localised_name = {"fluid-name.fi_arc_gold"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "fi_materials_pure_gold", amount = 1},
         },
@@ -1081,6 +1112,7 @@ data:extend({
         localised_name = {"item-name.fi_materials_gold"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_arc_gold", amount = 100},
         },
@@ -1097,6 +1129,7 @@ data:extend({
         localised_name = {"fluid-name.fi_arc_titan"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "fi_materials_pure_titan", amount = 1},
         },
@@ -1113,6 +1146,7 @@ data:extend({
         localised_name = {"item-name.fi_materials_titan"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_arc_titan", amount = 100},
         },
@@ -1129,6 +1163,7 @@ data:extend({
         localised_name = {"fluid-name.fi_arc_neodym"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "fi_materials_pure_neodym", amount = 1},
         },
@@ -1145,6 +1180,7 @@ data:extend({
         localised_name = {"item-name.fi_materials_neodym"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_arc_neodym", amount = 100},
         },
@@ -1178,6 +1214,7 @@ data:extend({
         localised_name = {"item-name.fi_materials_NFK"},
         enabled = false,
         category = 'fi_compound_machine_category',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "petroleum-gas", amount = 10},
             {type = "item", name = "fi_materials_natural_fiber", amount = 1},
@@ -1196,6 +1233,7 @@ data:extend({
         localised_name = {"item-name.fi_materials_GFK"},
         enabled = false,
         category = 'fi_compound_machine_category',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "petroleum-gas", amount = 10},
             {type = "item", name = "fi_materials_glass_fiber", amount = 1},
@@ -1289,6 +1327,7 @@ data:extend({
         enabled = false,
         category = 'crafting',
         main_product = 'fi_materials_empty_solution',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = "fi_materials_GFK", amount = 6},
             {type = "item", name = "barrel", amount = 1},
@@ -1307,6 +1346,7 @@ data:extend({
         enabled = false,
         category = 'chemistry',
         main_product = 'fi_materials_solution',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_strong_acid", amount = 120},
             {type = "fluid", name = "sulfuric-acid", amount = 60},
@@ -1390,6 +1430,7 @@ data:extend({
         category = 'fi_refining',
         icon = sprite('icons/fi_refining_basic.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "crude-oil", amount = 180},
             {type = "fluid", name = "steam", amount = 40},
@@ -1413,6 +1454,7 @@ data:extend({
         category = 'fi_refining',
         icon = sprite('icons/fi_refining_coal.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "crude-oil", amount = 180},
             {type = "fluid", name = "steam", amount = 40},
@@ -1437,6 +1479,7 @@ data:extend({
         category = 'fi_refining',
         icon = sprite('icons/fi_refining_sulfur.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "crude-oil", amount = 180},
             {type = "fluid", name = "steam", amount = 40},
@@ -1460,6 +1503,7 @@ data:extend({
         enabled = false,
         category = 'chemistry',
         main_product = 'sulfur',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_acid_gas", amount = 10},
             {type = "fluid", name = "steam", amount = 5},
@@ -1480,6 +1524,7 @@ data:extend({
         enabled = false,
         category = 'chemistry',
         main_product = 'el_acidic_water',
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "fi_acid_gas", amount = 20},
             {type = "fluid", name = "steam", amount = 5},
@@ -1501,6 +1546,7 @@ data:extend({
         category = 'fi_refining',
         icon = sprite('icons/fi_cracking_kerosene.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "el_kerosene", amount = 200},
         },
@@ -1522,6 +1568,7 @@ data:extend({
         category = 'fi_refining',
         icon = sprite('icons/fi_cracking_kerosene_coal.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type = "fluid", name = "el_kerosene", amount = 200},
             {type = "item", name = "fi_crushed_coal_item", amount = 10},
@@ -1542,6 +1589,7 @@ data:extend({
         localised_name = {"item-name.fi_energy_crystal_charged_item"},
         enabled = false,
         category = 'el_charger_category',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fi_energy_crystal_item', amount = 1},
         },
@@ -1557,6 +1605,7 @@ data:extend({
         localised_name = {"item-name.el_materials_ceramic"},
         enabled = false,
         category = 'crafting-with-fluid',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="steam", amount=45},
             {type="item", name="fi_crushed_stone_item", amount=3},
@@ -1593,6 +1642,7 @@ data:extend({
         main_product = 'solid-fuel',
         icon = sprite('icons/fi_solid_2.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_kerosene", amount=20},
         },
@@ -1612,6 +1662,7 @@ data:extend({
         main_product = 'solid-fuel',
         icon = sprite('icons/fi_solid_1.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_desulfurized_kerosene", amount=30},
         },
@@ -1631,6 +1682,7 @@ data:extend({
         main_product = 'rocket-fuel',
         icon = sprite('icons/fi_rocket_1.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_desulfurized_kerosene", amount=30},
             {type="item", name="solid-fuel", amount=10},
@@ -1651,6 +1703,7 @@ data:extend({
         main_product = 'rocket-fuel',
         icon = sprite('icons/fi_rocket_2.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_kerosene", amount=20},
             {type="item", name="solid-fuel", amount=10},
@@ -1671,6 +1724,7 @@ data:extend({
         main_product = 'rocket-fuel',
         icon = sprite('icons/fi_rocket_2.png'),
         icon_size = 64,
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_kerosene", amount=20},
             {type="item", name="solid-fuel", amount=10},

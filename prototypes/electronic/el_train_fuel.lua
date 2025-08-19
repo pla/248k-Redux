@@ -22,6 +22,7 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '70MJ',
+        weight = 1 * kg
     },
     {
         name = 'el_train_fuel_diesel_energized_item',
@@ -36,6 +37,7 @@ data:extend({
         fuel_category = 'el_train_fuel',
         fuel_emissions_multiplier = 1,
         fuel_value = '100MJ',
+        weight = 1 * kg
     },
 
 })

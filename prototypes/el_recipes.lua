@@ -37,6 +37,7 @@ data:extend({
         enabled = false,
         category = 'crafting',
         subgroup = 'el_item_subgroup_b',
+        allow_productivity = true,
         ingredients = {
             {type = "item",name = 'el_lithium_item',amount = 4},
             {type = "item",name = 'iron-plate',amount = 4},
@@ -56,6 +57,7 @@ data:extend({
         localised_name = {"item-name.el_lithium_battery"},
         enabled = false,
         category = 'crafting',
+        allow_productivity = true,
         ingredients = {
             {type = "item",name = 'el_lithium_item',amount = 4},
             {type = "item",name = 'iron-plate',amount = 4},
@@ -183,6 +185,7 @@ data:extend({
         enabled = false,
         category = 'oil-processing',
         main_product = 'el_kerosene',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="crude-oil", amount=160},
             {type="fluid", name="steam", amount=60},
@@ -227,6 +230,7 @@ data:extend({
         enabled = false,
         category = 'chemistry',
         main_product = 'el_desulfurized_kerosene',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_kerosene", amount=200},
         },
@@ -245,6 +249,7 @@ data:extend({
         category = 'chemistry',
         subgroup = 'el_item_subgroup_e',
         main_product = 'sulfuric-acid',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_acidic_water", amount=150},
         },
@@ -264,6 +269,7 @@ data:extend({
         category = 'crafting-with-fluid',
         subgroup = 'el_item_subgroup_d',
         main_product = 'el_train_fuel_diesel_item',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_desulfurized_kerosene", amount=70},
         },
@@ -315,6 +321,7 @@ data:extend({
         localised_name = {"item-name.el_energy_crystal_item"},
         enabled = false,
         category = 'el_grower_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="el_energy_crystal_item", amount=1},
             {type="fluid", name="el_acidic_water", amount=15},
@@ -332,6 +339,7 @@ data:extend({
         localised_name = {"item-name.el_train_fuel_diesel_energized_item"},
         enabled = false,
         category = 'crafting',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="el_train_fuel_diesel_item", amount=4},
             {type="item", name="el_energy_crystal_charged_item", amount=1},
@@ -1254,6 +1262,7 @@ data:extend({
         localised_name = {"item-name.el_aluminum_item"},
         enabled = false,
         category = 'smelting',
+        allow_productivity = true,
         ingredients = {
             {type = "item", name = 'el_aluminum_ore_item',amount = 2},
         },
@@ -1287,6 +1296,7 @@ data:extend({
         localised_name = {"fluid-name.el_arc_pure_iron"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="el_materials_pure_iron", amount=1},
         },
@@ -1303,6 +1313,7 @@ data:extend({
         localised_name = {"item-name.iron-plate"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_arc_pure_iron", amount=100},
         },
@@ -1320,6 +1331,7 @@ data:extend({
         localised_name = {"item-name.steel-plate"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_arc_pure_iron", amount=500},
         },
@@ -1337,6 +1349,7 @@ data:extend({
         localised_name = {"fluid-name.el_arc_pure_copper"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="el_materials_pure_copper", amount=1},
         },
@@ -1353,6 +1366,7 @@ data:extend({
         localised_name = {"item-name.copper-plate"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_arc_pure_copper", amount=100},
         },
@@ -1370,6 +1384,7 @@ data:extend({
         localised_name = {"fluid-name.el_arc_pure_aluminum"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="el_materials_pure_aluminum", amount=1},
         },
@@ -1386,6 +1401,7 @@ data:extend({
         localised_name = {"item-name.el_aluminum_item"},
         enabled = false,
         category = 'el_caster_category',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="el_arc_pure_aluminum", amount=100},
         },
@@ -1403,6 +1419,7 @@ data:extend({
         localised_name = {"item-name.el_materials_ceramic"},
         enabled = false,
         category = 'crafting-with-fluid',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="steam", amount=30},
             {type="item", name="stone", amount=2},
@@ -1419,6 +1436,7 @@ data:extend({
         localised_name = {"item-name.el_materials_ceramic"},
         enabled = false,
         category = 'el_arc_furnace_category',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="stone", amount=4},
             {type="item", name="coal", amount=3},
@@ -1435,6 +1453,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.el_materials_ALK"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="el_materials_ceramic", amount=2},
             {type="item", name="el_aluminum_item", amount=6},
@@ -1500,6 +1519,7 @@ data:extend({
         enabled = false,
         category = 'oil-processing',
         main_product = 'el_kerosene',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="crude-oil", amount=200},
             {type="fluid", name="steam", amount=80},
@@ -1541,6 +1561,7 @@ data:extend({
         localised_name = {"item-name.el_energy_crystal_charged_item"},
         enabled = false,
         category = 'el_charger_category',
+        allow_productivity = true,
         ingredients = {
             {type='item', name='el_energy_crystal_item', amount=1},
         },

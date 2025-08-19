@@ -48,6 +48,7 @@ data:extend({
         usage_priority = 'secondary-input',
         buffer_capacity = '5MJ',
     },
+    module_slots = 4,
     allowed_effects = {"speed", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {

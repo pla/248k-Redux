@@ -48,6 +48,7 @@ data:extend({
             --input_flow_limit = '4MW',
         },
         energy_usage = '2MW',
+        module_slots = 4,
         allowed_effects = {"speed", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {

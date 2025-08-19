@@ -56,6 +56,7 @@ data:extend({
         "fi_ki_science",
         "fu_ki_science"
     },
+    module_slots = 4,
     allowed_effects = {"speed", "productivity", "consumption", "pollution"},
     module_specification = {
         module_info_icon_shift = {

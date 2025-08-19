@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'el_item_subgroup_d',
         order = 'a-a',
+        weight = 200 * kg
     },
 })
 
@@ -37,7 +38,32 @@ data:extend({
         drawing_box = {{-1, -4}, {1, 3}},
         connection_distance = 3,
         joint_distance = 4,
-        wheels = standard_train_wheels,
+        wheels = {
+            rotated = {
+                direction_count = 256,
+                filenames = {
+                    "__base__/graphics/entity/train-wheel/train-wheel-1.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-2.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-3.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-4.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-5.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-6.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-7.png",
+                    "__base__/graphics/entity/train-wheel/train-wheel-8.png"
+                },
+                height = 228,
+                line_length = 4,
+                lines_per_file = 8,
+                priority = "very-low",
+                scale = 0.5,
+                shift = {
+                    0.015625,
+                    0.03125
+                },
+                usage = "train",
+                width = 230
+            },  
+        },
         rail_category = "regular",
         open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
         close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},

@@ -259,6 +259,7 @@ data:extend({
         category = 'gr_charger_category',
         enabled = false,
         main_product = 'gr_materials_stabilizer_item',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'gr_materials_crushed_exotic_item', amount = 1},
             {type = 'item', name = 'fu_materials_energy_crystal', amount = 10},
@@ -276,6 +277,7 @@ data:extend({
         localised_name = {"item-name.gr_materials_crushed_exotic_item"},
         enabled = false,
         category = 'fi_crushing',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'fu_space_probe_ore_item', amount = 1},
         },
@@ -594,6 +596,7 @@ data:extend({
         localised_name = {"item-name.gr_materials_data_item"},
         enabled = false,
         category = 'fu_fusor_crafting_category',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'gr_materials_crushed_exotic_item', amount = 1},
             {type = 'item', name = 'gr_materials_stabilizer_item', amount = 1},
@@ -612,6 +615,7 @@ data:extend({
         localised_name = {"item-name.gr_materials_stacked_data_item"},
         enabled = false,
         category = 'fu_fusor_crafting_category',
+        allow_productivity = true,
         ingredients = {
             {type = 'item', name = 'gr_materials_data_item', amount = 3},
             {type = 'item', name = 'gr_materials_stack_up_item', amount = 1},
@@ -773,6 +777,7 @@ data:extend({
         enabled = false,
         category = 'crafting-with-fluid',
         main_product = 'gr_materials_circuit',
+        allow_productivity = true,
         ingredients = {
             {type="item", name="gr_materials_gold_wire", amount=10},
             {type="item", name="copper-cable", amount=10},
@@ -791,6 +796,7 @@ data:extend({
         type = 'recipe',
         localised_name = {"item-name.gr_materials_gold_wire"},
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             {type="item", name="fi_materials_gold", amount=1},
         },
@@ -806,6 +812,7 @@ data:extend({
         localised_name = {"item-name.gr_materials_pcb"},
         enabled = false,
         category = 'chemistry',
+        allow_productivity = true,
         ingredients = {
             {type="fluid", name="petroleum-gas", amount=30},
             {type="item", name="fi_materials_glass_fiber", amount=1},

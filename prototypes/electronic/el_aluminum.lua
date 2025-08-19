@@ -16,6 +16,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'el_item_subgroup_a',
         order = 'a-a',
+        weight = 2 * kg
     },
 
 })
@@ -29,6 +30,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'el_item_subgroup_a',
         order = 'b-a',
+        weight = 2 * kg
     },
 
 })

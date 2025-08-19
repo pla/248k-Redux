@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-b',
+        weight = 50 * kg
     },
 
 })
@@ -47,6 +48,7 @@ data:extend({
           type = 'electric',
           usage_priority = 'secondary-input',
       },
+      module_slots = 2,
       allowed_effects = {"speed", "productivity", "consumption", "pollution"},
         module_specification = {
             module_info_icon_shift = {

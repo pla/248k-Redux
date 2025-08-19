@@ -40,3 +40,4 @@ require('scripts/gravitation/gr_make_white_hole_recipes') --Lo movi aqui para co
 
 --make item vent recipes
 require('scripts/electronic/el_burner') --Lo movi aqui para evitar error con Space age
+

@@ -48,6 +48,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'el_item_subgroup_f',
         order = 'b-b',
+        weight = 200 * kg
     },
     {
         name = 'fi_ki_core_item',
@@ -58,6 +59,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_k',
         order = 'b-b',
+        weight = 500 * kg
     },
     {
         name = 'fu_ki_core_item',
@@ -68,6 +70,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_k',
         order = 'b-b',
+        weight = 1000 * kg
     },
 
 })

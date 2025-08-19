@@ -34,6 +34,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-a',
+        weight = 50 * kg
     },
     {
         name = 'el_burner_kerosene_item',
@@ -44,6 +45,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'el_item_subgroup_c',
         order = 'a-a',
+        weight = 50 * kg
     },
     
 

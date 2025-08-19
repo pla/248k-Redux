@@ -49,6 +49,7 @@ data:extend({
           usage_priority = 'secondary-input',
       },
       energy_usage = '2MW',
+      module_slots = 2,
       allowed_effects = {"speed", "consumption", "pollution", "productivity"},
       module_specification = {
         module_info_icon_shift = {
