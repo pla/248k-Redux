@@ -69,6 +69,7 @@ data:extend({
         close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
         sound_minimum_speed = 0.2,
         allow_manual_color = false,
+        allow_remote_driving = true,
         minable = {
             mining_time = 1,
             result = 'el_diesel_train_item',

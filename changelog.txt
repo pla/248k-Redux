@@ -1,8 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.17
+Date: 19.08.2025
+  Changes:
+    - Added remote driving to the mod's trains.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.16
 Date: 18.08.2025
   Changes:
-    - Fixel train wheels not showing.
+    - Fixed train wheels not showing.
     - Fixed module slots not showing on multiple machines.
     - Enabled productivity for multiple recipes.
 ---------------------------------------------------------------------------------------------------
