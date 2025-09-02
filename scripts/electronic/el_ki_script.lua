@@ -683,10 +683,18 @@ function el_ki_single_beacon_update(id)
 
             beacon_inv.clear()
 
+            --[[if storage.ki.beacon[id].icon then
+                rendering.destroy_object(storage.ki.beacon[id].icon)
+                storage.ki.beacon[id].icon = nil
+            end]]
+
             if storage.ki.beacon[id].icon then
-                rendering.destroy(storage.ki.beacon[id].icon)
+                if storage.ki.beacon[id].icon.valid then
+                    storage.ki.beacon[id].icon:destroy()
+                end
                 storage.ki.beacon[id].icon = nil
             end
+
 
             if storage.ki.channel[channel].core then
                 local coreunit = storage.ki.channel[channel].core
