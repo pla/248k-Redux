@@ -145,4 +145,19 @@ data:extend({
         default_value   = false,
         order           = 'i-d',
     },
+    {
+        name            = 'legacy_icons',
+        type            = 'bool-setting',
+        setting_type    = 'startup',
+        default_value   = false,
+        order           = 'i-d',
+    },
+    {
+        name            = 'Low_Density_Structures_default_recycling_output',
+        type            = 'bool-setting',
+        setting_type    = 'startup',
+        default_value   = false,
+        order           = 'i-d',
+    },
+    
 })

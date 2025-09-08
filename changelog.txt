@@ -1,8 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.19
+Date: 8.09.2025
+  Changes:
+    - Added a new startup setting: "Use 248k recipe for Low Density Structures recycling".
+      Allows players to choose between the 248k recycling recipe (Fibreglass + Aluminum Ceramic Composites + Copper Plates)
+      or the vanilla recycling recipe (Steel + Plastic + Copper Plates).
+---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 1.09.2025
   Changes:
-    - Fixed Fixed a crash when deconstructing or modifying beacons at the placement limit..
+    - Fixed a crash when deconstructing or modifying beacons at the placement limit.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.17
 Date: 19.08.2025
