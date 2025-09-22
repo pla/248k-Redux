@@ -162,7 +162,7 @@ data:extend({
             },
         --},
 
-
+--[[
         sloped = {
           layers = {
             {
@@ -255,7 +255,7 @@ data:extend({
             }
           }
         }
-      },
+]]      },
 
 
         --minimap

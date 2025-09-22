@@ -201,7 +201,7 @@ data:extend({
         enabled = false,
         category = 'fi_crafting_category',
         allow_productivity = true,
-        auto_recycle = settings.startup["Low_Density_Structures_default_recycling_output,"],
+        auto_recycle = settings.startup["Low_Density_Structures_default_recycling_output"].value,
         ingredients = {
             {type = 'item', name = 'fi_materials_glass_fiber', amount = 3},
             {type = 'item', name = 'el_materials_ALK', amount = 3},
