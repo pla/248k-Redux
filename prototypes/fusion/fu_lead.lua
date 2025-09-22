@@ -16,6 +16,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 4 * kg,
     },
 
 })
@@ -29,6 +30,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'b-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_crushed_lead_item',
@@ -38,6 +40,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a-b',
         order = 'c-a',
+        weight = 2 * kg,
     },
 
 })

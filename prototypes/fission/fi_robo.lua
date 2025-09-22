@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
+        weight = 100 * kg,
     },
     {
         name = 'fi_robo_charger_item',
@@ -28,6 +29,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
+        weight = 100 * kg,
     },
 
 })

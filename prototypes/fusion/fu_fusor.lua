@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-a',
+        weight = 100 * kg,
     },
     {
         name = 'fu_tech_sign_item',
@@ -27,6 +28,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'fu_item_subgroup_b',
         order = 'a-a',
+        weight = 0.1 * kg,
     },
 
 })

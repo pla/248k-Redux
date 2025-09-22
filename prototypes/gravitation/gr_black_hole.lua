@@ -18,6 +18,7 @@ data:extend({
         stack_size = 1,
         subgroup = 'gr_item_subgroup_c',
         order = 'e-a',
+        weight = 1000 * kg,
     },
     {
         name = 'gr_black_hole_base_entity',

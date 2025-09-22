@@ -23,6 +23,7 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '60MJ',
+        weight = 5 * kg,
     },
     {
         name = 'fu_materials_energy_charged_crystal',
@@ -39,6 +40,7 @@ data:extend({
         fuel_top_speed_multiplier = 1,
         fuel_value = '300MJ',
         burnt_result = 'fu_materials_energy_crystal',
+        weight = 10 * kg,
     },
     {
         name = 'fu_materials_refined_crystal',
@@ -48,6 +50,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 10 * kg,
     },
     {
         name = 'fu_materials_pure_lead',
@@ -57,6 +60,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 4 * kg,
     },
     {
         name = 'fu_materials_KFK',
@@ -66,6 +70,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_b',
         order = 'a-a',
+        weight = 4 * kg,
     },
     {
         name = 'fu_materials_TIM',
@@ -75,6 +80,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_b',
         order = 'a-a',
+        weight = 4 * kg,
     },
     {
         name = 'fu_materials_magnet',
@@ -84,6 +90,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_b',
         order = 'a-a',
+        weight = 4 * kg,
     },
     {
         name = 'fu_materials_carbon_fiber',
@@ -93,6 +100,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_b',
         order = 'a-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_plasma_card',
@@ -102,6 +110,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_c',
         order = 'c-a',
+        weight = 1 * kg,
     },
     {
         name = 'fu_materials_laser_card',
@@ -111,6 +120,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_c',
         order = 'c-a',
+        weight = 1 * kg,
     },
     {
         name = 'fu_materials_magnet_card',
@@ -120,6 +130,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_c',
         order = 'c-a',
+        weight = 1 * kg,
     },
     {
         name = 'fu_materials_fusion_card',
@@ -129,6 +140,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_c',
         order = 'c-a',
+        weight = 1 * kg,
     },
     {
         name = 'fu_materials_empty_container',
@@ -138,6 +150,7 @@ data:extend({
         stack_size = 5,
         subgroup = 'fu_item_subgroup_b',
         order = 'f-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_charged_container',
@@ -147,6 +160,7 @@ data:extend({
         stack_size = 5,
         subgroup = 'fu_item_subgroup_b',
         order = 'f-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_stone',
@@ -156,6 +170,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a',
         order = 'f-a',
+        weight = 20 * kg,
     },
     {
         name = 'fu_materials_gold_ingot',
@@ -165,6 +180,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_titan_ingot',
@@ -174,6 +190,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_neodym_ingot',
@@ -183,6 +200,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_lead_ingot',
@@ -192,6 +210,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'a-a',
+        weight = 2 * kg,
     },
     {
         name = 'fu_materials_slag',
@@ -201,6 +220,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fu_item_subgroup_a',
         order = 'f-a',
+        weight = 1 * kg,
     },
     {
         name = 'fu_materials_upgrade',
@@ -210,5 +230,6 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_b',
         order = 'x-a',
+        weight = 250 * kg,
     },
 })

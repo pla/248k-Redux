@@ -17,6 +17,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_b',
         order = 'a-b',
+        weight = 2.5 * kg
     },
     {
         name = 'fi_industrial_steel_blend_item',
@@ -26,6 +27,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 10 * kg
     },
     {
         name = 'fi_materials_natural_fiber',
@@ -35,6 +37,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_glass_fiber',
@@ -44,6 +47,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_glass',
@@ -53,6 +57,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2.5 * kg
     },
     {
         name = 'fi_materials_flourite',
@@ -62,6 +67,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_pure_gold',
@@ -71,6 +77,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 4 * kg
     },
     {
         name = 'fi_materials_pure_titan',
@@ -80,6 +87,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 4 * kg
     },
     {
         name = 'fi_materials_pure_neodym',
@@ -89,6 +97,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 4 * kg
     },
     {
         name = 'fi_materials_gold',
@@ -98,6 +107,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_neodym',
@@ -107,6 +117,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_titan',
@@ -116,6 +127,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_NFK',
@@ -125,6 +137,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_b',
         order = 'a-a',
+        weight = 2.5 * kg
     },
     {
         name = 'fi_materials_GFK',
@@ -134,6 +147,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fi_item_subgroup_b',
         order = 'a-a',
+        weight = 2.5* kg
     },
     {
         name = 'fi_materials_waste',
@@ -143,6 +157,7 @@ data:extend({
         stack_size = 1,
         subgroup = 'fi_item_subgroup_a',
         order = 'f-a',
+        weight = 500 * kg
     },
     {
         name = 'fi_materials_solution',
@@ -152,6 +167,7 @@ data:extend({
         stack_size = 1,
         subgroup = 'fi_item_subgroup_a-c',
         order = 'f-a',
+        weight = 500 * kg
     },
     {
         name = 'fi_materials_empty_solution',
@@ -161,6 +177,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_b',
         order = 'f-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_solution',
@@ -170,6 +187,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_b',
         order = 'f-b',
+        weight = 4 * kg
     },
     {
         name = 'fi_materials_rich_powder',
@@ -179,6 +197,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'b-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_materials_rich_solution',
@@ -188,6 +207,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_b',
         order = 'f-b',
+        weight = 4 * kg
     },
     {
         name = 'fi_materials_dirty_solution',
@@ -197,6 +217,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_b',
         order = 'f-b',
+        weight = 4 * kg
     },
     {
         name = 'fi_materials_upgrade',
@@ -206,6 +227,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_j',
         order = 'b-a',
+        weight = 250 * kg
     },
 
 })

@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'a-c',
+        weight = 1000 * kg,
     },
     {
       name = 'fu_tokamak_reactor_item',
@@ -28,6 +29,7 @@ data:extend({
       stack_size = 20,
       subgroup = 'fu_item_subgroup_d',
       order = 'a-b',
+      weight = 1000 * kg,
   },
 })
 

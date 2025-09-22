@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
         order = 'b-a',
+        weight = 250 * kg,
     },
     {
         name = 'gr_magnet_wagon_item',
@@ -28,6 +29,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
         order = 'b-b',
+        weight = 250 * kg,
     },
     {
         name = 'gr_magnet_tanker_item',
@@ -38,6 +40,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'gr_item_subgroup_b',
         order = 'b-c',
+        weight = 250 * kg,
     },
 })
 
@@ -468,6 +471,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'e-a',
+        weight = 500 * kg,
     },
     {
         name = 'gr_magnet_wagon_pre_item',
@@ -478,6 +482,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'e-b',
+        weight = 500 * kg,
     },
     {
         name = 'gr_magnet_tanker_pre_item',
@@ -488,6 +493,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_d',
         order = 'e-c',
+        weight = 500 * kg,
     },
     {
         name = 'gr_magnet_train_pre_entity',

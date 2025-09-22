@@ -17,6 +17,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-d',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_iron_item',
@@ -26,6 +27,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-a',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_copper_item',
@@ -35,6 +37,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-b',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_aluminum_item',
@@ -44,6 +47,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-c',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_coal_item',
@@ -53,6 +57,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-f',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_glass_item',
@@ -62,6 +67,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-f',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_stone_item',
@@ -71,6 +77,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-f',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_uranium_item',
@@ -80,5 +87,6 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-f',
+        weight = 20 * kg
     },
 })

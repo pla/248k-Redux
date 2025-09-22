@@ -18,6 +18,7 @@ data:extend({
         subgroup = 'fi_item_subgroup_e',
         place_as_equipment_result = 'fi_train_equipment_generator_item',
         order = 'a-a',
+        weight = 200 * kg
     },
     {
         name = 'fi_equipment_player_reactor_item',
@@ -28,6 +29,7 @@ data:extend({
         subgroup = 'fi_item_subgroup_e',
         place_as_equipment_result = 'fi_equipment_player_reactor_item',
         order = 'a-b',
+        weight = 500 * kg
     },
     {
         name = 'fi_equipment_player_shield_item',
@@ -38,6 +40,7 @@ data:extend({
         subgroup = 'fi_item_subgroup_e',
         place_as_equipment_result = 'fi_equipment_player_shield_item',
         order = 'a-c',
+        weight = 100 * kg
     },
 
 })

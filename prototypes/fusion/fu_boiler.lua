@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fu_item_subgroup_c',
         order = 'a-c',
+        weight = 100 * kg,
     },
 
 })

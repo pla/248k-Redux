@@ -17,6 +17,7 @@ data:extend({
         stack_size = 10,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-c-c',
+        weight = 200 * kg,
     },
     {
         name = 'gr_materials_stack_down_item',
@@ -26,6 +27,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-c-b',
+        weight = 200 * kg,
     },
     {
         name = 'gr_materials_stack_up_item',
@@ -35,6 +37,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-c-a',
+        weight = 200 * kg,
     },
     {
         name = 'gr_materials_cooked_crystal_item',
@@ -44,6 +47,7 @@ data:extend({
         stack_size = 10,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-d',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_refined_crystal_item',
@@ -53,6 +57,7 @@ data:extend({
         stack_size = 10,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-e',
+        weight = 10 * kg,
     },
     {
         name = 'gr_materials_crushed_exotic_item',
@@ -62,6 +67,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-f',
+        weight = 2 * kg,
     },
     {
         name = 'gr_materials_stabilizer_item',
@@ -71,6 +77,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-g',
+        weight = 20 * kg,
     },
 
 
@@ -83,6 +90,7 @@ data:extend({
         stack_size = 2,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-a',
+        weight = 15.625 * kg,
     },
     {
         name = 'gr_materials_red_data_item',
@@ -92,6 +100,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-a',
+        weight = 15.625 * kg,
     },
     {
         name = 'gr_materials_green_item',
@@ -101,6 +110,7 @@ data:extend({
         stack_size = 2,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-b',
+        weight = 31.25 * kg,
     },
     {
         name = 'gr_materials_green_data_item',
@@ -110,6 +120,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-b',
+        weight = 31.25 * kg,
     },
     {
         name = 'gr_materials_blue_item',
@@ -119,6 +130,7 @@ data:extend({
         stack_size = 2,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-c',
+        weight = 62.5 * kg,
     },
     {
         name = 'gr_materials_blue_data_item',
@@ -128,6 +140,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-c',
+        weight = 62.5 * kg,
     },
     {
         name = 'gr_materials_purple_item',
@@ -137,6 +150,7 @@ data:extend({
         stack_size = 2,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-d',
+        weight = 125 * kg,
     },
     {
         name = 'gr_materials_purple_data_item',
@@ -146,6 +160,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-d',
+        weight = 125 * kg,
     },
     {
         name = 'gr_materials_yellow_item',
@@ -155,6 +170,7 @@ data:extend({
         stack_size = 2,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-e',
+        weight = 250 * kg,
     },
     {
         name = 'gr_materials_yellow_data_item',
@@ -164,6 +180,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-e',
+        weight = 250 * kg,
     },
     {
         name = 'gr_materials_grey_item',
@@ -173,6 +190,7 @@ data:extend({
         stack_size = 2,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-f',
+        weight = 500 * kg,
     },
     {
         name = 'gr_materials_grey_data_item',
@@ -182,6 +200,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-f',
+        weight = 500 * kg,
     },
     {
         name = 'gr_materials_white_item',
@@ -191,6 +210,7 @@ data:extend({
         stack_size = 1,
         subgroup = 'gr_item_subgroup_f',
         order = 'c-g',
+        weight = 1000 * kg,
     },
     {
         name = 'gr_materials_white_data_item',
@@ -200,6 +220,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'b-g',
+        weight = 1000 * kg,
     },
 
 
@@ -211,6 +232,7 @@ data:extend({
         stack_size = 500,
         subgroup = 'gr_item_subgroup_a',
         order = 'f-a',
+        weight = 10 * kg,
     },
     {
         name = 'gr_materials_stacked_data_item',
@@ -220,6 +242,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'gr_item_subgroup_a',
         order = 'f-b',
+        weight = 100 * kg,
     },
 
     {
@@ -231,6 +254,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-a',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_green_pack_item',
@@ -241,6 +265,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-b',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_blue_pack_item',
@@ -251,6 +276,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-c',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_purple_pack_item',
@@ -261,6 +287,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-d',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_yellow_pack_item',
@@ -271,6 +298,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-e',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_grey_pack_item',
@@ -281,6 +309,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-f',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_white_pack_item',
@@ -291,6 +320,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'gr_item_subgroup_f',
         order = 'f-g',
+        weight = 5 * kg,
     },
 
     {
@@ -302,6 +332,7 @@ data:extend({
         subgroup = 'gr_item_subgroup_b',
         place_as_equipment_result = 'gr_materials_charge_item',
         order = 'c-a',
+        weight = 1000 * kg,
     },
     {
         name = 'gr_materials_charge_item',
@@ -410,6 +441,7 @@ data:extend({
         stack_size = 500,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-b',
+        weight = 4 * kg,
     },
     {
         name = 'gr_materials_gold_wire',
@@ -419,6 +451,7 @@ data:extend({
         stack_size = 200,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-c',
+        weight = 1 * kg,
     },
     {
         name = 'gr_materials_pcb',
@@ -428,6 +461,7 @@ data:extend({
         stack_size = 200,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-a',
+        weight = 2 * kg,
     },
     {
         name = 'gr_materials_magnet',
@@ -437,6 +471,7 @@ data:extend({
         stack_size = 200,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-a',
+        weight = 5 * kg,
     },
     {
         name = 'gr_materials_plasma_cube',
@@ -446,6 +481,7 @@ data:extend({
         stack_size = 200,
         subgroup = 'gr_item_subgroup_a',
         order = 'a-a',
+        weight = 10 * kg,
     },
     {
         name = 'gr_materials_upgrade',
@@ -455,6 +491,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'gr_item_subgroup_d',
         order = 'x-a',
+        weight = 250 * kg,
     },
 
 })

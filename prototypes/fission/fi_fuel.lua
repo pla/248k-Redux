@@ -22,6 +22,7 @@ data:extend({
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'a-a',
         burnt_result = 'fi_used_basic_fuel_item',
+        weight = 100 * kg
     },
     {
         --u 238 + th 232
@@ -36,6 +37,7 @@ data:extend({
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'a-b',
         burnt_result = 'fi_used_basic_thorium_fuel_item',
+        weight = 100 * kg
     },
     {
         --u 238 + pu 239
@@ -50,6 +52,7 @@ data:extend({
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'b-a',
         burnt_result = 'fi_used_advanced_fuel_item',
+        weight = 100 * kg
     },
     {
         --u 233 + u 238
@@ -64,6 +67,7 @@ data:extend({
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'b-b',
         burnt_result = 'fi_used_advanced_thorium_fuel_item',
+        weight = 100 * kg
     },
     {   
         --u 235 + pu 239
@@ -78,6 +82,7 @@ data:extend({
         fuel_glow_color = {r=0.1,g=0.74,b=0.39,a=0.5},
         order = 'c-a',
         burnt_result = 'fi_used_pure_fuel_item',
+        weight = 100 * kg
     },
     {   
         --used_basic
@@ -88,6 +93,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_d',
         order = 'c-a',
+        weight = 100 * kg
     },
     {   
         --used_basic_thorium
@@ -98,6 +104,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_d',
         order = 'c-a',
+        weight = 100 * kg
     },
     {   
         --used_advanced
@@ -108,6 +115,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_d',
         order = 'c-a',
+        weight = 100 * kg
     },
     {   
         --used_advanced_thorium
@@ -118,6 +126,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_d',
         order = 'c-a',
+        weight = 100 * kg
     },
     {   
         --used_pure
@@ -128,6 +137,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_d',
         order = 'c-a',
+        weight = 100 * kg
     },
     {   
         --u33
@@ -138,6 +148,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_a',
         order = 'a-b',
+        weight = 50 * kg
     },
     {   
         --pu239
@@ -148,6 +159,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_a',
         order = 'a-c',
+        weight = 50 * kg
     },
     {   
         --th232
@@ -158,6 +170,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_a',
         order = 'a-a',
+        weight = 50 * kg
     },
     --train crystal fuel
     {
@@ -173,6 +186,7 @@ data:extend({
         fuel_category = 'el_train_fuel',
         fuel_emissions_multiplier = 3.5,
         fuel_value = '250MJ',
+        weight = 5 * kg
     },
 
 

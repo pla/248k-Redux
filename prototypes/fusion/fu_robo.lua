@@ -18,6 +18,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fu_item_subgroup_d',
         order = 'b-a',
+		weight = 50 * kg,
 	},
 	{
         name = 'fu_robo_construction_item',
@@ -28,6 +29,7 @@ data:extend({
         stack_size = 50,
         subgroup = 'fu_item_subgroup_d',
         order = 'b-b',
+		weight = 50 * kg,
     },
 })
 

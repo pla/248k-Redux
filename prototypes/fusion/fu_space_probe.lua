@@ -125,6 +125,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'fu_item_subgroup_b',
         order = 'f-a',
+        weight = 0.5 * kg,
     },
     {
         name = 'fu_space_probe_science_item_1',
@@ -135,6 +136,7 @@ data:extend({
         stack_size = 10000,
         subgroup = 'fu_item_subgroup_b',
         order = 'f-b',
+        weight = 0.5 * kg,
     },
 
 })

@@ -23,6 +23,7 @@ data:extend({
         fuel_emissions_multiplier = 1,
         fuel_top_speed_multiplier = 1,
         fuel_value = '30MJ',
+        weight = 2 * kg
     },
     {
         name = 'fi_energy_crystal_charged_item',
@@ -39,6 +40,7 @@ data:extend({
         fuel_top_speed_multiplier = 1,
         fuel_value = '100MJ',
         burnt_result = 'fi_energy_crystal_item',
+        weight = 2 * kg
     },
     {
         name = 'fi_crushed_crystal_item',
@@ -48,6 +50,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_a-b',
         order = 'a-e',
+        weight = 2 * kg
     },
     {
         name = 'fi_catalyst_crystal_item',
@@ -57,6 +60,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-b',
+        weight = 10 * kg
     },
     {
         name = 'fi_base_crystal_item',
@@ -66,5 +70,6 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_f',
         order = 'a-c',
+        weight = 10 * kg
     },
 })

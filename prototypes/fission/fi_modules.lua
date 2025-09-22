@@ -76,6 +76,7 @@ data:extend({
         category = '248k_productivity_category',
         tier = 1,
         order = 'a-a',
+        weight = 20 * kg,
         effect = {
             consumption = 0.9,--{bonus = 0.9},
             speed = -0.2, --{bonus = -0.2},
@@ -95,6 +96,7 @@ data:extend({
         category = '248k_productivity_category',
         tier = 2,
         order = 'a-a',
+        weight = 20 * kg,
         effect = {
             consumption = 1.4, --{bonus = 1.4},
             speed = -0.35, --{bonus = -0.35},
@@ -114,6 +116,7 @@ data:extend({
         category = '248k_productivity_category',
         tier = 3,
         order = 'a-a',
+        weight = 20 * kg,
         effect = {
             consumption = 2.6, --{bonus = 2.6},
             speed = -0.6, --{bonus = -0.6},
@@ -133,6 +136,7 @@ data:extend({
         category = '248k_productivity_category',
         tier = 4,
         order = 'a-a',
+        weight = 20 * kg,
         effect = {
             consumption = 2, --{bonus = 2},
             speed = -0.5, --{bonus = -0.5},
@@ -150,6 +154,7 @@ data:extend({
         category = '248k_productivity_category',
         tier = 5,
         order = 'a-b',
+        weight = 20 * kg,
         effect = {
             consumption = 3, --{bonus = 3},
             speed = -0.7, --{bonus = -0.7},
@@ -167,6 +172,7 @@ data:extend({
         category = '248k_productivity_category',
         tier = 6,
         order = 'a-c',
+        weight = 20 * kg,
         effect = {
             consumption = 6, --{bonus = 6},
             speed = -0.9, --{bonus = -0.9},
@@ -182,6 +188,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_e',
         order = 'b-k',
+        weight = 10 * kg,
     },
     {
         name = 'fi_modules_core_item',
@@ -191,6 +198,7 @@ data:extend({
         stack_size = 100,
         subgroup = 'fi_item_subgroup_e',
         order = 'b-x',
+        weight = 10 * kg,
     },
     
 

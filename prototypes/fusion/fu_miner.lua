@@ -18,6 +18,7 @@ data:extend({
         stack_size = 20,
         subgroup = 'fi_item_subgroup_c',
         order = 'a-b',
+        weight = 500 * kg,
     },
     {
         name = 'fu_miner_fuel_item',
@@ -29,6 +30,7 @@ data:extend({
         order = 'a-b',
         fuel_category = 'fu_miner_fuel_category',
         fuel_value = '80MJ',
+        weight = 5 * kg,
     },
 
 })
@@ -188,6 +190,7 @@ miner2_item.icons = {
 }
 miner2_item.icon = nil
 miner2_item.place_result = 'fu_miner_entity_2'
+miner2_item.weight = 500 * kg
 
 local miner3_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
 miner3_item.name = 'fu_miner_item_3'
@@ -203,6 +206,7 @@ miner3_item.icon = nil
 miner3_item.place_result = 'fu_miner_entity_3'
 miner3_item.subgroup = 'fu_item_subgroup_c'
 miner3_item.order = 'a-b'
+miner3_item.weight = 500 * kg
 
 local miner4_item = util.table.deepcopy(data.raw['item']['fu_miner_item'])
 miner4_item.name = 'fu_miner_item_4'
@@ -218,6 +222,7 @@ miner4_item.icon = nil
 miner4_item.place_result = 'fu_miner_entity_4'
 miner4_item.subgroup = 'gr_item_subgroup_c'
 miner4_item.order = 'a-b'
+miner4_item.weight = 500 * kg,
 
 
 data:extend({miner2,miner3,miner4,miner2_item,miner3_item,miner4_item})
