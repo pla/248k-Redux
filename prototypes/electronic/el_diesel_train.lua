@@ -192,8 +192,8 @@ data:extend({
               priority = "very-low",
               scale = 0.5,
               shift = {
-                0.25,
-                -0.6
+                0.2,
+                -0.73
               },
               usage = "train",
               width = 512
