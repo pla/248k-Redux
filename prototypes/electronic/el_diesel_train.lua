@@ -162,7 +162,7 @@ data:extend({
             },
         --},
 
---[[
+
         sloped = {
           layers = {
             {
@@ -173,89 +173,34 @@ data:extend({
                 --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-1.png",
                 sprite("sloped-2.png"),
                 --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-2.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-3.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-4.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-5.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-6.png",
+                sprite("sloped-3.png"),
+                --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-3.png",
+                sprite("sloped-4.png"),
+                --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-4.png",
+                sprite("sloped-5.png"),
+                --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-5.png",
+                sprite("sloped-6.png"),
+                --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-6.png",
                 sprite("sloped-7.png"),
                 --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-7.png",
                 sprite("sloped-8.png"),
                 --"__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-8.png"
               },
-              height = 562,
-              line_length = 4,
-              lines_per_file = 5,
-              priority = "very-low",
-              scale = 0.6,
-              shift = {
-                0.5,
-                -0.7
-              },
-              usage = "train",
-              width = 474
-            },
-            {
-              apply_runtime_tint = true,
-              dice = 4,
-              direction_count = 160,
-              filenames = {
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-1.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-2.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-3.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-4.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-5.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-6.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-7.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-mask-8.png"
-              },
-              flags = {
-                "mask"
-              },
-              height = 560,
+              height = 512,
               line_length = 4,
               lines_per_file = 5,
               priority = "very-low",
               scale = 0.5,
               shift = {
-                0,
-                -0.140625
-              },
-              tint_as_overlay = true,
-              usage = "train",
-              width = 474
-            },
-            {
-              dice = 4,
-              direction_count = 160,
-              draw_as_shadow = true,
-              filenames = {
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-1.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-2.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-3.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-4.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-5.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-6.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-7.png",
-                "__elevated-rails__/graphics/entity/locomotive/locomotive-sloped-shadow-8.png"
-              },
-              flags = {
-                "shadow"
-              },
-              height = 578,
-              line_length = 4,
-              lines_per_file = 5,
-              priority = "very-low",
-              scale = 0.5,
-              shift = {
-                0.46875,
-                0.265625
+                0.25,
+                -0.6
               },
               usage = "train",
-              width = 528
+              width = 512
             }
           }
         }
-]]      },
+      },
 
 
         --minimap
