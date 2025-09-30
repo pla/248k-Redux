@@ -236,7 +236,8 @@ data:extend({
 
 
 -- Todo esto es para cuando pueda subir los graficos de los trenes, hasta entonces esto esperara
-
+--,
+--        "248k-Redux-train-graphics >= 1.0.0"
 --Added graphic compatibility with Elevated Rails, thanks to the help of PreLayZero and the support of Maeve, Queen of Death and Dreams.
 
 --[[--local functions
