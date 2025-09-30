@@ -6,6 +6,7 @@ function gr_make_white_hole_recipe(item)
         hidden = true,
         allow_as_intermediate = false,
         category = 'gr_white_hole_category',
+        auto_recycle = false,
         ingredients = {
             {type = "item", name = 'blank', amount = 1}
         },

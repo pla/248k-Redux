@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.22
+Date: 29.09.2025
+  Changes:
+    - Fixed Scrap recipe that wasn't working correctly when using 248K Redux + Krastorio 2 Space Out + Space Age
+---------------------------------------------------------------------------------------------------
 Version: 0.1.21
 Date: 22.09.2025
   Changes:
