@@ -76,7 +76,7 @@ building_table = {
     {"medium-electric-pole",    "el_materials_ALK", 2},
     {"big-electric-pole",       "el_materials_ALK", 4},
 
-    {"stack-inserter",          "el_energy_crystal_item", 2},
+    {"bulk-inserter",          "el_energy_crystal_item", 2},
 
     {"express-splitter",        "fi_materials_GFK", 3},
     {"express-transport-belt",  "fi_materials_GFK", 1},
@@ -129,7 +129,7 @@ tech_table = {
     {"el_ki_tech",              "circuit-network"},
     {"electric-energy-distribution-1",  "el_ALK_tech"},
     {"el_energy_tech",          "solar-energy"},
-    {"stack-inserter",          "el_grower_tech"},
+    {"bulk-inserter",          "el_grower_tech"},
     {"electric-engine",         "fi_caster_tech"},
     {"robotics",                "fi_caster_tech"},
     {"production-science-pack", "fi_caster_tech"},

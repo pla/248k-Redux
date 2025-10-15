@@ -1742,7 +1742,7 @@ data:extend({
             {type="item", name="concrete", amount=30},
         },
         results = {
-            {type="item", name="fu_miner_item", amount=20},
+            {type="item", name="fu_miner_item", amount=1},
         },
         --result_count = 20, se pasa este 20 al amount del resultado, el valor original del amount era 1
         energy_required = 10,

@@ -118,6 +118,7 @@ data:extend({
         icon_size = 64,
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         selection_priority = 60,
+        hidden_in_factoriopedia = true,
         picture = {
             filename = sprite('slave_entity_animation.png'),
             width = 64,
@@ -186,6 +187,7 @@ data:extend({
         icon_size = 64,
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         selection_priority = 60,
+        hidden_in_factoriopedia = true,
         picture = {
             filename = sprite('slave_entity_animation.png'),
             width = 64,
@@ -252,6 +254,7 @@ data:extend({
         icon_size = 64,
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
         selection_priority = 60,
+        hidden_in_factoriopedia = true,
         picture = {
             filename = sprite('slave_entity_animation.png'),
             width = 64,

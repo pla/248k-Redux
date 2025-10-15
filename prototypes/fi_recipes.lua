@@ -65,6 +65,7 @@ data:extend({
     type = 'recipe',
         localised_name = {"item-name.fi_miner_item"},
     enabled = false,
+    hidden_in_factoriopedia = true,
     ingredients = {
             {type = 'item', name = 'concrete', amount = 100},
             {type = 'item', name = 'fi_compound_material_item', amount = 60},

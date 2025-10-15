@@ -1,4 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.28
+Date: 14.10.2025
+  Changes:
+    - Replaced "stack-inserter" with "bulk-inserter" in 248k-Redux/scripts/overhaul.lua (2 occurences) (Fixed by cackling.fiend).
+---------------------------------------------------------------------------------------------------
+Version: 0.1.27
+Date: 11.10.2025
+  Changes:
+    - Hidden multiple recipes and objects that shouldn't be appearing on the Factoriopedia
+---------------------------------------------------------------------------------------------------
+Version: 0.1.26
+Date: 8.10.2025
+  Changes:
+    - Fixed fu_miner_recipe, which resulted in 20 products when it should have been 1 (informed by lyx_kljk).
+---------------------------------------------------------------------------------------------------
+Version: 0.1.25
+Date: 6.10.2025
+  Changes:
+    - Fixed by cackling.fiend: Game could crash on load if another mod turned certain technologies into triggers without a unit field.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.24
 Date: 4.10.2025
   Changes:

@@ -111,8 +111,20 @@ local function add_tech_cards(table_in)
     end
 end
 
-local function add_tech_card(tech, card)
+--[[local function add_tech_card(tech, card)
     if not data.raw.technology[tech] then 
+        return
+    end
+
+    if contains_tech_card(data.raw.technology[tech].unit.ingredients, card) then
+        return
+    end
+
+    table.insert(data.raw.technology[tech].unit.ingredients, {card, 1})
+end]]
+
+local function add_tech_card(tech, card)
+    if not data.raw.technology[tech] or not data.raw.technology[tech].unit then
         return
     end
 

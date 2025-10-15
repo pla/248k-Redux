@@ -42,6 +42,7 @@ data:extend({
         type = "selection-tool",
         stack_size = 1,
         icon_size = 64,
+        hidden_in_factoriopedia = true,
         icon = sprite('selection_tool.png'),
         flags = {--[["hidden", comentando esto para saltar error, entender para que es esto]]"mod-openable","only-in-cursor"},
         
