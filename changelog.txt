@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.29
+Date: 27.10.2025
+  Changes:
+    - Fixed bug "Error while running setup for entity prototype "solar-panel" (solar-panel): next_upgrade target (el_solar_entity) must have the same bounding box"
+    - Fixed bug "Technology gr_blue_tech: there is no lab that will accept all of the science packs this technology requires"
+---------------------------------------------------------------------------------------------------
 Version: 0.1.28
 Date: 14.10.2025
   Changes:

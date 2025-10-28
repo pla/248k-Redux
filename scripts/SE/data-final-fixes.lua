@@ -6,6 +6,9 @@ end
 table.insert(data.raw.lab["gr_lab_entity"].inputs, "se-deep-space-science-pack-1")
 table.insert(data.raw.lab["gr_lab_entity"].inputs, "se-material-science-pack-2")
 table.insert(data.raw.lab["gr_lab_entity"].inputs, "se-rocket-science-pack")
+table.insert(data.raw.lab["gr_lab_entity"].inputs, "space-science-pack")
+table.insert(data.raw.lab["gr_lab_entity"].inputs, "production-science-pack")
+
 --se-energy-science-pack-1
 table.insert(data.raw.technology["fu_energy_tech"].unit.ingredients, {"se-energy-science-pack-1", 1})
 table.insert(data.raw.technology["fu_reactor_tech"].unit.ingredients, {"se-energy-science-pack-1", 1})

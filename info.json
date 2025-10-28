@@ -1,6 +1,6 @@
 {
     "name": "248k-Redux",
-    "version": "0.1.28",
+    "version": "0.1.29",
     "title": "248k Redux Mod",
     "author": "Suplanker",
     "factorio_version": "2.0",
@@ -14,6 +14,7 @@
         "?informatron",
         "?Krastorio2",
         "?IndustrialRevolution",
-        "?RealisticReactors"
+        "?RealisticReactors",
+        "(?)squeak-through-2"
     ]
 }
